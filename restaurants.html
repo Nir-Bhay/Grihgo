@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover the best restaurants in Bihar & Jharkhand on GRIHGO. Local favorites, featured restaurants, and exclusive partners.">
+    <meta name="keywords" content="restaurants Bihar, food delivery Jharkhand, Patna restaurants, local food">
+    <meta name="author" content="GRIHGO">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Restaurants - GRIHGO">
+    <meta property="og:description" content="Discover the best restaurants in Bihar & Jharkhand">
+    <meta property="og:type" content="website">
+
+    <title>Restaurants - GRIHGO | Best Food in Bihar & Jharkhand</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/logo.png">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/src/css/global.css">
+    <link rel="stylesheet" href="/src/css/header.css">
+    <link rel="stylesheet" href="/src/css/restaurants.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-logo-link">
+                <img src="/logo.png" alt="GRIHGO" class="navbar-logo">
+            </a>
+            <div class="navbar-menu" id="navbar-menu">
+                <a href="/about.html" class="navbar-link">About</a>
+                <a href="/cities.html" class="navbar-link">Cities</a>
+                <a href="/restaurants.html" class="navbar-link active">Restaurants</a>
+                <div class="navbar-dropdown">
+                    <a href="#" class="navbar-link navbar-dropdown-toggle">
+                        Explore
+                        <i data-lucide="chevron-down" class="icon-xs"></i>
+                    </a>
+                    <div class="navbar-dropdown-menu">
+                        <a href="/blog.html" class="dropdown-item">
+                            <i data-lucide="book-open" class="icon-sm"></i>
+                            <div>
+                                <span class="dropdown-title">Blog</span>
+                                <span class="dropdown-desc">Stories & updates</span>
+                            </div>
+                        </a>
+                        <a href="/delivery.html" class="dropdown-item">
+                            <i data-lucide="bike" class="icon-sm"></i>
+                            <div>
+                                <span class="dropdown-title">Delivery Partners</span>
+                                <span class="dropdown-desc">Earn with GrihGO</span>
+                            </div>
+                        </a>
+                        <a href="/transparency.html" class="dropdown-item">
+                            <i data-lucide="shield-check" class="icon-sm"></i>
+                            <div>
+                                <span class="dropdown-title">Transparency</span>
+                                <span class="dropdown-desc">Zero hidden charges</span>
+                            </div>
+                        </a>
+                        <a href="/pride.html" class="dropdown-item">
+                            <i data-lucide="heart" class="icon-sm"></i>
+                            <div>
+                                <span class="dropdown-title">Local Pride</span>
+                                <span class="dropdown-desc">ई हमर है!</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a href="/partner.html" class="navbar-link">Partner With Us</a>
+                <a href="/careers.html" class="navbar-link">Careers</a>
+                <a href="/contact.html" class="navbar-link">Help</a>
+                <a href="/#download" class="btn btn-primary btn-sm navbar-cta">
+                    <i data-lucide="download" class="icon-sm"></i>
+                    Download App
+                </a>
+            </div>
+            <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <img src="/logo.png" alt="GRIHGO" class="mobile-menu-logo">
+            <button class="mobile-menu-close" id="mobile-menu-close">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <div class="mobile-menu-content">
+            <a href="/" class="mobile-menu-link">
+                <i data-lucide="home"></i>
+                Home
+            </a>
+            <a href="/about.html" class="mobile-menu-link">
+                <i data-lucide="info"></i>
+                About
+            </a>
+            <a href="/cities.html" class="mobile-menu-link">
+                <i data-lucide="map"></i>
+                Cities
+            </a>
+            <a href="/restaurants.html" class="mobile-menu-link active">
+                <i data-lucide="utensils"></i>
+                Restaurants
+            </a>
+            <a href="/blog.html" class="mobile-menu-link">
+                <i data-lucide="book-open"></i>
+                Blog
+            </a>
+            <a href="/partner.html" class="mobile-menu-link">
+                <i data-lucide="handshake"></i>
+                Partner With Us
+            </a>
+            <a href="/delivery.html" class="mobile-menu-link">
+                <i data-lucide="bike"></i>
+                Delivery Partners
+            </a>
+            <a href="/transparency.html" class="mobile-menu-link">
+                <i data-lucide="shield-check"></i>
+                Transparency
+            </a>
+            <a href="/pride.html" class="mobile-menu-link">
+                <i data-lucide="heart"></i>
+                Local Pride
+            </a>
+            <a href="/careers.html" class="mobile-menu-link">
+                <i data-lucide="briefcase"></i>
+                Careers
+            </a>
+            <a href="/contact.html" class="mobile-menu-link">
+                <i data-lucide="headphones"></i>
+                Help
+            </a>
+        </div>
+        <div class="mobile-menu-footer">
+            <a href="/#download" class="btn btn-primary btn-lg" style="width: 100%;">
+                <i data-lucide="download"></i>
+                Download App
+            </a>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <header class="restaurants-header">
+        <div class="restaurants-header-bg">
+            <div class="header-pattern"></div>
+            <div class="header-gradient"></div>
+            <!-- Floating Food Icons -->
+            <div class="floating-food-icons">
+                <div class="floating-icon icon-1">🍕</div>
+                <div class="floating-icon icon-2">🍔</div>
+                <div class="floating-icon icon-3">🍜</div>
+                <div class="floating-icon icon-4">🍱</div>
+                <div class="floating-icon icon-5">🥗</div>
+                <div class="floating-icon icon-6">🍛</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="restaurants-header-content">
+                <!-- Breadcrumb -->
+                <nav class="breadcrumb" data-aos="fade-down">
+                    <a href="/">Home</a>
+                    <i data-lucide="chevron-right" class="icon-xs"></i>
+                    <span class="breadcrumb-current">Restaurants</span>
+                </nav>
+
+                <div class="header-badge" data-aos="fade-up" data-aos-delay="100">
+                    <i data-lucide="utensils"></i>
+                    <span>50+ Partner Restaurants</span>
+                </div>
+
+                <h1 data-aos="fade-up" data-aos-delay="200">Discover Local Flavors</h1>
+
+                <p class="header-subtitle" data-aos="fade-up" data-aos-delay="300">
+                    Explore the best restaurants in Bihar & Jharkhand. From local favorites to premium dining.
+                </p>
+
+                <!-- Quick Stats -->
+                <div class="header-stats" data-aos="fade-up" data-aos-delay="400">
+                    <div class="header-stat">
+                        <span class="stat-value">50+</span>
+                        <span class="stat-label">Restaurants</span>
+                    </div>
+                    <div class="header-stat">
+                        <span class="stat-value">200+</span>
+                        <span class="stat-label">Dishes</span>
+                    </div>
+                    <div class="header-stat">
+                        <span class="stat-value">4.5★</span>
+                        <span class="stat-label">Avg Rating</span>
+                    </div>
+                    <div class="header-stat">
+                        <span class="stat-value">25min</span>
+                        <span class="stat-label">Avg Delivery</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search & Filter Section -->
+    <section class="filter-section" id="filter-section">
+        <div class="container">
+            <div class="filter-wrapper">
+                <!-- Search Bar -->
+                <div class="search-container" data-aos="fade-up">
+                    <div class="search-box">
+                        <i data-lucide="search" class="search-icon"></i>
+                        <input type="text" class="search-input" id="restaurant-search"
+                            placeholder="Search restaurants, cuisines, or dishes...">
+                        <button class="search-clear" id="search-clear" style="display: none;">
+                            <i data-lucide="x"></i>
+                        </button>
+                    </div>
+
+                    <!-- City Selector -->
+                    <div class="city-selector">
+                        <i data-lucide="map-pin" class="city-icon"></i>
+                        <select class="city-select" id="city-select">
+                            <option value="">All Cities</option>
+                            <option value="patna">📍 Patna</option>
+                            <option value="darbhanga">📍 Darbhanga</option>
+                            <option value="muzaffarpur">📍 Muzaffarpur</option>
+                            <option value="gaya">📍 Gaya</option>
+                            <option value="ranchi">📍 Ranchi</option>
+                            <option value="jamshedpur">📍 Jamshedpur</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Filter Pills -->
+                <div class="filter-pills-wrapper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="filter-pills" id="filter-pills">
+                        <button class="filter-pill active" data-filter="all">
+                            <i data-lucide="grid-3x3"></i>
+                            All
+                        </button>
+                        <button class="filter-pill" data-filter="rating">
+                            <i data-lucide="star"></i>
+                            Rating 4.0+
+                        </button>
+                        <button class="filter-pill" data-filter="fast-delivery">
+                            <i data-lucide="zap"></i>
+                            Fast Delivery
+                        </button>
+                        <button class="filter-pill" data-filter="pure-veg">
+                            <i data-lucide="leaf"></i>
+                            Pure Veg
+                        </button>
+                        <button class="filter-pill" data-filter="biryani">
+                            🍚 Biryani
+                        </button>
+                        <button class="filter-pill" data-filter="north-indian">
+                            🍛 North Indian
+                        </button>
+                        <button class="filter-pill" data-filter="chinese">
+                            🥡 Chinese
+                        </button>
+                        <button class="filter-pill" data-filter="south-indian">
+                            🥘 South Indian
+                        </button>
+                        <button class="filter-pill" data-filter="desserts">
+                            🍰 Desserts
+                        </button>
+                        <button class="filter-pill" data-filter="street-food">
+                            🌯 Street Food
+                        </button>
+                    </div>
+
+                    <!-- Filter scroll indicators -->
+                    <button class="filter-scroll-btn filter-scroll-left" id="filter-scroll-left" style="display: none;">
+                        <i data-lucide="chevron-left"></i>
+                    </button>
+                    <button class="filter-scroll-btn filter-scroll-right" id="filter-scroll-right">
+                        <i data-lucide="chevron-right"></i>
+                    </button>
+                </div>
+
+                <!-- Active Filters -->
+                <div class="active-filters" id="active-filters" style="display: none;">
+                    <span class="active-filters-label">Active filters:</span>
+                    <div class="active-filter-tags" id="active-filter-tags"></div>
+                    <button class="clear-filters-btn" id="clear-filters">
+                        <i data-lucide="x"></i>
+                        Clear All
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cuisine Categories -->
+    <section class="section cuisine-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>🍽️ Browse by Cuisine</h2>
+                <p class="section-subtitle">What are you craving today?</p>
+            </div>
+
+            <div class="cuisine-grid" data-aos="fade-up" data-aos-delay="100">
+                <a href="#" class="cuisine-card" data-cuisine="biryani">
+                    <div class="cuisine-icon">
+                        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=200&h=200&fit=crop"
+                            alt="Biryani">
+                    </div>
+                    <span class="cuisine-name">Biryani</span>
+                    <span class="cuisine-count">15 places</span>
+                </a>
+
+                <a href="#" class="cuisine-card" data-cuisine="north-indian">
+                    <div class="cuisine-icon">
+                        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=200&h=200&fit=crop"
+                            alt="North Indian">
+                    </div>
+                    <span class="cuisine-name">North Indian</span>
+                    <span class="cuisine-count">25 places</span>
+                </a>
+
+                <a href="#" class="cuisine-card" data-cuisine="chinese">
+                    <div class="cuisine-icon">
+                        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=200&h=200&fit=crop"
+                            alt="Chinese">
+                    </div>
+                    <span class="cuisine-name">Chinese</span>
+                    <span class="cuisine-count">18 places</span>
+                </a>
+
+                <a href="#" class="cuisine-card" data-cuisine="south-indian">
+                    <div class="cuisine-icon">
+                        <img src="https://images.unsplash.com/photo-1630383249896-424e482df921?w=200&h=200&fit=crop"
+                            alt="South Indian">
+                    </div>
+                    <span class="cuisine-name">South Indian</span>
+                    <span class="cuisine-count">12 places</span>
+                </a>
+
+                <a href="#" class="cuisine-card" data-cuisine="street-food">
+                    <div class="cuisine-icon">
+                        <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=200&h=200&fit=crop"
+                            alt="Street Food">
+                    </div>
+                    <span class="cuisine-name">Street Food</span>
+                    <span class="cuisine-count">20 places</span>
+                </a>
+
+                <a href="#" class="cuisine-card" data-cuisine="desserts">
+                    <div class="cuisine-icon">
+                        <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=200&h=200&fit=crop"
+                            alt="Desserts">
+                    </div>
+                    <span class="cuisine-name">Desserts</span>
+                    <span class="cuisine-count">10 places</span>
+                </a>
+
+                <a href="#" class="cuisine-card" data-cuisine="bihari">
+                    <div class="cuisine-icon">
+                        <img src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40?w=200&h=200&fit=crop"
+                            alt="Bihari">
+                    </div>
+                    <span class="cuisine-name">Bihari Special</span>
+                    <span class="cuisine-count">8 places</span>
+                </a>
+
+                <a href="#" class="cuisine-card" data-cuisine="all">
+                    <div class="cuisine-icon cuisine-icon-all">
+                        <i data-lucide="grid-3x3"></i>
+                    </div>
+                    <span class="cuisine-name">View All</span>
+                    <span class="cuisine-count">50+ places</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurant of the Day -->
+    <section class="section restaurant-spotlight-section">
+        <div class="container">
+            <div class="spotlight-wrapper" data-aos="fade-up">
+                <div class="spotlight-badge">
+                    <i data-lucide="award"></i>
+                    Restaurant of the Day
+                </div>
+
+                <div class="spotlight-card">
+                    <div class="spotlight-image">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800"
+                            alt="The Biryani House">
+                        <div class="spotlight-overlay">
+                            <span class="spotlight-tag exclusive">
+                                <i data-lucide="crown"></i>
+                                GrihGO Exclusive
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="spotlight-content">
+                        <div class="spotlight-header">
+                            <div class="spotlight-rating">
+                                <span class="rating-value">4.8</span>
+                                <i data-lucide="star"></i>
+                                <span class="rating-count">(2,345 reviews)</span>
+                            </div>
+                            <div class="spotlight-badges">
+                                <span class="badge badge-success">
+                                    <i data-lucide="check-circle"></i>
+                                    Verified
+                                </span>
+                                <span class="badge badge-info">
+                                    <i data-lucide="percent"></i>
+                                    20% OFF Today
+                                </span>
+                            </div>
+                        </div>
+
+                        <h3 class="spotlight-name">The Biryani House</h3>
+                        <p class="spotlight-cuisine">Biryani • North Indian • Mughlai</p>
+
+                        <div class="spotlight-features">
+                            <div class="feature-item">
+                                <i data-lucide="clock"></i>
+                                <span>25-30 min delivery</span>
+                            </div>
+                            <div class="feature-item">
+                                <i data-lucide="map-pin"></i>
+                                <span>Patna, Bihar</span>
+                            </div>
+                            <div class="feature-item">
+                                <i data-lucide="indian-rupee"></i>
+                                <span>₹350 for two</span>
+                            </div>
+                        </div>
+
+                        <p class="spotlight-description">
+                            Famous for authentic Lucknowi and Hyderabadi Biryani. Our secret spice blend has been passed
+                            down for 3 generations.
+                        </p>
+
+                        <div class="spotlight-popular">
+                            <span class="popular-label">Popular:</span>
+                            <div class="popular-items">
+                                <span class="popular-item">Chicken Biryani</span>
+                                <span class="popular-item">Mutton Biryani</span>
+                                <span class="popular-item">Paneer Biryani</span>
+                            </div>
+                        </div>
+
+                        <div class="spotlight-actions">
+                            <a href="/#download" class="btn btn-primary btn-lg">
+                                <i data-lucide="shopping-bag"></i>
+                                Order Now
+                            </a>
+                            <button class="btn btn-outline btn-lg spotlight-favorite" id="spotlight-favorite">
+                                <i data-lucide="heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Restaurants -->
+    <section class="section featured-section" id="featured">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-header-left">
+                    <span class="section-tag">
+                        <i data-lucide="star"></i>
+                        Top Picks
+                    </span>
+                    <h2>Featured Restaurants</h2>
+                    <p class="section-subtitle">Handpicked for quality and taste</p>
+                </div>
+                <div class="section-header-right">
+                    <a href="#all-restaurants" class="btn btn-outline">
+                        View All
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="restaurants-grid featured-grid">
+                <!-- Premium Restaurant Card 1 -->
+                <div class="restaurant-card featured" data-aos="fade-up" data-aos-delay="100"
+                    data-cuisine="biryani north-indian">
+                    <div class="restaurant-image">
+                        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=400"
+                            alt="The Biryani House">
+                        <div class="image-overlay">
+                            <button class="favorite-btn" aria-label="Add to favorites">
+                                <i data-lucide="heart"></i>
+                            </button>
+                        </div>
+                        <div class="restaurant-badges">
+                            <span class="badge-exclusive">
+                                <i data-lucide="crown"></i>
+                                Exclusive
+                            </span>
+                        </div>
+                        <div class="delivery-time">
+                            <i data-lucide="clock"></i>
+                            25-30 min
+                        </div>
+                    </div>
+
+                    <div class="restaurant-info">
+                        <div class="restaurant-header">
+                            <h3 class="restaurant-name">The Biryani House</h3>
+                            <div class="restaurant-rating">
+                                <span class="rating-score">4.5</span>
+                                <i data-lucide="star"></i>
+                            </div>
+                        </div>
+
+                        <p class="restaurant-cuisine">Biryani • North Indian • Mughlai</p>
+
+                        <div class="restaurant-meta">
+                            <span class="meta-item">
+                                <i data-lucide="map-pin"></i>
+                                Patna
+                            </span>
+                            <span class="meta-item">
+                                <i data-lucide="indian-rupee"></i>
+                                ₹350 for two
+                            </span>
+                        </div>
+
+                        <div class="restaurant-offers">
+                            <span class="offer-tag">
+                                <i data-lucide="percent"></i>
+                                20% OFF up to ₹100
+                            </span>
+                        </div>
+
+                        <div class="restaurant-footer">
+                            <a href="/#download" class="btn btn-primary btn-sm btn-block">
+                                <i data-lucide="shopping-bag"></i>
+                                Order Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium Restaurant Card 2 -->
+                <div class="restaurant-card featured" data-aos="fade-up" data-aos-delay="150"
+                    data-cuisine="north-indian thali pure-veg">
+                    <div class="restaurant-image">
+                        <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400"
+                            alt="Sharma Bhojanalaya">
+                        <div class="image-overlay">
+                            <button class="favorite-btn" aria-label="Add to favorites">
+                                <i data-lucide="heart"></i>
+                            </button>
+                        </div>
+                        <div class="restaurant-badges">
+                            <span class="badge-veg">
+                                <i data-lucide="leaf"></i>
+                                Pure Veg
+                            </span>
+                        </div>
+                        <div class="delivery-time">
+                            <i data-lucide="clock"></i>
+                            20-25 min
+                        </div>
+                    </div>
+
+                    <div class="restaurant-info">
+                        <div class="restaurant-header">
+                            <h3 class="restaurant-name">Sharma Bhojanalaya</h3>
+                            <div class="restaurant-rating high">
+                                <span class="rating-score">4.7</span>
+                                <i data-lucide="star"></i>
+                            </div>
+                        </div>
+
+                        <p class="restaurant-cuisine">Pure Veg • Thali • North Indian</p>
+
+                        <div class="restaurant-meta">
+                            <span class="meta-item">
+                                <i data-lucide="map-pin"></i>
+                                Darbhanga
+                            </span>
+                            <span class="meta-item">
+                                <i data-lucide="indian-rupee"></i>
+                                ₹250 for two
+                            </span>
+                        </div>
+
+                        <div class="restaurant-offers">
+                            <span class="offer-tag">
+                                <i data-lucide="zap"></i>
+                                Free Delivery
+                            </span>
+                        </div>
+
+                        <div class="restaurant-footer">
+                            <a href="/#download" class="btn btn-primary btn-sm btn-block">
+                                <i data-lucide="shopping-bag"></i>
+                                Order Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium Restaurant Card 3 -->
+                <div class="restaurant-card featured" data-aos="fade-up" data-aos-delay="200"
+                    data-cuisine="punjabi tandoor">
+                    <div class="restaurant-image">
+                        <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400"
+                            alt="Makhani Kitchen">
+                        <div class="image-overlay">
+                            <button class="favorite-btn" aria-label="Add to favorites">
+                                <i data-lucide="heart"></i>
+                            </button>
+                        </div>
+                        <div class="restaurant-badges">
+                            <span class="badge-new">
+                                <i data-lucide="sparkles"></i>
+                                New
+                            </span>
+                        </div>
+                        <div class="delivery-time">
+                            <i data-lucide="clock"></i>
+                            35-40 min
+                        </div>
+                    </div>
+
+                    <div class="restaurant-info">
+                        <div class="restaurant-header">
+                            <h3 class="restaurant-name">Makhani Kitchen</h3>
+                            <div class="restaurant-rating">
+                                <span class="rating-score">4.3</span>
+                                <i data-lucide="star"></i>
+                            </div>
+                        </div>
+
+                        <p class="restaurant-cuisine">Punjabi • Tandoor • Curry</p>
+
+                        <div class="restaurant-meta">
+                            <span class="meta-item">
+                                <i data-lucide="map-pin"></i>
+                                Ranchi
+                            </span>
+                            <span class="meta-item">
+                                <i data-lucide="indian-rupee"></i>
+                                ₹400 for two
+                            </span>
+                        </div>
+
+                        <div class="restaurant-offers">
+                            <span class="offer-tag new">
+                                <i data-lucide="gift"></i>
+                                New User: 30% OFF
+                            </span>
+                        </div>
+
+                        <div class="restaurant-footer">
+                            <a href="/#download" class="btn btn-primary btn-sm btn-block">
+                                <i data-lucide="shopping-bag"></i>
+                                Order Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium Restaurant Card 4 -->
+                <div class="restaurant-card featured" data-aos="fade-up" data-aos-delay="250" data-cuisine="chinese">
+                    <div class="restaurant-image">
+                        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=400" alt="Chinese Corner">
+                        <div class="image-overlay">
+                            <button class="favorite-btn" aria-label="Add to favorites">
+                                <i data-lucide="heart"></i>
+                            </button>
+                        </div>
+                        <div class="delivery-time">
+                            <i data-lucide="clock"></i>
+                            30-35 min
+                        </div>
+                    </div>
+
+                    <div class="restaurant-info">
+                        <div class="restaurant-header">
+                            <h3 class="restaurant-name">Chinese Corner</h3>
+                            <div class="restaurant-rating medium">
+                                <span class="rating-score">3.9</span>
+                                <i data-lucide="star"></i>
+                            </div>
+                        </div>
+
+                        <p class="restaurant-cuisine">Chinese • Indo-Chinese • Noodles</p>
+
+                        <div class="restaurant-meta">
+                            <span class="meta-item">
+                                <i data-lucide="map-pin"></i>
+                                Muzaffarpur
+                            </span>
+                            <span class="meta-item">
+                                <i data-lucide="indian-rupee"></i>
+                                ₹300 for two
+                            </span>
+                        </div>
+
+                        <div class="restaurant-offers">
+                            <span class="offer-tag">
+                                <i data-lucide="truck"></i>
+                                Free Delivery on ₹199+
+                            </span>
+                        </div>
+
+                        <div class="restaurant-footer">
+                            <a href="/#download" class="btn btn-primary btn-sm btn-block">
+                                <i data-lucide="shopping-bag"></i>
+                                Order Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Favorites -->
+    <section class="section local-favorites-section" id="local-favorites">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-header-left">
+                    <span class="section-tag favorites-tag">
+                        <i data-lucide="heart"></i>
+                        Local Love
+                    </span>
+                    <h2>Local Favorites</h2>
+                    <p class="section-subtitle">Most loved by people in your area</p>
+                </div>
+            </div>
+
+            <div class="restaurants-grid">
+                <!-- Local Favorite 1 -->
+                <div class="restaurant-card" data-aos="fade-up" data-aos-delay="100" data-cuisine="bihari">
+                    <div class="restaurant-image">
+                        <img src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40?w=400" alt="Litti House">
+                        <div class="image-overlay">
+                            <button class="favorite-btn active" aria-label="Remove from favorites">
+                                <i data-lucide="heart"></i>
+                            </button>
+                        </div>
+                        <div class="restaurant-badges">
+                            <span class="badge-popular">
+                                <i data-lucide="flame"></i>
+                                Popular
+                            </span>
+                        </div>
+                        <div class="delivery-time">
+                            <i data-lucide="clock"></i>
+                            20-25 min
+                        </div>
+                    </div>
+
+                    <div class="restaurant-info">
+                        <div class="restaurant-header">
+                            <h3 class="restaurant-name">Litti House</h3>
+                            <div class="restaurant-rating high">
+                                <span class="rating-score">4.8</span>
+                                <i data-lucide="star"></i>
+                            </div>
+                        </div>
+
+                        <p class="restaurant-cuisine">Bihari • Litti Chokha • Local</p>
+
+                        <div class="restaurant-meta">
+                            <span class="meta-item">
+                                <i data-lucide="map-pin"></i>
+                                Patna
+                            </span>
+                            <span class="meta-item">
+                                <i data-lucide="users"></i>
+                                520+ orders
+                            </span>
+                        </div>
+
+                        <div class="restaurant-footer">
+                            <a href="/#download" class="btn btn-primary btn-sm btn-block">
+                                <i data-lucide="shopping-bag"></i>
+                                Order Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Local Favorite 2 -->
+                <div class="restaurant-card" data-aos="fade-up" data-aos-delay="150" data-cuisine="desserts sweets">
+                    <div class="restaurant-image">
+                        <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=400"
+                            alt="Maithili Sweets">
+                        <div class="image-overlay">
+                            <button class="favorite-btn" aria-label="Add to favorites">
+                                <i data-lucide="heart"></i>
+                            </button>
+                        </div>
+                        <div class="delivery-time">
+                            <i data-lucide="clock"></i>
+                            15-20 min
+                        </div>
+                    </div>
+
+                    <div class="restaurant-info">
+                        <div class="restaurant-header">
+                            <h3 class="restaurant-name">Maithili Sweets</h3>
+                            <div class="restaurant-rating">
+                                <span class="rating-score">4.6</span>
+                                <i data-lucide="star"></i>
+                            </div>
+                        </div>
+
+                        <p class="restaurant-cuisine">Sweets • Desserts • Snacks</p>
+
+                        <div class="restaurant-meta">
+                            <span class="meta-item">
+                                <i data-lucide="map-pin"></i>
+                                Darbhanga
+                            </span>
+                            <span class="meta-item">
+                                <i data-lucide="users"></i>
+                                387+ orders
+                            </span>
+                        </div>
+
+                        <div class="restaurant-footer">
+                            <a href="/#download" class="btn btn-primary btn-sm btn-block">
+                                <i data-lucide="shopping-bag"></i>
+                                Order Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Local Favorite 3 -->
+                <div class="restaurant-card" data-aos="fade-up" data-aos-delay="200" data-cuisine="street-food tea">
+                    <div class="restaurant-image">
+                        <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400"
+                            alt="Thandi Chai Corner">
+                        <div class="image-overlay">
+                            <button class="favorite-btn" aria-label="Add to favorites">
+                                <i data-lucide="heart"></i>
+                            </button>
+                        </div>
+                        <div class="restaurant-badges">
+                            <span class="badge-bestseller">
+                                <i data-lucide="trophy"></i>
+                                Bestseller
+                            </span>
+                        </div>
+                        <div class="delivery-time">
+                            <i data-lucide="clock"></i>
+                            10-15 min
+                        </div>
+                    </div>
+
+                    <div class="restaurant-info">
+                        <div class="restaurant-header">
+                            <h3 class="restaurant-name">Thandi Chai Corner</h3>
+                            <div class="restaurant-rating">
+                                <span class="rating-score">4.4</span>
+                                <i data-lucide="star"></i>
+                            </div>
+                        </div>
+
+                        <p class="restaurant-cuisine">Tea • Snacks • Street Food</p>
+
+                        <div class="restaurant-meta">
+                            <span class="meta-item">
+                                <i data-lucide="map-pin"></i>
+                                Gaya
+                            </span>
+                            <span class="meta-item">
+                                <i data-lucide="users"></i>
+                                234+ orders
+                            </span>
+                        </div>
+
+                        <div class="restaurant-footer">
+                            <a href="/#download" class="btn btn-primary btn-sm btn-block">
+                                <i data-lucide="shopping-bag"></i>
+                                Order Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Local Favorite 4 -->
+                <div class="restaurant-card" data-aos="fade-up" data-aos-delay="250" data-cuisine="south-indian">
+                    <div class="restaurant-image">
+                        <img src="https://images.unsplash.com/photo-1630383249896-424e482df921?w=400" alt="South Spice">
+                        <div class="image-overlay">
+                            <button class="favorite-btn" aria-label="Add to favorites">
+                                <i data-lucide="heart"></i>
+                            </button>
+                        </div>
+                        <div class="delivery-time">
+                            <i data-lucide="clock"></i>
+                            25-30 min
+                        </div>
+                    </div>
+
+                    <div class="restaurant-info">
+                        <div class="restaurant-header">
+                            <h3 class="restaurant-name">South Spice</h3>
+                            <div class="restaurant-rating">
+                                <span class="rating-score">4.5</span>
+                                <i data-lucide="star"></i>
+                            </div>
+                        </div>
+
+                        <p class="restaurant-cuisine">South Indian • Dosa • Idli</p>
+
+                        <div class="restaurant-meta">
+                            <span class="meta-item">
+                                <i data-lucide="map-pin"></i>
+                                Jamshedpur
+                            </span>
+                            <span class="meta-item">
+                                <i data-lucide="users"></i>
+                                198+ orders
+                            </span>
+                        </div>
+
+                        <div class="restaurant-footer">
+                            <a href="/#download" class="btn btn-primary btn-sm btn-block">
+                                <i data-lucide="shopping-bag"></i>
+                                Order Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Bites Section -->
+    <section class="section quick-bites-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-header-left">
+                    <span class="section-tag quick-tag">
+                        <i data-lucide="zap"></i>
+                        Super Fast
+                    </span>
+                    <h2>Quick Bites</h2>
+                    <p class="section-subtitle">Delivered in under 20 minutes</p>
+                </div>
+            </div>
+
+            <div class="quick-bites-grid" data-aos="fade-up" data-aos-delay="100">
+                <div class="quick-bite-card">
+                    <div class="quick-bite-image">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=300" alt="Pizza">
+                    </div>
+                    <div class="quick-bite-info">
+                        <span class="quick-bite-time">
+                            <i data-lucide="zap"></i>
+                            15 min
+                        </span>
+                        <h4>Pizza Hub</h4>
+                        <p>Fast Food • Pizza</p>
+                        <span class="quick-bite-rating">⭐ 4.2</span>
+                    </div>
+                </div>
+
+                <div class="quick-bite-card">
+                    <div class="quick-bite-image">
+                        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=300" alt="Burger">
+                    </div>
+                    <div class="quick-bite-info">
+                        <span class="quick-bite-time">
+                            <i data-lucide="zap"></i>
+                            12 min
+                        </span>
+                        <h4>Burger Zone</h4>
+                        <p>Burgers • Fries</p>
+                        <span class="quick-bite-rating">⭐ 4.0</span>
+                    </div>
+                </div>
+
+                <div class="quick-bite-card">
+                    <div class="quick-bite-image">
+                        <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=300" alt="Rolls">
+                    </div>
+                    <div class="quick-bite-info">
+                        <span class="quick-bite-time">
+                            <i data-lucide="zap"></i>
+                            10 min
+                        </span>
+                        <h4>Roll Express</h4>
+                        <p>Rolls • Wraps</p>
+                        <span class="quick-bite-rating">⭐ 4.3</span>
+                    </div>
+                </div>
+
+                <div class="quick-bite-card">
+                    <div class="quick-bite-image">
+                        <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=300" alt="Momos">
+                    </div>
+                    <div class="quick-bite-info">
+                        <span class="quick-bite-time">
+                            <i data-lucide="zap"></i>
+                            18 min
+                        </span>
+                        <h4>Momo Point</h4>
+                        <p>Momos • Dumplings</p>
+                        <span class="quick-bite-rating">⭐ 4.5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Partners Coming Soon -->
+    <section class="section coming-soon-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-tag coming-tag">
+                    <i data-lucide="sparkles"></i>
+                    Coming Soon
+                </span>
+                <h2>New Partners Joining</h2>
+                <p class="section-subtitle">Exciting restaurants launching on GrihGO soon!</p>
+            </div>
+
+            <div class="coming-soon-grid" data-aos="fade-up" data-aos-delay="100">
+                <div class="coming-soon-card">
+                    <div class="coming-soon-icon">🍕</div>
+                    <h4>Pizza Palace</h4>
+                    <p class="coming-location">
+                        <i data-lucide="map-pin"></i>
+                        Patna
+                    </p>
+                    <span class="coming-badge">January 2025</span>
+                    <button class="btn btn-outline btn-sm notify-btn">
+                        <i data-lucide="bell"></i>
+                        Notify Me
+                    </button>
+                </div>
+
+                <div class="coming-soon-card">
+                    <div class="coming-soon-icon">🍜</div>
+                    <h4>Noodle Bowl</h4>
+                    <p class="coming-location">
+                        <i data-lucide="map-pin"></i>
+                        Ranchi
+                    </p>
+                    <span class="coming-badge">January 2025</span>
+                    <button class="btn btn-outline btn-sm notify-btn">
+                        <i data-lucide="bell"></i>
+                        Notify Me
+                    </button>
+                </div>
+
+                <div class="coming-soon-card">
+                    <div class="coming-soon-icon">🍔</div>
+                    <h4>Burger Station</h4>
+                    <p class="coming-location">
+                        <i data-lucide="map-pin"></i>
+                        Muzaffarpur
+                    </p>
+                    <span class="coming-badge">February 2025</span>
+                    <button class="btn btn-outline btn-sm notify-btn">
+                        <i data-lucide="bell"></i>
+                        Notify Me
+                    </button>
+                </div>
+
+                <div class="coming-soon-card">
+                    <div class="coming-soon-icon">🥗</div>
+                    <h4>Healthy Bites</h4>
+                    <p class="coming-location">
+                        <i data-lucide="map-pin"></i>
+                        Bhagalpur
+                    </p>
+                    <span class="coming-badge">February 2025</span>
+                    <button class="btn btn-outline btn-sm notify-btn">
+                        <i data-lucide="bell"></i>
+                        Notify Me
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner CTA Section -->
+    <section class="section partner-cta-section">
+        <div class="partner-cta-bg">
+            <div class="cta-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="partner-cta-wrapper" data-aos="zoom-in">
+                <div class="partner-cta-content">
+                    <div class="cta-icon">
+                        <i data-lucide="store"></i>
+                    </div>
+                    <h2>Own a Restaurant?</h2>
+                    <p>Join 50+ restaurants already growing with GrihGO. Zero commission for first 3 months!</p>
+
+                    <div class="cta-features">
+                        <div class="cta-feature">
+                            <i data-lucide="check-circle"></i>
+                            <span>No setup fees</span>
+                        </div>
+                        <div class="cta-feature">
+                            <i data-lucide="check-circle"></i>
+                            <span>Free marketing</span>
+                        </div>
+                        <div class="cta-feature">
+                            <i data-lucide="check-circle"></i>
+                            <span>Daily payouts</span>
+                        </div>
+                    </div>
+
+                    <div class="cta-buttons">
+                        <a href="/partner.html" class="btn btn-white btn-lg">
+                            <i data-lucide="handshake"></i>
+                            Partner With Us
+                        </a>
+                        <a href="/contact.html" class="btn btn-outline-white btn-lg">
+                            <i data-lucide="phone"></i>
+                            Contact Sales
+                        </a>
+                    </div>
+                </div>
+
+                <div class="partner-cta-image">
+                    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=500" alt="Restaurant Partner">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0 50L48 45.8C96 41.7 192 33.3 288 29.2C384 25 480 25 576 33.3C672 41.7 768 58.3 864 62.5C960 66.7 1056 58.3 1152 50C1248 41.7 1344 33.3 1392 29.2L1440 25V100H1392C1344 100 1248 100 1152 100C1056 100 960 100 864 100C768 100 672 100 576 100C480 100 384 100 288 100C192 100 96 100 48 100H0V50Z"
+                    fill="currentColor" />
+            </svg>
+        </div>
+
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Brand Column -->
+                    <div class="footer-brand" data-aos="fade-up">
+                        <a href="/" class="footer-logo">
+                            <img src="/logo.png" alt="GRIHGO">
+                        </a>
+                        <p class="footer-tagline">Bihar & Jharkhand ka apna food delivery app. Fresh food. Fair prices.
+                            Local love.</p>
+                        <div class="footer-social">
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i data-lucide="instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <i data-lucide="twitter"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <i data-lucide="facebook"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="YouTube">
+                                <i data-lucide="youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-links" data-aos="fade-up" data-aos-delay="100">
+                        <h4 class="footer-title">For Customers</h4>
+                        <ul>
+                            <li><a href="/restaurants.html"><i data-lucide="chevron-right"></i> Browse Restaurants</a>
+                            </li>
+                            <li><a href="/cities.html"><i data-lucide="chevron-right"></i> Cities</a></li>
+                            <li><a href="/#download"><i data-lucide="chevron-right"></i> Download App</a></li>
+                            <li><a href="/transparency.html"><i data-lucide="chevron-right"></i> Price Transparency</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Business Links -->
+                    <div class="footer-links" data-aos="fade-up" data-aos-delay="150">
+                        <h4 class="footer-title">For Businesses</h4>
+                        <ul>
+                            <li><a href="/partner.html"><i data-lucide="chevron-right"></i> Partner With Us</a></li>
+                            <li><a href="/delivery.html"><i data-lucide="chevron-right"></i> Become Delivery Partner</a>
+                            </li>
+                            <li><a href="/blog.html"><i data-lucide="chevron-right"></i> Restaurant Resources</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Company Links -->
+                    <div class="footer-links" data-aos="fade-up" data-aos-delay="200">
+                        <h4 class="footer-title">Company</h4>
+                        <ul>
+                            <li><a href="/about.html"><i data-lucide="chevron-right"></i> About Us</a></li>
+                            <li><a href="/careers.html"><i data-lucide="chevron-right"></i> Careers <span
+                                        class="badge-hiring">Hiring!</span></a></li>
+                            <li><a href="/blog.html"><i data-lucide="chevron-right"></i> Blog</a></li>
+                            <li><a href="/contact.html"><i data-lucide="chevron-right"></i> Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- App Download -->
+                    <div class="footer-app" data-aos="fade-up" data-aos-delay="250">
+                        <h4 class="footer-title">Get the App</h4>
+                        <a href="#" class="app-download-btn">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                                alt="Google Play">
+                        </a>
+                        <a href="#" class="app-download-btn">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+                                alt="App Store">
+                        </a>
+                        <p class="coming-soon">Coming Soon!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="footer-copyright">
+                        <p>© 2024 GrihGO. All rights reserved.</p>
+                    </div>
+
+                    <div class="footer-legal">
+                        <a href="/privacy.html">Privacy Policy</a>
+                        <span class="separator">•</span>
+                        <a href="/terms.html">Terms of Service</a>
+                    </div>
+
+                    <div class="footer-badge">
+                        <span>Made with</span>
+                        <i data-lucide="heart" class="heart-icon"></i>
+                        <span>in Bihar</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-bottom-nav" id="mobile-bottom-nav">
+        <a href="/" class="nav-item">
+            <i data-lucide="home"></i>
+            <span>Home</span>
+        </a>
+        <a href="/restaurants.html" class="nav-item active">
+            <i data-lucide="utensils"></i>
+            <span>Food</span>
+        </a>
+        <a href="#" class="nav-item nav-item-center" id="search-trigger">
+            <div class="nav-item-icon">
+                <i data-lucide="search"></i>
+            </div>
+        </a>
+        <a href="/cities.html" class="nav-item">
+            <i data-lucide="map-pin"></i>
+            <span>Cities</span>
+        </a>
+        <a href="/contact.html" class="nav-item">
+            <i data-lucide="user"></i>
+            <span>Account</span>
+        </a>
+    </nav>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i data-lucide="chevron-up"></i>
+    </button>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="/src/main.js"></script>
+
+    <script>
+        // Filter functionality
+        const filterPills = document.querySelectorAll('.filter-pill');
+        const restaurantCards = document.querySelectorAll('.restaurant-card');
+
+        filterPills.forEach(pill => {
+            pill.addEventListener('click', () => {
+                // Update active state
+                filterPills.forEach(p => p.classList.remove('active'));
+                pill.classList.add('active');
+
+                const filter = pill.dataset.filter;
+
+                restaurantCards.forEach(card => {
+                    if (filter === 'all') {
+                        card.style.display = '';
+                        return;
+                    }
+
+                    const cuisines = card.dataset.cuisine || '';
+                    if (cuisines.includes(filter)) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Search functionality
+        const searchInput = document.getElementById('restaurant-search');
+        const searchClear = document.getElementById('search-clear');
+
+        searchInput?.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            searchClear.style.display = query ? 'flex' : 'none';
+
+            restaurantCards.forEach(card => {
+                const name = card.querySelector('.restaurant-name')?.textContent.toLowerCase() || '';
+                const cuisine = card.querySelector('.restaurant-cuisine')?.textContent.toLowerCase() || '';
+
+                if (name.includes(query) || cuisine.includes(query)) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        searchClear?.addEventListener('click', () => {
+            searchInput.value = '';
+            searchClear.style.display = 'none';
+            restaurantCards.forEach(card => card.style.display = '');
+        });
+
+        // Favorite button functionality
+        document.querySelectorAll('.favorite-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                btn.classList.toggle('active');
+
+                if (btn.classList.contains('active')) {
+                    showNotification('success', 'Added to favorites! ❤️');
+                } else {
+                    showNotification('info', 'Removed from favorites');
+                }
+            });
+        });
+
+        // Notify button functionality
+        document.querySelectorAll('.notify-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                btn.innerHTML = '<i data-lucide="check"></i> Notified!';
+                btn.classList.add('btn-success');
+                btn.disabled = true;
+                lucide.createIcons();
+                showNotification('success', 'You\'ll be notified when this restaurant launches! 🔔');
+            });
+        });
+
+        // Show notification helper
+        function showNotification(type, message) {
+            const container = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            toast.className = `toast toast-${type}`;
+            toast.innerHTML = `
+                <i data-lucide="${type === 'success' ? 'check-circle' : 'info'}" class="toast-icon"></i>
+                <span class="toast-message">${message}</span>
+            `;
+            container.appendChild(toast);
+            lucide.createIcons();
+
+            setTimeout(() => {
+                toast.classList.add('toast-exit');
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+
+        // Filter scroll buttons
+        const filterWrapper = document.querySelector('.filter-pills');
+        const scrollLeftBtn = document.getElementById('filter-scroll-left');
+        const scrollRightBtn = document.getElementById('filter-scroll-right');
+
+        filterWrapper?.addEventListener('scroll', () => {
+            scrollLeftBtn.style.display = filterWrapper.scrollLeft > 0 ? 'flex' : 'none';
+            scrollRightBtn.style.display =
+                filterWrapper.scrollLeft < filterWrapper.scrollWidth - filterWrapper.clientWidth - 10
+                    ? 'flex' : 'none';
+        });
+
+        scrollLeftBtn?.addEventListener('click', () => {
+            filterWrapper.scrollBy({ left: -200, behavior: 'smooth' });
+        });
+
+        scrollRightBtn?.addEventListener('click', () => {
+            filterWrapper.scrollBy({ left: 200, behavior: 'smooth' });
+        });
+    </script>
+</body>
+
+</html>

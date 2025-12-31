@@ -1,0 +1,72 @@
+/* ===================================
+   Business / Partner Styles
+   =================================== */
+
+/* Earnings Calculator */
+.calculator-card {
+    background: white;
+    padding: var(--space-8);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.calc-input-group {
+    margin-bottom: var(--space-6);
+}
+
+.calc-label {
+    display: block;
+    margin-bottom: var(--space-2);
+    font-weight: var(--font-weight-medium);
+}
+
+.calc-range {
+    width: 100%;
+    margin: var(--space-2) 0;
+}
+
+.calc-display {
+    text-align: center;
+    padding: var(--space-6);
+    background: var(--color-primary-light);
+    border-radius: var(--radius-lg);
+    margin-top: var(--space-8);
+}
+
+.calc-value {
+    display: block;
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+}
+
+/* Benefit Cards */
+.benefit-card {
+    text-align: center;
+    padding: var(--space-8);
+}
+
+.benefit-icon {
+    width: 64px;
+    height: 64px;
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--space-4);
+    font-size: var(--font-size-2xl);
+}
+
+/* Testimonials for partners */
+.partner-testimonial {
+    background: var(--color-bg-dark);
+    color: white;
+    padding: var(--space-20) 0;
+}
+
+.partner-testimonial .testimonial-quote {
+    color: white;
+}

@@ -1,0 +1,60 @@
+/* ===================================
+   Impact & Local Pride Styles
+   =================================== */
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-8);
+    margin-bottom: var(--space-16);
+}
+
+.impact-card {
+    text-align: center;
+    padding: var(--space-10);
+}
+
+.impact-number {
+    display: block;
+    font-size: var(--font-size-5xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    margin-bottom: var(--space-2);
+}
+
+.impact-label {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-lg);
+}
+
+.commitment-item {
+    display: flex;
+    gap: var(--space-6);
+    margin-bottom: var(--space-8);
+    align-items: flex-start;
+}
+
+.commitment-icon {
+    width: 56px;
+    height: 56px;
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: var(--font-size-xl);
+}
+
+@media (max-width: 992px) {
+    .impact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .impact-grid {
+        grid-template-columns: 1fr;
+    }
+}

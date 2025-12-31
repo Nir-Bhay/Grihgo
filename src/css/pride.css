@@ -1,0 +1,436 @@
+/**
+ * ===================================
+ * GRIHGO Pride Page Styles
+ * Local Pride - "ई हमर है!"
+ * ===================================
+ */
+
+/* ===================================
+   Hero Section
+   =================================== */
+.pride-hero {
+    background: linear-gradient(135deg, var(--color-primary-darker) 0%, var(--color-bg-dark) 100%);
+    padding: calc(var(--navbar-height) + 80px) 0 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.pride-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    pointer-events: none;
+}
+
+.pride-hero-icon {
+    font-size: 80px;
+    margin-bottom: 24px;
+    color: var(--color-primary);
+    display: inline-block;
+}
+
+.pride-hero-icon svg {
+    width: 80px;
+    height: 80px;
+}
+
+.pride-hero h1 {
+    color: white;
+    font-size: clamp(32px, 6vw, 48px);
+    margin-bottom: 16px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.pride-tagline {
+    color: var(--color-primary);
+    font-size: clamp(24px, 4vw, 32px);
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.pride-subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+}
+
+/* ===================================
+   Stats Section
+   =================================== */
+.pride-stats-section {
+    background: var(--color-primary);
+    padding: 60px 0;
+}
+
+.pride-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    color: white;
+}
+
+.pride-stat-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.pride-stat-number {
+    font-size: clamp(36px, 5vw, 48px);
+    font-weight: 800;
+    color: white;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.pride-stat-label {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+}
+
+/* ===================================
+   Why Local Matters Section
+   =================================== */
+.pride-why-section {
+    background: white;
+    padding: 80px 0;
+}
+
+.pride-section-title {
+    text-align: center;
+    margin-bottom: 48px;
+    font-size: clamp(28px, 4vw, 36px);
+    font-weight: 700;
+    color: var(--color-text-primary);
+}
+
+.pride-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.pride-card {
+    text-align: center;
+    padding: 32px;
+    background: var(--color-bg-secondary, #f8f9fa);
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pride-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.pride-card-icon {
+    font-size: 64px;
+    margin-bottom: 24px;
+    color: var(--color-primary);
+    display: inline-block;
+}
+
+.pride-card-icon svg {
+    width: 64px;
+    height: 64px;
+}
+
+.pride-card h3 {
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+.pride-card p {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+/* ===================================
+   Testimonials Section
+   =================================== */
+.pride-testimonials-section {
+    background: var(--color-bg-primary, #f8f9fa);
+    padding: 80px 0;
+}
+
+.pride-testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.pride-testimonial {
+    background: white;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.pride-testimonial:hover {
+    transform: translateY(-4px);
+}
+
+.pride-testimonial-quote {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--color-text-primary);
+    margin-bottom: 24px;
+    font-style: italic;
+}
+
+.pride-testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.pride-testimonial-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.pride-testimonial-name {
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: 2px;
+}
+
+.pride-testimonial-role {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+}
+
+/* ===================================
+   Commitment Section
+   =================================== */
+.pride-commitment-section {
+    background: white;
+    padding: 80px 0;
+}
+
+.pride-commitment-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.pride-commitment-title {
+    font-size: clamp(28px, 4vw, 36px);
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: var(--color-text-primary);
+}
+
+.pride-commitment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.pride-commitment-item {
+    display: flex;
+    gap: 16px;
+}
+
+.pride-commitment-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--color-primary-light, #ECFDF5);
+    color: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.pride-commitment-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.pride-commitment-content h4 {
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: var(--color-text-primary);
+}
+
+.pride-commitment-content p {
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+}
+
+.pride-brand-card {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-darker) 100%);
+    padding: 48px;
+    border-radius: 24px;
+    color: white;
+    text-align: center;
+}
+
+.pride-brand-logo {
+    width: 150px;
+    margin: 0 auto 24px;
+    filter: brightness(0) invert(1);
+}
+
+.pride-brand-card h3 {
+    color: white;
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.pride-brand-tagline {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.pride-brand-flag {
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 8px;
+    font-size: 24px;
+}
+
+/* ===================================
+   CTA Section
+   =================================== */
+.pride-cta-section {
+    background: var(--color-bg-dark);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.pride-cta-title {
+    color: white;
+    margin-bottom: 16px;
+    font-size: clamp(28px, 4vw, 36px);
+    font-weight: 700;
+}
+
+.pride-cta-subtitle {
+    color: var(--color-text-light, rgba(255, 255, 255, 0.7));
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+.pride-cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.btn-outline-white {
+    border-color: white;
+    color: white;
+}
+
+.btn-outline-white:hover {
+    background: white;
+    color: var(--color-primary);
+}
+
+/* ===================================
+   Responsive Styles
+   =================================== */
+@media (max-width: 1024px) {
+    .pride-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .pride-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .pride-testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .pride-commitment-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .pride-hero {
+        padding: calc(var(--navbar-height) + 60px) 0 60px;
+    }
+    
+    .pride-hero-icon {
+        font-size: 60px;
+    }
+    
+    .pride-hero-icon svg {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .pride-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    .pride-stat-item {
+        padding: 16px;
+    }
+    
+    .pride-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .pride-testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .pride-brand-card {
+        padding: 32px;
+    }
+    
+    .pride-brand-logo {
+        width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pride-stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .pride-stat-number {
+        font-size: 28px;
+    }
+    
+    .pride-stat-label {
+        font-size: 12px;
+    }
+    
+    .pride-cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pride-cta-buttons .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+}

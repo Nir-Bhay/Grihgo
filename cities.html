@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GrihGO cities in Bihar & Jharkhand. Vote for your city to launch next!">
+    <meta name="keywords" content="GrihGO cities, food delivery Bihar, Jharkhand food delivery, Patna, Ranchi">
+    <meta name="author" content="GRIHGO">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="GrihGO Cities - Vote for Your City">
+    <meta property="og:description"
+        content="GrihGO is expanding across Bihar & Jharkhand. Vote for your city to launch next!">
+    <meta property="og:type" content="website">
+
+    <title>Cities - GRIHGO | Food Delivery in Bihar & Jharkhand</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/logo.png">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/src/css/global.css">
+    <link rel="stylesheet" href="/src/css/header.css">
+    <link rel="stylesheet" href="/src/css/cities.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-logo-link">
+                <img src="/logo.png" alt="GRIHGO" class="navbar-logo">
+            </a>
+            <div class="navbar-menu" id="navbar-menu">
+                <a href="/about.html" class="navbar-link">About</a>
+                <a href="/cities.html" class="navbar-link active">Cities</a>
+                <a href="/restaurants.html" class="navbar-link">Restaurants</a>
+                <div class="navbar-dropdown">
+                    <a href="#" class="navbar-link navbar-dropdown-toggle">
+                        Explore
+                        <i data-lucide="chevron-down" class="icon-xs"></i>
+                    </a>
+                    <div class="navbar-dropdown-menu">
+                        <a href="/blog.html" class="dropdown-item">
+                            <i data-lucide="book-open" class="icon-sm"></i>
+                            <div>
+                                <span class="dropdown-title">Blog</span>
+                                <span class="dropdown-desc">Stories & updates</span>
+                            </div>
+                        </a>
+                        <a href="/delivery.html" class="dropdown-item">
+                            <i data-lucide="bike" class="icon-sm"></i>
+                            <div>
+                                <span class="dropdown-title">Delivery Partners</span>
+                                <span class="dropdown-desc">Earn with GrihGO</span>
+                            </div>
+                        </a>
+                        <a href="/transparency.html" class="dropdown-item">
+                            <i data-lucide="shield-check" class="icon-sm"></i>
+                            <div>
+                                <span class="dropdown-title">Transparency</span>
+                                <span class="dropdown-desc">Zero hidden charges</span>
+                            </div>
+                        </a>
+                        <a href="/pride.html" class="dropdown-item">
+                            <i data-lucide="heart" class="icon-sm"></i>
+                            <div>
+                                <span class="dropdown-title">Local Pride</span>
+                                <span class="dropdown-desc">ई हमर है!</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a href="/partner.html" class="navbar-link">Partner With Us</a>
+                <a href="/careers.html" class="navbar-link">Careers</a>
+                <a href="/contact.html" class="navbar-link">Help</a>
+                <a href="/#download" class="btn btn-primary btn-sm navbar-cta">
+                    <i data-lucide="download" class="icon-sm"></i>
+                    Download App
+                </a>
+            </div>
+            <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <img src="/logo.png" alt="GRIHGO" class="mobile-menu-logo">
+            <button class="mobile-menu-close" id="mobile-menu-close">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <div class="mobile-menu-content">
+            <a href="/" class="mobile-menu-link">
+                <i data-lucide="home"></i>
+                Home
+            </a>
+            <a href="/about.html" class="mobile-menu-link">
+                <i data-lucide="info"></i>
+                About
+            </a>
+            <a href="/cities.html" class="mobile-menu-link active">
+                <i data-lucide="map"></i>
+                Cities
+            </a>
+            <a href="/restaurants.html" class="mobile-menu-link">
+                <i data-lucide="utensils"></i>
+                Restaurants
+            </a>
+            <a href="/blog.html" class="mobile-menu-link">
+                <i data-lucide="book-open"></i>
+                Blog
+            </a>
+            <a href="/partner.html" class="mobile-menu-link">
+                <i data-lucide="handshake"></i>
+                Partner With Us
+            </a>
+            <a href="/delivery.html" class="mobile-menu-link">
+                <i data-lucide="bike"></i>
+                Delivery Partners
+            </a>
+            <a href="/transparency.html" class="mobile-menu-link">
+                <i data-lucide="shield-check"></i>
+                Transparency
+            </a>
+            <a href="/pride.html" class="mobile-menu-link">
+                <i data-lucide="heart"></i>
+                Local Pride
+            </a>
+            <a href="/careers.html" class="mobile-menu-link">
+                <i data-lucide="briefcase"></i>
+                Careers
+            </a>
+            <a href="/contact.html" class="mobile-menu-link">
+                <i data-lucide="headphones"></i>
+                Help
+            </a>
+        </div>
+        <div class="mobile-menu-footer">
+            <a href="/#download" class="btn btn-primary btn-lg" style="width: 100%;">
+                <i data-lucide="download"></i>
+                Download App
+            </a>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <header class="cities-header">
+        <div class="cities-header-bg">
+            <div class="header-pattern"></div>
+            <div class="header-gradient"></div>
+            <!-- Floating City Icons -->
+            <div class="floating-city-icons">
+                <div class="floating-icon icon-1">🏛️</div>
+                <div class="floating-icon icon-2">🏔️</div>
+                <div class="floating-icon icon-3">🌾</div>
+                <div class="floating-icon icon-4">🏭</div>
+                <div class="floating-icon icon-5">🛕</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="cities-header-content">
+                <!-- Breadcrumb -->
+                <nav class="breadcrumb" data-aos="fade-down">
+                    <a href="/">Home</a>
+                    <i data-lucide="chevron-right" class="icon-xs"></i>
+                    <span class="breadcrumb-current">Cities</span>
+                </nav>
+
+                <div class="header-badge" data-aos="fade-up" data-aos-delay="100">
+                    <i data-lucide="map-pin"></i>
+                    <span>Expanding Rapidly</span>
+                </div>
+
+                <h1 data-aos="fade-up" data-aos-delay="200">GrihGO Cities</h1>
+
+                <p class="header-subtitle" data-aos="fade-up" data-aos-delay="300">
+                    Expanding across Bihar & Jharkhand — Vote for your city and be part of the food revolution!
+                </p>
+
+                <!-- Quick Stats -->
+                <div class="header-stats" data-aos="fade-up" data-aos-delay="400">
+                    <div class="header-stat">
+                        <span class="stat-value">2</span>
+                        <span class="stat-label">Live Cities</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="header-stat">
+                        <span class="stat-value">3</span>
+                        <span class="stat-label">Launching Soon</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="header-stat">
+                        <span class="stat-value">5+</span>
+                        <span class="stat-label">In Voting</span>
+                    </div>
+                </div>
+
+                <div class="header-actions" data-aos="fade-up" data-aos-delay="500">
+                    <a href="#vote-section" class="btn btn-white btn-lg">
+                        <i data-lucide="vote"></i>
+                        Vote for Your City
+                    </a>
+                    <a href="#live-cities" class="btn btn-outline-white btn-lg">
+                        <i data-lucide="map"></i>
+                        Explore Live Cities
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Interactive Map Section -->
+    <section class="section map-section" id="map">
+        <div class="container">
+            <div class="map-wrapper" data-aos="fade-up">
+                <div class="map-container">
+                    <!-- Map Visualization -->
+                    <div class="map-visual">
+                        <div class="map-india">
+                            <!-- Bihar Region -->
+                            <div class="map-region bihar">
+                                <span class="region-label">Bihar</span>
+                            </div>
+                            <!-- Jharkhand Region -->
+                            <div class="map-region jharkhand">
+                                <span class="region-label">Jharkhand</span>
+                            </div>
+                        </div>
+
+                        <!-- City Markers -->
+                        <div class="city-markers">
+                            <!-- Live Cities -->
+                            <div class="city-marker live" style="top: 25%; left: 45%;" data-city="patna">
+                                <div class="marker-pulse"></div>
+                                <div class="marker-dot"></div>
+                                <div class="marker-label">Patna</div>
+                            </div>
+                            <div class="city-marker live" style="top: 20%; left: 55%;" data-city="darbhanga">
+                                <div class="marker-pulse"></div>
+                                <div class="marker-dot"></div>
+                                <div class="marker-label">Darbhanga</div>
+                            </div>
+
+                            <!-- Launching Soon -->
+                            <div class="city-marker launching" style="top: 15%; left: 40%;" data-city="muzaffarpur">
+                                <div class="marker-dot"></div>
+                                <div class="marker-label">Muzaffarpur</div>
+                            </div>
+                            <div class="city-marker launching" style="top: 65%; left: 50%;" data-city="ranchi">
+                                <div class="marker-dot"></div>
+                                <div class="marker-label">Ranchi</div>
+                            </div>
+                            <div class="city-marker launching" style="top: 70%; left: 70%;" data-city="jamshedpur">
+                                <div class="marker-dot"></div>
+                                <div class="marker-label">Jamshedpur</div>
+                            </div>
+
+                            <!-- Voting -->
+                            <div class="city-marker voting" style="top: 40%; left: 35%;" data-city="gaya">
+                                <div class="marker-dot"></div>
+                                <div class="marker-label">Gaya</div>
+                            </div>
+                            <div class="city-marker voting" style="top: 35%; left: 75%;" data-city="bhagalpur">
+                                <div class="marker-dot"></div>
+                                <div class="marker-label">Bhagalpur</div>
+                            </div>
+                            <div class="city-marker voting" style="top: 55%; left: 60%;" data-city="dhanbad">
+                                <div class="marker-dot"></div>
+                                <div class="marker-label">Dhanbad</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map Legend -->
+                    <div class="map-legend">
+                        <div class="legend-item">
+                            <span class="legend-dot live"></span>
+                            <span>Live Now</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-dot launching"></span>
+                            <span>Launching Soon</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-dot voting"></span>
+                            <span>Open for Voting</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Info Panel -->
+                <div class="map-info-panel">
+                    <div class="info-panel-header">
+                        <i data-lucide="info"></i>
+                        <h3>Our Coverage</h3>
+                    </div>
+                    <p>We're rapidly expanding to serve every corner of Bihar and Jharkhand with fresh food delivery.
+                    </p>
+
+                    <div class="coverage-stats">
+                        <div class="coverage-stat">
+                            <div class="coverage-icon live">
+                                <i data-lucide="check-circle"></i>
+                            </div>
+                            <div class="coverage-info">
+                                <span class="coverage-number">2</span>
+                                <span class="coverage-label">Live Cities</span>
+                            </div>
+                        </div>
+                        <div class="coverage-stat">
+                            <div class="coverage-icon launching">
+                                <i data-lucide="clock"></i>
+                            </div>
+                            <div class="coverage-info">
+                                <span class="coverage-number">3</span>
+                                <span class="coverage-label">Launching Soon</span>
+                            </div>
+                        </div>
+                        <div class="coverage-stat">
+                            <div class="coverage-icon voting">
+                                <i data-lucide="vote"></i>
+                            </div>
+                            <div class="coverage-info">
+                                <span class="coverage-number">5+</span>
+                                <span class="coverage-label">In Voting</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#vote-section" class="btn btn-primary btn-block">
+                        <i data-lucide="vote"></i>
+                        Vote for Your City
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Cities Section -->
+    <section class="section live-cities-section" id="live-cities">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-header-left">
+                    <span class="section-tag live-tag">
+                        <span class="pulse-dot"></span>
+                        Live Now
+                    </span>
+                    <h2>Order Food Now</h2>
+                    <p class="section-subtitle">These cities are live! Start ordering your favorite food today.</p>
+                </div>
+            </div>
+
+            <div class="live-cities-grid">
+                <!-- Patna -->
+                <div class="live-city-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="city-card-header">
+                        <div class="city-status live">
+                            <span class="status-dot"></span>
+                            Live
+                        </div>
+                        <div class="city-badges">
+                            <span class="city-badge popular">
+                                <i data-lucide="trending-up"></i>
+                                Most Popular
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="city-card-body">
+                        <div class="city-icon-wrapper">
+                            <div class="city-icon">
+                                <i data-lucide="landmark"></i>
+                            </div>
+                            <div class="city-icon-bg"></div>
+                        </div>
+
+                        <h3 class="city-name">Patna</h3>
+                        <p class="city-tagline">Capital of Bihar</p>
+
+                        <div class="city-stats">
+                            <div class="city-stat">
+                                <i data-lucide="store"></i>
+                                <span><strong>30+</strong> Restaurants</span>
+                            </div>
+                            <div class="city-stat">
+                                <i data-lucide="map-pin"></i>
+                                <span>Full Coverage</span>
+                            </div>
+                            <div class="city-stat">
+                                <i data-lucide="clock"></i>
+                                <span>Avg. 25 min delivery</span>
+                            </div>
+                        </div>
+
+                        <div class="city-features">
+                            <span class="feature-tag">
+                                <i data-lucide="check"></i>
+                                Free Delivery Available
+                            </span>
+                            <span class="feature-tag">
+                                <i data-lucide="check"></i>
+                                24/7 Support
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="city-card-footer">
+                        <a href="/restaurants.html?city=patna" class="btn btn-primary btn-block">
+                            <i data-lucide="utensils"></i>
+                            Explore Restaurants
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Darbhanga -->
+                <div class="live-city-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="city-card-header">
+                        <div class="city-status live">
+                            <span class="status-dot"></span>
+                            Live
+                        </div>
+                        <div class="city-badges">
+                            <span class="city-badge new">
+                                <i data-lucide="sparkles"></i>
+                                Recently Launched
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="city-card-body">
+                        <div class="city-icon-wrapper">
+                            <div class="city-icon">
+                                <i data-lucide="castle"></i>
+                            </div>
+                            <div class="city-icon-bg"></div>
+                        </div>
+
+                        <h3 class="city-name">Darbhanga</h3>
+                        <p class="city-tagline">Heart of Mithila</p>
+
+                        <div class="city-stats">
+                            <div class="city-stat">
+                                <i data-lucide="store"></i>
+                                <span><strong>20+</strong> Restaurants</span>
+                            </div>
+                            <div class="city-stat">
+                                <i data-lucide="map-pin"></i>
+                                <span>Expanding Coverage</span>
+                            </div>
+                            <div class="city-stat">
+                                <i data-lucide="clock"></i>
+                                <span>Avg. 30 min delivery</span>
+                            </div>
+                        </div>
+
+                        <div class="city-features">
+                            <span class="feature-tag">
+                                <i data-lucide="check"></i>
+                                Launch Offers
+                            </span>
+                            <span class="feature-tag">
+                                <i data-lucide="check"></i>
+                                Local Favorites
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="city-card-footer">
+                        <a href="/restaurants.html?city=darbhanga" class="btn btn-primary btn-block">
+                            <i data-lucide="utensils"></i>
+                            Explore Restaurants
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Launching Soon Section -->
+    <section class="section launching-section" id="launching-soon">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-tag launching-tag">
+                    <i data-lucide="clock"></i>
+                    Coming Soon
+                </span>
+                <h2>Launching Soon</h2>
+                <p class="section-subtitle">Get notified when we launch in your city!</p>
+            </div>
+
+            <div class="launching-cities-grid">
+                <!-- Muzaffarpur -->
+                <div class="launching-city-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="launching-ribbon">January 2025</div>
+
+                    <div class="launching-city-icon">
+                        <span>🥭</span>
+                    </div>
+
+                    <h3>Muzaffarpur</h3>
+                    <p class="city-tagline">Land of Litchi</p>
+
+                    <div class="launch-countdown" data-launch="2025-01-15">
+                        <div class="countdown-item">
+                            <span class="countdown-value" data-days>--</span>
+                            <span class="countdown-label">Days</span>
+                        </div>
+                        <div class="countdown-separator">:</div>
+                        <div class="countdown-item">
+                            <span class="countdown-value" data-hours>--</span>
+                            <span class="countdown-label">Hours</span>
+                        </div>
+                        <div class="countdown-separator">:</div>
+                        <div class="countdown-item">
+                            <span class="countdown-value" data-minutes>--</span>
+                            <span class="countdown-label">Min</span>
+                        </div>
+                    </div>
+
+                    <div class="notify-form">
+                        <p class="notify-label">Get notified when we launch:</p>
+                        <div class="input-with-button">
+                            <input type="email" class="input" placeholder="Enter your email" required>
+                            <button class="btn btn-primary btn-sm" onclick="notifyMe(this, 'muzaffarpur')">
+                                <i data-lucide="bell"></i>
+                                Notify Me
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="interested-count">
+                        <i data-lucide="users"></i>
+                        <span><strong>1,234</strong> people interested</span>
+                    </div>
+                </div>
+
+                <!-- Ranchi -->
+                <div class="launching-city-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="launching-ribbon">February 2025</div>
+
+                    <div class="launching-city-icon">
+                        <span>⛰️</span>
+                    </div>
+
+                    <h3>Ranchi</h3>
+                    <p class="city-tagline">Capital of Jharkhand</p>
+
+                    <div class="launch-countdown" data-launch="2025-02-01">
+                        <div class="countdown-item">
+                            <span class="countdown-value" data-days>--</span>
+                            <span class="countdown-label">Days</span>
+                        </div>
+                        <div class="countdown-separator">:</div>
+                        <div class="countdown-item">
+                            <span class="countdown-value" data-hours>--</span>
+                            <span class="countdown-label">Hours</span>
+                        </div>
+                        <div class="countdown-separator">:</div>
+                        <div class="countdown-item">
+                            <span class="countdown-value" data-minutes>--</span>
+                            <span class="countdown-label">Min</span>
+                        </div>
+                    </div>
+
+                    <div class="notify-form">
+                        <p class="notify-label">Get notified when we launch:</p>
+                        <div class="input-with-button">
+                            <input type="email" class="input" placeholder="Enter your email" required>
+                            <button class="btn btn-primary btn-sm" onclick="notifyMe(this, 'ranchi')">
+                                <i data-lucide="bell"></i>
+                                Notify Me
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="interested-count">
+                        <i data-lucide="users"></i>
+                        <span><strong>2,567</strong> people interested</span>
+                    </div>
+                </div>
+
+                <!-- Jamshedpur -->
+                <div class="launching-city-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="launching-ribbon">February 2025</div>
+
+                    <div class="launching-city-icon">
+                        <span>🏭</span>
+                    </div>
+
+                    <h3>Jamshedpur</h3>
+                    <p class="city-tagline">Steel City of India</p>
+
+                    <div class="launch-countdown" data-launch="2025-02-15">
+                        <div class="countdown-item">
+                            <span class="countdown-value" data-days>--</span>
+                            <span class="countdown-label">Days</span>
+                        </div>
+                        <div class="countdown-separator">:</div>
+                        <div class="countdown-item">
+                            <span class="countdown-value" data-hours>--</span>
+                            <span class="countdown-label">Hours</span>
+                        </div>
+                        <div class="countdown-separator">:</div>
+                        <div class="countdown-item">
+                            <span class="countdown-value" data-minutes>--</span>
+                            <span class="countdown-label">Min</span>
+                        </div>
+                    </div>
+
+                    <div class="notify-form">
+                        <p class="notify-label">Get notified when we launch:</p>
+                        <div class="input-with-button">
+                            <input type="email" class="input" placeholder="Enter your email" required>
+                            <button class="btn btn-primary btn-sm" onclick="notifyMe(this, 'jamshedpur')">
+                                <i data-lucide="bell"></i>
+                                Notify Me
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="interested-count">
+                        <i data-lucide="users"></i>
+                        <span><strong>1,890</strong> people interested</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vote Section -->
+    <section class="section vote-section" id="vote-section">
+        <div class="vote-section-bg">
+            <div class="vote-pattern"></div>
+        </div>
+
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-tag voting-tag">
+                    <i data-lucide="vote"></i>
+                    Community Choice
+                </span>
+                <h2>Vote for Next City</h2>
+                <p class="section-subtitle">
+                    Top voted cities will launch next! Your vote matters. <br>
+                    <span class="hindi-text">आपके शहर में GrihGO कब आएगा? वोट करें!</span>
+                </p>
+            </div>
+
+            <!-- Voting Progress -->
+            <div class="voting-progress-wrapper" data-aos="fade-up" data-aos-delay="100">
+                <div class="voting-progress-card">
+                    <div class="progress-header">
+                        <div class="progress-info">
+                            <span class="progress-label">Total Votes</span>
+                            <span class="progress-count" id="total-votes">15,432</span>
+                        </div>
+                        <div class="progress-goal">
+                            <span>Goal: 25,000</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar-wrapper">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 62%;"></div>
+                        </div>
+                    </div>
+                    <p class="progress-message">
+                        <i data-lucide="trophy"></i>
+                        Top 2 cities will be announced for launch in March 2025!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Voting Leaderboard -->
+            <div class="voting-leaderboard" data-aos="fade-up" data-aos-delay="150">
+                <h3 class="leaderboard-title">
+                    <i data-lucide="trophy"></i>
+                    Current Leaderboard
+                </h3>
+
+                <div class="leaderboard-grid">
+                    <!-- Rank 1 -->
+                    <div class="vote-card rank-1" data-city="gaya" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="vote-rank">
+                            <i data-lucide="trophy"></i>
+                            <span>1</span>
+                        </div>
+                        <div class="vote-card-header">
+                            <div class="city-icon-box">
+                                <i data-lucide="sparkles"></i>
+                            </div>
+                            <div class="city-info">
+                                <h4>Gaya</h4>
+                                <span class="city-subtitle">Spiritual Capital</span>
+                            </div>
+                        </div>
+                        <div class="vote-progress">
+                            <div class="vote-progress-bar" style="width: 85%;"></div>
+                        </div>
+                        <div class="vote-stats">
+                            <span class="vote-count" data-count="3456">3,456</span>
+                            <span class="vote-label">votes</span>
+                        </div>
+                        <button class="btn btn-vote" onclick="voteCity('gaya', this)">
+                            <i data-lucide="thumbs-up"></i>
+                            Vote Now
+                        </button>
+                    </div>
+
+                    <!-- Rank 2 -->
+                    <div class="vote-card rank-2" data-city="bhagalpur" data-aos="zoom-in" data-aos-delay="150">
+                        <div class="vote-rank">
+                            <i data-lucide="medal"></i>
+                            <span>2</span>
+                        </div>
+                        <div class="vote-card-header">
+                            <div class="city-icon-box">
+                                <i data-lucide="waves"></i>
+                            </div>
+                            <div class="city-info">
+                                <h4>Bhagalpur</h4>
+                                <span class="city-subtitle">Silk City</span>
+                            </div>
+                        </div>
+                        <div class="vote-progress">
+                            <div class="vote-progress-bar" style="width: 72%;"></div>
+                        </div>
+                        <div class="vote-stats">
+                            <span class="vote-count" data-count="2987">2,987</span>
+                            <span class="vote-label">votes</span>
+                        </div>
+                        <button class="btn btn-vote" onclick="voteCity('bhagalpur', this)">
+                            <i data-lucide="thumbs-up"></i>
+                            Vote Now
+                        </button>
+                    </div>
+
+                    <!-- Rank 3 -->
+                    <div class="vote-card rank-3" data-city="dhanbad" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="vote-rank">
+                            <i data-lucide="award"></i>
+                            <span>3</span>
+                        </div>
+                        <div class="vote-card-header">
+                            <div class="city-icon-box">
+                                <i data-lucide="pickaxe"></i>
+                            </div>
+                            <div class="city-info">
+                                <h4>Dhanbad</h4>
+                                <span class="city-subtitle">Coal Capital</span>
+                            </div>
+                        </div>
+                        <div class="vote-progress">
+                            <div class="vote-progress-bar" style="width: 58%;"></div>
+                        </div>
+                        <div class="vote-stats">
+                            <span class="vote-count" data-count="2345">2,345</span>
+                            <span class="vote-label">votes</span>
+                        </div>
+                        <button class="btn btn-vote" onclick="voteCity('dhanbad', this)">
+                            <i data-lucide="thumbs-up"></i>
+                            Vote Now
+                        </button>
+                    </div>
+
+                    <!-- Rank 4 -->
+                    <div class="vote-card rank-4" data-city="purnia" data-aos="zoom-in" data-aos-delay="250">
+                        <div class="vote-rank">
+                            <span>4</span>
+                        </div>
+                        <div class="vote-card-header">
+                            <div class="city-icon-box">
+                                <i data-lucide="wheat"></i>
+                            </div>
+                            <div class="city-info">
+                                <h4>Purnia</h4>
+                                <span class="city-subtitle">Gateway of NE Bihar</span>
+                            </div>
+                        </div>
+                        <div class="vote-progress">
+                            <div class="vote-progress-bar" style="width: 45%;"></div>
+                        </div>
+                        <div class="vote-stats">
+                            <span class="vote-count" data-count="1876">1,876</span>
+                            <span class="vote-label">votes</span>
+                        </div>
+                        <button class="btn btn-vote" onclick="voteCity('purnia', this)">
+                            <i data-lucide="thumbs-up"></i>
+                            Vote Now
+                        </button>
+                    </div>
+
+                    <!-- Rank 5 -->
+                    <div class="vote-card rank-5" data-city="hazaribagh" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="vote-rank">
+                            <span>5</span>
+                        </div>
+                        <div class="vote-card-header">
+                            <div class="city-icon-box">
+                                <i data-lucide="mountain"></i>
+                            </div>
+                            <div class="city-info">
+                                <h4>Hazaribagh</h4>
+                                <span class="city-subtitle">Land of Thousand Gardens</span>
+                            </div>
+                        </div>
+                        <div class="vote-progress">
+                            <div class="vote-progress-bar" style="width: 32%;"></div>
+                        </div>
+                        <div class="vote-stats">
+                            <span class="vote-count" data-count="1234">1,234</span>
+                            <span class="vote-label">votes</span>
+                        </div>
+                        <button class="btn btn-vote" onclick="voteCity('hazaribagh', this)">
+                            <i data-lucide="thumbs-up"></i>
+                            Vote Now
+                        </button>
+                    </div>
+
+                    <!-- Rank 6 -->
+                    <div class="vote-card rank-6" data-city="begusarai" data-aos="zoom-in" data-aos-delay="350">
+                        <div class="vote-rank">
+                            <span>6</span>
+                        </div>
+                        <div class="vote-card-header">
+                            <div class="city-icon-box">
+                                <i data-lucide="factory"></i>
+                            </div>
+                            <div class="city-info">
+                                <h4>Begusarai</h4>
+                                <span class="city-subtitle">Industrial Hub</span>
+                            </div>
+                        </div>
+                        <div class="vote-progress">
+                            <div class="vote-progress-bar" style="width: 25%;"></div>
+                        </div>
+                        <div class="vote-stats">
+                            <span class="vote-count" data-count="987">987</span>
+                            <span class="vote-label">votes</span>
+                        </div>
+                        <button class="btn btn-vote" onclick="voteCity('begusarai', this)">
+                            <i data-lucide="thumbs-up"></i>
+                            Vote Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Request City -->
+            <div class="request-city-section" data-aos="fade-up" data-aos-delay="200">
+                <div class="request-city-card">
+                    <div class="request-icon">
+                        <i data-lucide="map-pin-plus"></i>
+                    </div>
+                    <div class="request-content">
+                        <h4>Don't see your city?</h4>
+                        <p>Request your city and we'll add it to the voting list!</p>
+                    </div>
+                    <a href="/contact.html?subject=request-city" class="btn btn-primary">
+                        <i data-lucide="plus-circle"></i>
+                        Request Your City
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expansion Timeline -->
+    <section class="section expansion-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-tag">
+                    <i data-lucide="calendar"></i>
+                    Roadmap
+                </span>
+                <h2>Our Expansion Journey</h2>
+                <p class="section-subtitle">From 2 cities to covering entire Bihar & Jharkhand</p>
+            </div>
+
+            <div class="expansion-timeline" data-aos="fade-up" data-aos-delay="100">
+                <div class="timeline-track"></div>
+
+                <div class="timeline-milestone completed">
+                    <div class="milestone-marker">
+                        <i data-lucide="check"></i>
+                    </div>
+                    <div class="milestone-content">
+                        <span class="milestone-date">Oct 2024</span>
+                        <h4>Patna Launch</h4>
+                        <p>Our first city with 30+ restaurants</p>
+                    </div>
+                </div>
+
+                <div class="timeline-milestone completed">
+                    <div class="milestone-marker">
+                        <i data-lucide="check"></i>
+                    </div>
+                    <div class="milestone-content">
+                        <span class="milestone-date">Dec 2024</span>
+                        <h4>Darbhanga Launch</h4>
+                        <p>Expanding to Mithila region</p>
+                    </div>
+                </div>
+
+                <div class="timeline-milestone current">
+                    <div class="milestone-marker">
+                        <div class="pulse-ring"></div>
+                    </div>
+                    <div class="milestone-content">
+                        <span class="milestone-date">Jan 2025</span>
+                        <h4>Muzaffarpur Launch</h4>
+                        <p>Coming to the Litchi capital</p>
+                    </div>
+                </div>
+
+                <div class="timeline-milestone upcoming">
+                    <div class="milestone-marker"></div>
+                    <div class="milestone-content">
+                        <span class="milestone-date">Feb 2025</span>
+                        <h4>Jharkhand Entry</h4>
+                        <p>Ranchi & Jamshedpur launch</p>
+                    </div>
+                </div>
+
+                <div class="timeline-milestone upcoming">
+                    <div class="milestone-marker"></div>
+                    <div class="milestone-content">
+                        <span class="milestone-date">Q2 2025</span>
+                        <h4>10 Cities Goal</h4>
+                        <p>Covering major towns</p>
+                    </div>
+                </div>
+
+                <div class="timeline-milestone upcoming">
+                    <div class="milestone-marker"></div>
+                    <div class="milestone-content">
+                        <span class="milestone-date">2026</span>
+                        <h4>Full Coverage</h4>
+                        <p>All major cities covered</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Expand Here Section -->
+    <section class="section why-expand-section">
+        <div class="container">
+            <div class="why-expand-wrapper">
+                <div class="why-expand-content" data-aos="fade-right">
+                    <span class="section-tag">
+                        <i data-lucide="heart"></i>
+                        Our Commitment
+                    </span>
+                    <h2>Why Bihar & Jharkhand?</h2>
+                    <p class="lead-text">
+                        Because every city deserves quality food delivery with transparent pricing.
+                    </p>
+
+                    <div class="why-list">
+                        <div class="why-item">
+                            <div class="why-icon">
+                                <i data-lucide="users"></i>
+                            </div>
+                            <div class="why-content">
+                                <h4>130+ Million People</h4>
+                                <p>Bihar & Jharkhand together have a massive population waiting for quality food
+                                    delivery.</p>
+                            </div>
+                        </div>
+
+                        <div class="why-item">
+                            <div class="why-icon">
+                                <i data-lucide="store"></i>
+                            </div>
+                            <div class="why-content">
+                                <h4>Underserved Market</h4>
+                                <p>Most food delivery apps ignore Tier 2 & Tier 3 cities. We're changing that.</p>
+                            </div>
+                        </div>
+
+                        <div class="why-item">
+                            <div class="why-icon">
+                                <i data-lucide="heart"></i>
+                            </div>
+                            <div class="why-content">
+                                <h4>Local Pride</h4>
+                                <p>We're building for our home. Every city matters to us.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="why-expand-visual" data-aos="fade-left">
+                    <div class="visual-card">
+                        <div class="visual-header">
+                            <img src="/logo.png" alt="GrihGO" class="visual-logo">
+                        </div>
+                        <div class="visual-body">
+                            <div class="visual-stat-grid">
+                                <div class="visual-stat">
+                                    <span class="visual-stat-value">10+</span>
+                                    <span class="visual-stat-label">Cities by 2025</span>
+                                </div>
+                                <div class="visual-stat">
+                                    <span class="visual-stat-value">500+</span>
+                                    <span class="visual-stat-label">Restaurants Goal</span>
+                                </div>
+                                <div class="visual-stat">
+                                    <span class="visual-stat-value">1000+</span>
+                                    <span class="visual-stat-label">Delivery Partners</span>
+                                </div>
+                                <div class="visual-stat">
+                                    <span class="visual-stat-value">1L+</span>
+                                    <span class="visual-stat-label">Happy Customers</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="visual-footer">
+                            <p>Growing together with Bihar & Jharkhand</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="cta-bg">
+            <div class="cta-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <div class="cta-icon">
+                    <i data-lucide="rocket"></i>
+                </div>
+                <h2>Want GrihGO in Your City?</h2>
+                <p>Vote now and help us decide where to launch next! You can also partner with us as a restaurant or
+                    delivery partner.</p>
+                <div class="cta-buttons">
+                    <a href="#vote-section" class="btn btn-white btn-lg">
+                        <i data-lucide="vote"></i>
+                        Vote for Your City
+                    </a>
+                    <a href="/partner.html" class="btn btn-outline-white btn-lg">
+                        <i data-lucide="handshake"></i>
+                        Partner With Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0 50L48 45.8C96 41.7 192 33.3 288 29.2C384 25 480 25 576 33.3C672 41.7 768 58.3 864 62.5C960 66.7 1056 58.3 1152 50C1248 41.7 1344 33.3 1392 29.2L1440 25V100H1392C1344 100 1248 100 1152 100C1056 100 960 100 864 100C768 100 672 100 576 100C480 100 384 100 288 100C192 100 96 100 48 100H0V50Z"
+                    fill="currentColor" />
+            </svg>
+        </div>
+
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Brand Column -->
+                    <div class="footer-brand" data-aos="fade-up">
+                        <a href="/" class="footer-logo">
+                            <img src="/logo.png" alt="GRIHGO">
+                        </a>
+                        <p class="footer-tagline">Bihar & Jharkhand ka apna food delivery app. Fresh food. Fair prices.
+                            Local love.</p>
+                        <div class="footer-social">
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i data-lucide="instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <i data-lucide="twitter"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <i data-lucide="facebook"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="YouTube">
+                                <i data-lucide="youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-links" data-aos="fade-up" data-aos-delay="100">
+                        <h4 class="footer-title">For Customers</h4>
+                        <ul>
+                            <li><a href="/restaurants.html"><i data-lucide="chevron-right"></i> Browse Restaurants</a>
+                            </li>
+                            <li><a href="/cities.html"><i data-lucide="chevron-right"></i> Cities</a></li>
+                            <li><a href="/#download"><i data-lucide="chevron-right"></i> Download App</a></li>
+                            <li><a href="/transparency.html"><i data-lucide="chevron-right"></i> Price Transparency</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Business Links -->
+                    <div class="footer-links" data-aos="fade-up" data-aos-delay="150">
+                        <h4 class="footer-title">For Businesses</h4>
+                        <ul>
+                            <li><a href="/partner.html"><i data-lucide="chevron-right"></i> Partner With Us</a></li>
+                            <li><a href="/delivery.html"><i data-lucide="chevron-right"></i> Become Delivery Partner</a>
+                            </li>
+                            <li><a href="/blog.html"><i data-lucide="chevron-right"></i> Restaurant Resources</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Company Links -->
+                    <div class="footer-links" data-aos="fade-up" data-aos-delay="200">
+                        <h4 class="footer-title">Company</h4>
+                        <ul>
+                            <li><a href="/about.html"><i data-lucide="chevron-right"></i> About Us</a></li>
+                            <li><a href="/careers.html"><i data-lucide="chevron-right"></i> Careers <span
+                                        class="badge-hiring">Hiring!</span></a></li>
+                            <li><a href="/blog.html"><i data-lucide="chevron-right"></i> Blog</a></li>
+                            <li><a href="/contact.html"><i data-lucide="chevron-right"></i> Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- App Download -->
+                    <div class="footer-app" data-aos="fade-up" data-aos-delay="250">
+                        <h4 class="footer-title">Get the App</h4>
+                        <a href="#" class="app-download-btn">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                                alt="Google Play">
+                        </a>
+                        <a href="#" class="app-download-btn">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+                                alt="App Store">
+                        </a>
+                        <p class="coming-soon">Coming Soon!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="footer-copyright">
+                        <p>© 2024 GrihGO. All rights reserved.</p>
+                    </div>
+
+                    <div class="footer-legal">
+                        <a href="/privacy.html">Privacy Policy</a>
+                        <span class="separator">•</span>
+                        <a href="/terms.html">Terms of Service</a>
+                    </div>
+
+                    <div class="footer-badge">
+                        <span>Made with</span>
+                        <i data-lucide="heart" class="heart-icon"></i>
+                        <span>in Bihar</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-bottom-nav" id="mobile-bottom-nav">
+        <a href="/" class="nav-item">
+            <i data-lucide="home"></i>
+            <span>Home</span>
+        </a>
+        <a href="/restaurants.html" class="nav-item">
+            <i data-lucide="utensils"></i>
+            <span>Food</span>
+        </a>
+        <a href="#" class="nav-item nav-item-center" id="search-trigger">
+            <div class="nav-item-icon">
+                <i data-lucide="search"></i>
+            </div>
+        </a>
+        <a href="/cities.html" class="nav-item active">
+            <i data-lucide="map-pin"></i>
+            <span>Cities</span>
+        </a>
+        <a href="/contact.html" class="nav-item">
+            <i data-lucide="user"></i>
+            <span>Account</span>
+        </a>
+    </nav>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i data-lucide="chevron-up"></i>
+    </button>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="/src/main.js"></script>
+
+    <script>
+        // Countdown Timer for Launching Cities
+        function initCountdowns() {
+            const countdowns = document.querySelectorAll('.launch-countdown');
+
+            countdowns.forEach(countdown => {
+                const launchDate = new Date(countdown.dataset.launch).getTime();
+
+                setInterval(() => {
+                    const now = new Date().getTime();
+                    const distance = launchDate - now;
+
+                    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+                    countdown.querySelector('[data-days]').textContent = days > 0 ? days : '0';
+                    countdown.querySelector('[data-hours]').textContent = hours > 0 ? hours : '0';
+                    countdown.querySelector('[data-minutes]').textContent = minutes > 0 ? minutes : '0';
+                }, 1000);
+            });
+        }
+
+        initCountdowns();
+
+        // Notify Me Function
+        function notifyMe(button, city) {
+            const form = button.closest('.notify-form');
+            const input = form.querySelector('input[type="email"]');
+            const email = input.value;
+
+            if (!email || !email.includes('@')) {
+                showNotification('error', 'Please enter a valid email address');
+                return;
+            }
+
+            // Show loading
+            const originalHTML = button.innerHTML;
+            button.innerHTML = '<i data-lucide="loader-2" class="animate-spin"></i> Saving...';
+            button.disabled = true;
+
+            // Simulate API call
+            setTimeout(() => {
+                button.innerHTML = '<i data-lucide="check"></i> Subscribed!';
+                button.classList.add('btn-success');
+                button.classList.remove('btn-primary');
+                input.value = '';
+
+                // Update interested count
+                const countEl = form.closest('.launching-city-card').querySelector('.interested-count strong');
+                if (countEl) {
+                    const currentCount = parseInt(countEl.textContent.replace(/,/g, ''));
+                    countEl.textContent = (currentCount + 1).toLocaleString();
+                }
+
+                showNotification('success', `You'll be notified when we launch in ${city}! 🎉`);
+
+                lucide.createIcons();
+            }, 1500);
+        }
+    </script>
+</body>
+
+</html>

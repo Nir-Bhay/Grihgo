@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="GRIHGO - Bihar & Jharkhand's own food delivery app. Zero hidden charges. Fast delivery. Local love.">
+  <meta name="keywords" content="food delivery, Bihar, Jharkhand, Patna, restaurant, order food online">
+  <meta name="author" content="GRIHGO">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="GRIHGO - Bihar & Jharkhand's Food Delivery App">
+  <meta property="og:description"
+    content="Discover local restaurants with zero hidden charges. Fresh food. Fair prices. Local love.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts - Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <title>GRIHGO - Fresh Food Delivery in Bihar & Jharkhand</title>
+  <link rel="icon" type="image/png" href="/logo.png">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Swiper CSS for Carousels -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/src/css/global.css">
+  <link rel="stylesheet" href="/src/css/header.css">
+  <link rel="stylesheet" href="/src/css/home.css">
+  <link rel="stylesheet" href="/src/css/footer.css">
+
+
+
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <img src="/logo.png" alt="GRIHGO" class="preloader-logo">
+      <div class="preloader-spinner"></div>
+      <p class="preloader-text">Loading deliciousness...</p>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-container">
+      <a href="/" class="navbar-logo-link">
+        <img src="/logo.png" alt="GRIHGO" class="navbar-logo">
+      </a>
+
+      <div class="navbar-menu" id="navbar-menu">
+        <a href="/about.html" class="navbar-link">About</a>
+        <a href="/cities.html" class="navbar-link">Cities</a>
+        <a href="/restaurants.html" class="navbar-link">Restaurants</a>
+        <div class="navbar-dropdown">
+          <a href="#" class="navbar-link navbar-dropdown-toggle">
+            Explore
+            <i data-lucide="chevron-down" class="icon-xs"></i>
+          </a>
+          <div class="navbar-dropdown-menu">
+            <a href="/blog.html" class="dropdown-item">
+              <i data-lucide="book-open" class="icon-sm"></i>
+              <div>
+                <span class="dropdown-title">Blog</span>
+                <span class="dropdown-desc">Stories & updates</span>
+              </div>
+            </a>
+            <a href="/delivery.html" class="dropdown-item">
+              <i data-lucide="bike" class="icon-sm"></i>
+              <div>
+                <span class="dropdown-title">Delivery Partners</span>
+                <span class="dropdown-desc">Earn with GrihGO</span>
+              </div>
+            </a>
+            <a href="/transparency.html" class="dropdown-item">
+              <i data-lucide="shield-check" class="icon-sm"></i>
+              <div>
+                <span class="dropdown-title">Transparency</span>
+                <span class="dropdown-desc">Zero hidden charges</span>
+              </div>
+            </a>
+            <a href="/pride.html" class="dropdown-item">
+              <i data-lucide="heart" class="icon-sm"></i>
+              <div>
+                <span class="dropdown-title">Local Pride</span>
+                <span class="dropdown-desc">ई हमर है!</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a href="/partner.html" class="navbar-link">Partner With Us</a>
+        <a href="/careers.html" class="navbar-link">Careers</a>
+        <a href="/contact.html" class="navbar-link">Help</a>
+        <a href="#download" class="btn btn-primary btn-sm navbar-cta">
+          <i data-lucide="download" class="icon-sm"></i>
+          Download App
+        </a>
+      </div>
+
+      <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-header">
+      <img src="/logo.png" alt="GRIHGO" class="mobile-menu-logo">
+      <button class="mobile-menu-close" id="mobile-menu-close">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+    <div class="mobile-menu-content">
+      <a href="/about.html" class="mobile-menu-link">
+        <i data-lucide="info"></i>
+        About
+      </a>
+      <a href="/cities.html" class="mobile-menu-link">
+        <i data-lucide="map"></i>
+        Cities
+      </a>
+      <a href="/restaurants.html" class="mobile-menu-link">
+        <i data-lucide="utensils"></i>
+        Restaurants
+      </a>
+      <a href="/blog.html" class="mobile-menu-link">
+        <i data-lucide="book-open"></i>
+        Blog
+      </a>
+      <a href="/partner.html" class="mobile-menu-link">
+        <i data-lucide="handshake"></i>
+        Partner With Us
+      </a>
+      <a href="/delivery.html" class="mobile-menu-link">
+        <i data-lucide="bike"></i>
+        Delivery Partners
+      </a>
+      <a href="/transparency.html" class="mobile-menu-link">
+        <i data-lucide="shield-check"></i>
+        Transparency
+      </a>
+      <a href="/pride.html" class="mobile-menu-link">
+        <i data-lucide="heart"></i>
+        Local Pride
+      </a>
+      <a href="/careers.html" class="mobile-menu-link">
+        <i data-lucide="briefcase"></i>
+        Careers
+      </a>
+      <a href="/contact.html" class="mobile-menu-link">
+        <i data-lucide="headphones"></i>
+        Help
+      </a>
+    </div>
+    <div class="mobile-menu-footer">
+      <a href="#download" class="btn btn-primary btn-lg" style="width: 100%;">
+        <i data-lucide="download"></i>
+        Download App
+      </a>
+      <div class="mobile-menu-social">
+        <a href="#"><i data-lucide="instagram"></i></a>
+        <a href="#"><i data-lucide="twitter"></i></a>
+        <a href="#"><i data-lucide="facebook"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <!-- Animated Background -->
+    <div class="hero-bg">
+      <div class="hero-bg-gradient"></div>
+      <div class="hero-bg-pattern"></div>
+      <div class="hero-bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+    </div>
+
+    <div class="hero-content container">
+      <!-- Trust Badge -->
+      <div class="hero-badge" data-aos="fade-down" data-aos-delay="100">
+        <span class="badge-icon">🎉</span>
+        <span class="badge-text">Bihar & Jharkhand's #1 Food Delivery App</span>
+        <span class="badge-new">New</span>
+      </div>
+
+      <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+        Discover local restaurants in Bihar & Jharkhand — With
+        <span class="text-gradient">Zero Hidden Charges</span>
+      </h1>
+
+      <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="300">
+        Fresh food. Fair prices. Local love. <span class="hindi-text">बिहार का अपना फूड डिलीवरी ऐप।</span>
+      </p>
+
+      <!-- Hero Search -->
+      <div class="hero-search-wrapper" data-aos="fade-up" data-aos-delay="400">
+        <div class="hero-search">
+          <div class="input-with-icon location-box">
+            <i data-lucide="map-pin" class="input-icon"></i>
+            <input type="text" class="input" placeholder="Enter your location" id="location-input">
+            <button class="detect-location-btn" title="Detect my location" id="detect-location">
+              <i data-lucide="locate-fixed" class="icon-xs"></i>
+              <span>Detect</span>
+            </button>
+          </div>
+          <div class="separator"></div>
+          <div class="input-with-icon search-box">
+            <i data-lucide="search" class="input-icon"></i>
+            <input type="text" class="input" placeholder="Search for restaurant, cuisine or a dish" id="main-search">
+          </div>
+          <button class="btn btn-primary search-submit-btn">
+            <span class="btn-text">Search</span>
+            <i data-lucide="arrow-right" class="btn-icon"></i>
+          </button>
+        </div>
+
+        <!-- Quick Location Pills -->
+        <div class="quick-locations">
+          <span class="quick-label">Popular:</span>
+          <button class="location-pill" data-location="Patna">
+            <i data-lucide="map-pin" class="icon-xs"></i> Patna
+          </button>
+          <button class="location-pill" data-location="Ranchi">
+            <i data-lucide="map-pin" class="icon-xs"></i> Ranchi
+          </button>
+          <button class="location-pill" data-location="Jamshedpur">
+            <i data-lucide="map-pin" class="icon-xs"></i> Jamshedpur
+          </button>
+          <button class="location-pill" data-location="Muzaffarpur">
+            <i data-lucide="map-pin" class="icon-xs"></i> Muzaffarpur
+          </button>
+        </div>
+
+        <!-- Search Suggestions Dropdown -->
+        <div class="search-suggestions" id="search-suggestions">
+          <div class="suggestion-group">
+            <div class="suggestion-title">
+              <i data-lucide="clock"></i>
+              Recent Searches
+            </div>
+            <div class="suggestion-item"><i data-lucide="history"></i> Biryani</div>
+            <div class="suggestion-item"><i data-lucide="history"></i> The Biryani House</div>
+          </div>
+          <div class="suggestion-group">
+            <div class="suggestion-title">
+              <i data-lucide="trending-up"></i>
+              Trending Now
+            </div>
+            <div class="suggestion-item trending">
+              <i data-lucide="flame"></i> Momos
+              <span class="trending-badge">🔥 Hot</span>
+            </div>
+            <div class="suggestion-item trending">
+              <i data-lucide="flame"></i> North Indian
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trending Cuisines -->
+      <div class="trending-cuisines-container" data-aos="fade-up" data-aos-delay="500">
+        <h3 class="section-title-sm">
+          <i data-lucide="sparkles" class="icon-sm"></i>
+          Inspiration for your first order
+        </h3>
+        <div class="cuisine-scroll">
+          <a href="/restaurants.html?cuisine=biryani" class="cuisine-item">
+            <div class="cuisine-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=100&h=100&fit=crop" alt="Biryani"
+                loading="lazy">
+              <div class="cuisine-overlay">
+                <span class="cuisine-discount">20% OFF</span>
+              </div>
+            </div>
+            <span>Biryani</span>
+          </a>
+          <a href="/restaurants.html?cuisine=pizza" class="cuisine-item">
+            <div class="cuisine-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=100&h=100&fit=crop" alt="Pizza"
+                loading="lazy">
+            </div>
+            <span>Pizza</span>
+          </a>
+          <a href="/restaurants.html?cuisine=burger" class="cuisine-item">
+            <div class="cuisine-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=100&h=100&fit=crop" alt="Burger"
+                loading="lazy">
+            </div>
+            <span>Burger</span>
+          </a>
+          <a href="/restaurants.html?cuisine=thali" class="cuisine-item">
+            <div class="cuisine-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=100&h=100&fit=crop" alt="Thali"
+                loading="lazy">
+              <div class="cuisine-overlay">
+                <span class="cuisine-discount">₹99</span>
+              </div>
+            </div>
+            <span>Thali</span>
+          </a>
+          <a href="/restaurants.html?cuisine=chinese" class="cuisine-item">
+            <div class="cuisine-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=100&h=100&fit=crop" alt="Chinese"
+                loading="lazy">
+            </div>
+            <span>Chinese</span>
+          </a>
+          <a href="/restaurants.html?cuisine=desserts" class="cuisine-item">
+            <div class="cuisine-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=100&h=100&fit=crop" alt="Desserts"
+                loading="lazy">
+            </div>
+            <span>Desserts</span>
+          </a>
+          <a href="/restaurants.html?cuisine=rolls" class="cuisine-item">
+            <div class="cuisine-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=100&h=100&fit=crop" alt="Rolls"
+                loading="lazy">
+            </div>
+            <span>Rolls</span>
+          </a>
+          <a href="/restaurants.html?cuisine=momos" class="cuisine-item">
+            <div class="cuisine-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=100&h=100&fit=crop" alt="Momos"
+                loading="lazy">
+              <div class="cuisine-overlay">
+                <span class="cuisine-discount">🔥</span>
+              </div>
+            </div>
+            <span>Momos</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero CTA -->
+      <div class="hero-cta" data-aos="fade-up" data-aos-delay="600">
+        <a href="#download" class="btn btn-primary btn-lg btn-glow">
+          <i data-lucide="smartphone"></i>
+          Order on App
+        </a>
+        <a href="/restaurants.html" class="btn btn-outline-light btn-lg">
+          <i data-lucide="utensils"></i>
+          Browse Restaurants
+        </a>
+      </div>
+
+      <!-- Trust Indicators -->
+      <div class="trust-indicators" data-aos="fade-up" data-aos-delay="700">
+        <div class="trust-item">
+          <i data-lucide="shield-check"></i>
+          <span>100% Secure</span>
+        </div>
+        <div class="trust-item">
+          <i data-lucide="clock"></i>
+          <span>30 min Delivery</span>
+        </div>
+        <div class="trust-item">
+          <i data-lucide="badge-indian-rupee"></i>
+          <span>No Hidden Fees</span>
+        </div>
+        <div class="trust-item">
+          <i data-lucide="headphones"></i>
+          <span>24/7 Support</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Food Elements -->
+    <div class="floating-elements">
+      <div class="floating-food food-1">🍕</div>
+      <div class="floating-food food-2">🍔</div>
+      <div class="floating-food food-3">🍜</div>
+      <div class="floating-food food-4">🥗</div>
+      <div class="floating-food food-5">🍱</div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- Promotional Banner -->
+  <section class="promo-banner" data-aos="fade-up">
+    <div class="container">
+      <div class="promo-slider swiper" id="promo-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="promo-card promo-gradient-1">
+              <div class="promo-content">
+                <span class="promo-tag">Limited Time</span>
+                <h3>Get ₹100 OFF</h3>
+                <p>On your first order with code: <strong>GRIHGO100</strong></p>
+                <a href="#" class="btn btn-white btn-sm">Order Now</a>
+              </div>
+              <div class="promo-image">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=200" alt="Pizza Offer">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="promo-card promo-gradient-2">
+              <div class="promo-content">
+                <span class="promo-tag">Free Delivery</span>
+                <h3>Free Delivery Week</h3>
+                <p>Enjoy free delivery on all orders above ₹199</p>
+                <a href="#" class="btn btn-white btn-sm">Explore</a>
+              </div>
+              <div class="promo-image">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=200" alt="Free Delivery">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="promo-card promo-gradient-3">
+              <div class="promo-content">
+                <span class="promo-tag">Weekend Special</span>
+                <h3>Flat 30% OFF</h3>
+                <p>On Biryani & North Indian dishes</p>
+                <a href="#" class="btn btn-white btn-sm">Order Now</a>
+              </div>
+              <div class="promo-image">
+                <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=200" alt="Biryani Offer">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- City Voting Section -->
+  <section class="section city-voting-section" id="cities">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <span class="section-tag">
+          <i data-lucide="map-pin"></i>
+          City Voting
+        </span>
+        <h2 class="section-title">Aapka Shehar GrihGO par kab aayega?</h2>
+        <p class="section-subtitle">
+          Vote for your city — Top 3 cities will launch next! 🚀
+        </p>
+      </div>
+
+      <!-- Voting Progress -->
+      <div class="voting-progress" data-aos="fade-up" data-aos-delay="100">
+        <div class="progress-info">
+          <span class="progress-label">Total Votes</span>
+          <span class="progress-count" id="total-votes">12,235</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 65%;"></div>
+        </div>
+        <span class="progress-goal">Goal: 20,000 votes</span>
+      </div>
+
+      <div class="city-grid">
+        <div class="city-card" data-city="patna" data-aos="fade-up" data-aos-delay="100">
+          <div class="city-rank rank-1">
+            <i data-lucide="trophy"></i>
+          </div>
+          <div class="city-icon">
+            <i data-lucide="building-2"></i>
+          </div>
+          <h3 class="city-name">Patna</h3>
+          <div class="city-progress">
+            <div class="city-progress-bar" style="width: 85%;"></div>
+          </div>
+          <p class="city-votes">
+            <span class="vote-count" data-count="2847">2,847</span> votes
+          </p>
+          <button class="btn btn-primary btn-vote" onclick="voteCity('patna', this)">
+            <i data-lucide="vote"></i>
+            Vote Now
+          </button>
+        </div>
+
+        <div class="city-card" data-city="ranchi" data-aos="fade-up" data-aos-delay="150">
+          <div class="city-rank rank-2">
+            <i data-lucide="medal"></i>
+          </div>
+          <div class="city-icon">
+            <i data-lucide="mountain"></i>
+          </div>
+          <h3 class="city-name">Ranchi</h3>
+          <div class="city-progress">
+            <div class="city-progress-bar" style="width: 70%;"></div>
+          </div>
+          <p class="city-votes">
+            <span class="vote-count" data-count="1567">1,567</span> votes
+          </p>
+          <button class="btn btn-primary btn-vote" onclick="voteCity('ranchi', this)">
+            <i data-lucide="vote"></i>
+            Vote Now
+          </button>
+        </div>
+
+        <div class="city-card" data-city="darbhanga" data-aos="fade-up" data-aos-delay="200">
+          <div class="city-rank rank-3">
+            <i data-lucide="award"></i>
+          </div>
+          <div class="city-icon">
+            <i data-lucide="castle"></i>
+          </div>
+          <h3 class="city-name">Darbhanga</h3>
+          <div class="city-progress">
+            <div class="city-progress-bar" style="width: 60%;"></div>
+          </div>
+          <p class="city-votes">
+            <span class="vote-count" data-count="1923">1,923</span> votes
+          </p>
+          <button class="btn btn-primary btn-vote" onclick="voteCity('darbhanga', this)">
+            <i data-lucide="vote"></i>
+            Vote Now
+          </button>
+        </div>
+
+        <div class="city-card" data-city="muzaffarpur" data-aos="fade-up" data-aos-delay="250">
+          <div class="city-icon">
+            <i data-lucide="leaf"></i>
+          </div>
+          <h3 class="city-name">Muzaffarpur</h3>
+          <div class="city-progress">
+            <div class="city-progress-bar" style="width: 50%;"></div>
+          </div>
+          <p class="city-votes">
+            <span class="vote-count" data-count="1456">1,456</span> votes
+          </p>
+          <button class="btn btn-primary btn-vote" onclick="voteCity('muzaffarpur', this)">
+            <i data-lucide="vote"></i>
+            Vote Now
+          </button>
+        </div>
+
+        <div class="city-card" data-city="jamshedpur" data-aos="fade-up" data-aos-delay="300">
+          <div class="city-icon">
+            <i data-lucide="factory"></i>
+          </div>
+          <h3 class="city-name">Jamshedpur</h3>
+          <div class="city-progress">
+            <div class="city-progress-bar" style="width: 45%;"></div>
+          </div>
+          <p class="city-votes">
+            <span class="vote-count" data-count="1345">1,345</span> votes
+          </p>
+          <button class="btn btn-primary btn-vote" onclick="voteCity('jamshedpur', this)">
+            <i data-lucide="vote"></i>
+            Vote Now
+          </button>
+        </div>
+
+        <div class="city-card" data-city="gaya" data-aos="fade-up" data-aos-delay="350">
+          <div class="city-icon">
+            <i data-lucide="milestone"></i>
+          </div>
+          <h3 class="city-name">Gaya</h3>
+          <div class="city-progress">
+            <div class="city-progress-bar" style="width: 40%;"></div>
+          </div>
+          <p class="city-votes">
+            <span class="vote-count" data-count="1234">1,234</span> votes
+          </p>
+          <button class="btn btn-primary btn-vote" onclick="voteCity('gaya', this)">
+            <i data-lucide="vote"></i>
+            Vote Now
+          </button>
+        </div>
+
+        <div class="city-card" data-city="bhagalpur" data-aos="fade-up" data-aos-delay="400">
+          <div class="city-icon">
+            <i data-lucide="waves"></i>
+          </div>
+          <h3 class="city-name">Bhagalpur</h3>
+          <div class="city-progress">
+            <div class="city-progress-bar" style="width: 35%;"></div>
+          </div>
+          <p class="city-votes">
+            <span class="vote-count" data-count="987">987</span> votes
+          </p>
+          <button class="btn btn-primary btn-vote" onclick="voteCity('bhagalpur', this)">
+            <i data-lucide="vote"></i>
+            Vote Now
+          </button>
+        </div>
+
+        <div class="city-card" data-city="dhanbad" data-aos="fade-up" data-aos-delay="450">
+          <div class="city-icon">
+            <i data-lucide="pickaxe"></i>
+          </div>
+          <h3 class="city-name">Dhanbad</h3>
+          <div class="city-progress">
+            <div class="city-progress-bar" style="width: 30%;"></div>
+          </div>
+          <p class="city-votes">
+            <span class="vote-count" data-count="876">876</span> votes
+          </p>
+          <button class="btn btn-primary btn-vote" onclick="voteCity('dhanbad', this)">
+            <i data-lucide="vote"></i>
+            Vote Now
+          </button>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top: 48px;" data-aos="fade-up">
+        <p class="text-muted">Don't see your city? <a href="/contact.html" class="text-primary">Request it here</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Restaurants Section -->
+  <section class="section restaurants-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-header-left">
+          <span class="section-tag">
+            <i data-lucide="utensils"></i>
+            Top Picks
+          </span>
+          <h2 class="section-title">Featured Restaurants in Bihar</h2>
+        </div>
+        <a href="/restaurants.html" class="btn btn-outline section-link" data-aos="fade-left">
+          View All
+          <i data-lucide="arrow-right"></i>
+        </a>
+      </div>
+
+      <!-- Filters -->
+      <div class="restaurant-filters" data-aos="fade-up" data-aos-delay="100">
+        <button class="filter-btn active" data-filter="all">
+          <i data-lucide="grid"></i>
+          All
+        </button>
+        <button class="filter-btn" data-filter="nearby">
+          <i data-lucide="map-pin"></i>
+          Nearby
+        </button>
+        <button class="filter-btn" data-filter="rating">
+          <i data-lucide="star"></i>
+          Top Rated
+        </button>
+        <button class="filter-btn" data-filter="offers">
+          <i data-lucide="percent"></i>
+          Offers
+        </button>
+        <button class="filter-btn" data-filter="fast">
+          <i data-lucide="zap"></i>
+          Fast Delivery
+        </button>
+      </div>
+
+      <div class="restaurant-grid">
+        <div class="restaurant-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="restaurant-img-container">
+            <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=400" alt="Biryani House"
+              class="restaurant-img" loading="lazy">
+            <div class="restaurant-badges">
+              <span class="badge badge-exclusive">
+                <i data-lucide="crown" class="icon-xs"></i>
+                Exclusive
+              </span>
+            </div>
+            <div class="restaurant-offer">
+              <span>20% OFF up to ₹50</span>
+            </div>
+            <button class="restaurant-favorite" aria-label="Add to favorites">
+              <i data-lucide="heart"></i>
+            </button>
+          </div>
+          <div class="restaurant-content">
+            <div class="restaurant-header">
+              <h4 class="restaurant-name">The Biryani House</h4>
+              <div class="restaurant-rating">
+                <i data-lucide="star" class="icon-xs"></i>
+                <span>4.5</span>
+              </div>
+            </div>
+            <p class="restaurant-cuisine">Biryani, North Indian, Mughlai</p>
+            <div class="restaurant-meta">
+              <span class="meta-item">
+                <i data-lucide="clock" class="icon-xs"></i>
+                25-30 min
+              </span>
+              <span class="meta-item">
+                <i data-lucide="map-pin" class="icon-xs"></i>
+                Patna
+              </span>
+              <span class="meta-item">
+                <i data-lucide="indian-rupee" class="icon-xs"></i>
+                200 for two
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="restaurant-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="restaurant-img-container">
+            <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400" alt="Sharma Bhojanalaya"
+              class="restaurant-img" loading="lazy">
+            <div class="restaurant-badges">
+              <span class="badge badge-veg">
+                <span class="veg-icon"></span>
+                Pure Veg
+              </span>
+            </div>
+            <button class="restaurant-favorite" aria-label="Add to favorites">
+              <i data-lucide="heart"></i>
+            </button>
+          </div>
+          <div class="restaurant-content">
+            <div class="restaurant-header">
+              <h4 class="restaurant-name">Sharma Bhojanalaya</h4>
+              <div class="restaurant-rating">
+                <i data-lucide="star" class="icon-xs"></i>
+                <span>4.7</span>
+              </div>
+            </div>
+            <p class="restaurant-cuisine">Pure Veg, Thali, Home Style</p>
+            <div class="restaurant-meta">
+              <span class="meta-item">
+                <i data-lucide="clock" class="icon-xs"></i>
+                20-25 min
+              </span>
+              <span class="meta-item">
+                <i data-lucide="map-pin" class="icon-xs"></i>
+                Darbhanga
+              </span>
+              <span class="meta-item">
+                <i data-lucide="indian-rupee" class="icon-xs"></i>
+                150 for two
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="restaurant-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="restaurant-img-container">
+            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400" alt="Makhani Kitchen"
+              class="restaurant-img" loading="lazy">
+            <div class="restaurant-badges">
+              <span class="badge badge-new">
+                <i data-lucide="sparkles" class="icon-xs"></i>
+                New
+              </span>
+            </div>
+            <div class="restaurant-offer">
+              <span>Free Delivery</span>
+            </div>
+            <button class="restaurant-favorite" aria-label="Add to favorites">
+              <i data-lucide="heart"></i>
+            </button>
+          </div>
+          <div class="restaurant-content">
+            <div class="restaurant-header">
+              <h4 class="restaurant-name">Makhani Kitchen</h4>
+              <div class="restaurant-rating">
+                <i data-lucide="star" class="icon-xs"></i>
+                <span>4.3</span>
+              </div>
+            </div>
+            <p class="restaurant-cuisine">Punjabi, Mughlai, Chinese</p>
+            <div class="restaurant-meta">
+              <span class="meta-item">
+                <i data-lucide="clock" class="icon-xs"></i>
+                30-35 min
+              </span>
+              <span class="meta-item">
+                <i data-lucide="map-pin" class="icon-xs"></i>
+                Ranchi
+              </span>
+              <span class="meta-item">
+                <i data-lucide="indian-rupee" class="icon-xs"></i>
+                250 for two
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="restaurant-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="restaurant-img-container">
+            <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=400" alt="Chinese Corner"
+              class="restaurant-img" loading="lazy">
+            <div class="restaurant-badges">
+              <span class="badge badge-fast">
+                <i data-lucide="zap" class="icon-xs"></i>
+                Fast
+              </span>
+            </div>
+            <button class="restaurant-favorite" aria-label="Add to favorites">
+              <i data-lucide="heart"></i>
+            </button>
+          </div>
+          <div class="restaurant-content">
+            <div class="restaurant-header">
+              <h4 class="restaurant-name">Chinese Corner</h4>
+              <div class="restaurant-rating">
+                <i data-lucide="star" class="icon-xs"></i>
+                <span>4.2</span>
+              </div>
+            </div>
+            <p class="restaurant-cuisine">Chinese, Indo-Chinese, Fast Food</p>
+            <div class="restaurant-meta">
+              <span class="meta-item">
+                <i data-lucide="clock" class="icon-xs"></i>
+                15-20 min
+              </span>
+              <span class="meta-item">
+                <i data-lucide="map-pin" class="icon-xs"></i>
+                Muzaffarpur
+              </span>
+              <span class="meta-item">
+                <i data-lucide="indian-rupee" class="icon-xs"></i>
+                180 for two
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose GrihGO Section -->
+  <section class="section features-section" id="features">
+    <div class="container">
+      <div class="features-wrapper">
+        <div class="features-content" data-aos="fade-right">
+          <span class="section-tag">
+            <i data-lucide="heart"></i>
+            Why Choose Us
+          </span>
+          <h2 class="section-title">Why Bihar & Jharkhand love GrihGO</h2>
+          <p class="section-subtitle">We're not just another delivery app. We're your local food partner.</p>
+
+          <div class="features-list">
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="feature-icon">
+                <i data-lucide="wallet"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Zero Hidden Charges</h4>
+                <p>No extra platform fees, no surge pricing. What you see is what you pay. हमेशा!</p>
+              </div>
+              <div class="feature-check">
+                <i data-lucide="check-circle"></i>
+              </div>
+            </div>
+
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="150">
+              <div class="feature-icon">
+                <i data-lucide="navigation"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Extended Delivery Zones</h4>
+                <p>We deliver where others don't. Reaching every corner of your city, even Tier-3 areas.</p>
+              </div>
+              <div class="feature-check">
+                <i data-lucide="check-circle"></i>
+              </div>
+            </div>
+
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="feature-icon">
+                <i data-lucide="headphones"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Local Customer Support</h4>
+                <p>Talk to real people who speak your language. 24/7 support in Hindi & local dialects.</p>
+              </div>
+              <div class="feature-check">
+                <i data-lucide="check-circle"></i>
+              </div>
+            </div>
+
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="250">
+              <div class="feature-icon">
+                <i data-lucide="store"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Support Local Restaurants</h4>
+                <p>We help local eateries grow. Your order directly supports local businesses & families.</p>
+              </div>
+              <div class="feature-check">
+                <i data-lucide="check-circle"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="features-visual" data-aos="fade-left" data-aos-delay="200">
+          <div class="features-phone">
+            <div class="phone-frame">
+              <div class="phone-screen">
+                <img src="/logo.png" alt="GRIHGO App" class="phone-logo">
+                <div class="phone-animation">
+                  <div class="delivery-animation">
+                    <div class="delivery-path"></div>
+                    <div class="delivery-bike">🛵</div>
+                    <div class="delivery-home">🏠</div>
+                  </div>
+                </div>
+                <p class="phone-text">Delivering happiness<br>across Bihar & Jharkhand</p>
+              </div>
+            </div>
+            <!-- Floating Stats -->
+            <div class="floating-stat stat-1" data-aos="zoom-in" data-aos-delay="400">
+              <i data-lucide="clock"></i>
+              <span>30 min avg delivery</span>
+            </div>
+            <div class="floating-stat stat-2" data-aos="zoom-in" data-aos-delay="500">
+              <i data-lucide="star"></i>
+              <span>4.8 App Rating</span>
+            </div>
+            <div class="floating-stat stat-3" data-aos="zoom-in" data-aos-delay="600">
+              <i data-lucide="heart"></i>
+              <span>10K+ Happy Customers</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="section how-it-works-section" id="how-it-works">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <span class="section-tag">
+          <i data-lucide="lightbulb"></i>
+          Simple Process
+        </span>
+        <h2 class="section-title">Order in 3 Simple Steps</h2>
+        <p class="section-subtitle">Getting your favorite food has never been easier</p>
+      </div>
+
+      <div class="steps-container">
+        <div class="steps-line"></div>
+
+        <div class="step-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="step-number">
+            <span>1</span>
+          </div>
+          <div class="step-icon">
+            <i data-lucide="map-pin"></i>
+          </div>
+          <h4 class="step-title">Choose Your Location</h4>
+          <p class="step-desc">Enter your address and discover amazing restaurants nearby</p>
+          <div class="step-arrow">
+            <i data-lucide="arrow-right"></i>
+          </div>
+        </div>
+
+        <div class="step-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="step-number">
+            <span>2</span>
+          </div>
+          <div class="step-icon">
+            <i data-lucide="utensils-crossed"></i>
+          </div>
+          <h4 class="step-title">Browse & Order</h4>
+          <p class="step-desc">Explore menus, see transparent prices, and select your meal</p>
+          <div class="step-arrow">
+            <i data-lucide="arrow-right"></i>
+          </div>
+        </div>
+
+        <div class="step-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="step-number">
+            <span>3</span>
+          </div>
+          <div class="step-icon">
+            <i data-lucide="bike"></i>
+          </div>
+          <h4 class="step-title">Get Fresh Delivery</h4>
+          <p class="step-desc">Track your order in real-time. Fresh food at your doorstep!</p>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top: 48px;" data-aos="fade-up">
+        <a href="#download" class="btn btn-primary btn-lg">
+          <i data-lucide="play-circle"></i>
+          Start Ordering
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Price Transparency Section -->
+  <section class="section pricing-section" id="pricing">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <span class="section-tag">
+          <i data-lucide="shield-check"></i>
+          100% Transparent
+        </span>
+        <h2 class="section-title">What you see is what you pay</h2>
+        <p class="section-subtitle">Zero hidden charges. Always. हमेशा सच्चाई!</p>
+      </div>
+
+      <div class="comparison-wrapper" data-aos="fade-up" data-aos-delay="100">
+        <div class="comparison-card others">
+          <div class="comparison-header">
+            <span class="comparison-icon">❌</span>
+            <h3>Other Apps</h3>
+          </div>
+          <div class="comparison-body">
+            <div class="comparison-item">
+              <span class="item-label">Menu Price</span>
+              <span class="item-value">₹250</span>
+            </div>
+            <div class="comparison-item fee">
+              <span class="item-label">Packaging Fee</span>
+              <span class="item-value text-danger">+₹20</span>
+            </div>
+            <div class="comparison-item fee">
+              <span class="item-label">Platform Fee</span>
+              <span class="item-value text-danger">+₹10</span>
+            </div>
+            <div class="comparison-item fee">
+              <span class="item-label">Surge (Peak Hour)</span>
+              <span class="item-value text-danger">+₹15</span>
+            </div>
+            <div class="comparison-item">
+              <span class="item-label">Delivery</span>
+              <span class="item-value">+₹40</span>
+            </div>
+          </div>
+          <div class="comparison-total">
+            <span>Total</span>
+            <span class="total-value">₹335</span>
+          </div>
+        </div>
+
+        <div class="comparison-vs">
+          <span>VS</span>
+        </div>
+
+        <div class="comparison-card grihgo">
+          <div class="comparison-header">
+            <span class="comparison-icon">✓</span>
+            <h3>GrihGO</h3>
+            <span class="recommended-badge">Recommended</span>
+          </div>
+          <div class="comparison-body">
+            <div class="comparison-item">
+              <span class="item-label">Menu Price</span>
+              <span class="item-value">₹250</span>
+            </div>
+            <div class="comparison-item free">
+              <span class="item-label">Packaging</span>
+              <span class="item-value text-success">
+                <i data-lucide="check" class="icon-xs"></i>
+                Included
+              </span>
+            </div>
+            <div class="comparison-item free">
+              <span class="item-label">Platform Fee</span>
+              <span class="item-value text-success">
+                <i data-lucide="check" class="icon-xs"></i>
+                Never
+              </span>
+            </div>
+            <div class="comparison-item free">
+              <span class="item-label">Surge</span>
+              <span class="item-value text-success">
+                <i data-lucide="check" class="icon-xs"></i>
+                No surge ever
+              </span>
+            </div>
+            <div class="comparison-item">
+              <span class="item-label">Delivery</span>
+              <span class="item-value">+₹30</span>
+            </div>
+          </div>
+          <div class="comparison-total">
+            <span>Total</span>
+            <span class="total-value">₹280</span>
+          </div>
+          <div class="savings-banner">
+            <i data-lucide="piggy-bank"></i>
+            <span>You Save ₹55! 🎉</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-guarantee" data-aos="fade-up" data-aos-delay="200">
+        <div class="guarantee-item">
+          <i data-lucide="shield-check"></i>
+          <span>No Platform Fee Ever</span>
+        </div>
+        <div class="guarantee-item">
+          <i data-lucide="clock"></i>
+          <span>No Surge Pricing</span>
+        </div>
+        <div class="guarantee-item">
+          <i data-lucide="package"></i>
+          <span>Free Packaging</span>
+        </div>
+        <div class="guarantee-item">
+          <i data-lucide="refresh-cw"></i>
+          <span>Easy Refunds</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section testimonials-section">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <span class="section-tag">
+          <i data-lucide="message-circle"></i>
+          Testimonials
+        </span>
+        <h2 class="section-title">What our community says</h2>
+        <p class="section-subtitle">Real stories from real people across Bihar & Jharkhand</p>
+      </div>
+
+      <div class="testimonials-slider swiper" id="testimonials-slider" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-rating">
+                <i data-lucide="star"></i>
+                <i data-lucide="star"></i>
+                <i data-lucide="star"></i>
+                <i data-lucide="star"></i>
+                <i data-lucide="star"></i>
+              </div>
+              <p class="testimonial-quote">
+                "Before GrihGO, we only served walk-in customers. Now 40% of our orders come from delivery! They really
+                understand local businesses."
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">
+                  <span>R</span>
+                </div>
+                <div class="testimonial-info">
+                  <p class="testimonial-name">Radha Ji</p>
+                  <p class="testimonial-role">Sharma Bhojanalaya, Darbhanga</p>
+                </div>
+                <div class="testimonial-badge">
+                  <i data-lucide="store"></i>
+                  Restaurant Owner
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-rating">
+                <i data-lucide="star"></i>
+                <i data-lucide="star"></i>
+                <i data-lucide="star"></i>
+                <i data-lucide="star"></i>
+                <i data-lucide="star"></i>
+              </div>
+              <p class="testimonial-quote">
+                "Finally a platform that understands small town restaurants. No complicated pricing, no hidden fees. सब
+                कुछ साफ़!"
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">
+                  <span>S</span>
+                </div>
+                <div class="testimonial-info">
+                  <p class="testimonial-name">Sunil Kumar</p>
+                  <p class="testimonial-role">Restaurant Owner, Patna</p>
+                </div>
+                <div class="testimonial-badge">
+                  <i data-lucide="store"></i>
+                  Restaurant Owner
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-rating">
+                <i data-lucide="star"></i>
+                <i data-lucide="star"></i>
+                <i data-lucide="star"></i>
+                <i data-lucide="star"></i>
+                <i data-lucide="star"></i>
+              </div>
+              <p class="testimonial-quote">
+                "As a delivery partner, I earn ₹18,000/month with flexible hours. पैसा भी अच्छा, टाइम भी अच्छा! Best
+                decision I made."
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">
+                  <span>R</span>
+                </div>
+                <div class="testimonial-info">
+                  <p class="testimonial-name">Rakesh</p>
+                  <p class="testimonial-role">Delivery Partner, Muzaffarpur</p>
+                </div>
+                <div class="testimonial-badge">
+                  <i data-lucide="bike"></i>
+                  Delivery Hero
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-rating">
+                <i data-lucide="star"></i>
+                <i data-lucide="star"></i>
+                <i data-lucide="star"></i>
+                <i data-lucide="star"></i>
+                <i data-lucide="star"></i>
+              </div>
+              <p class="testimonial-quote">
+                "The best part is no hidden charges! Other apps add ₹50-60 extra, but GrihGO shows exact price. My
+                family orders twice a week now."
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">
+                  <span>A</span>
+                </div>
+                <div class="testimonial-info">
+                  <p class="testimonial-name">Anjali Sharma</p>
+                  <p class="testimonial-role">Regular Customer, Ranchi</p>
+                </div>
+                <div class="testimonial-badge">
+                  <i data-lucide="heart"></i>
+                  Loyal Customer
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="section stats-section">
+    <div class="container">
+      <div class="stats-wrapper">
+        <div class="stats-content" data-aos="fade-right">
+          <h2 class="section-title">Growing together with Bihar & Jharkhand</h2>
+          <p class="section-subtitle">We're proud to be part of your local food ecosystem</p>
+          <a href="/about.html" class="btn btn-outline">
+            Learn Our Story
+            <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="stats-grid" data-aos="fade-left">
+          <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="stat-icon">
+              <i data-lucide="store"></i>
+            </div>
+            <div class="stat-number" data-count="50">0</div>
+            <div class="stat-suffix">+</div>
+            <p class="stat-label">Restaurant Partners</p>
+          </div>
+
+          <div class="stat-card" data-aos="zoom-in" data-aos-delay="150">
+            <div class="stat-icon">
+              <i data-lucide="bike"></i>
+            </div>
+            <div class="stat-number" data-count="100">0</div>
+            <div class="stat-suffix">+</div>
+            <p class="stat-label">Delivery Partners</p>
+          </div>
+
+          <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="stat-icon">
+              <i data-lucide="map"></i>
+            </div>
+            <div class="stat-number" data-count="5">0</div>
+            <div class="stat-suffix"></div>
+            <p class="stat-label">Cities Launching</p>
+          </div>
+
+          <div class="stat-card" data-aos="zoom-in" data-aos-delay="250">
+            <div class="stat-icon">
+              <i data-lucide="users"></i>
+            </div>
+            <div class="stat-number" data-count="10">0</div>
+            <div class="stat-suffix">K+</div>
+            <p class="stat-label">Happy Customers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partner CTA Section -->
+  <section class="section partner-cta-section">
+    <div class="container">
+      <div class="partner-cards">
+        <div class="partner-card restaurant-partner" data-aos="fade-right">
+          <div class="partner-icon">
+            <i data-lucide="store"></i>
+          </div>
+          <h3>Partner your Restaurant</h3>
+          <p>Reach more customers with zero commission for first 3 months. Grow your business with us.</p>
+          <ul class="partner-benefits">
+            <li><i data-lucide="check"></i> Zero commission for 3 months</li>
+            <li><i data-lucide="check"></i> Free menu photoshoot</li>
+            <li><i data-lucide="check"></i> Dedicated support team</li>
+          </ul>
+          <a href="/partner.html" class="btn btn-primary">
+            Register Restaurant
+            <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="partner-card delivery-partner" data-aos="fade-left">
+          <div class="partner-icon">
+            <i data-lucide="bike"></i>
+          </div>
+          <h3>Become a Delivery Partner</h3>
+          <p>Earn up to ₹25,000/month with flexible hours. Be your own boss.</p>
+          <ul class="partner-benefits">
+            <li><i data-lucide="check"></i> Weekly payments</li>
+            <li><i data-lucide="check"></i> Insurance coverage</li>
+            <li><i data-lucide="check"></i> Incentives & bonuses</li>
+          </ul>
+          <a href="/delivery.html" class="btn btn-white">
+            Start Earning
+            <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- App Download CTA Section -->
+  <section class="section download-section" id="download">
+    <div class="container">
+      <div class="download-wrapper">
+        <div class="download-content" data-aos="fade-right">
+          <span class="section-tag light">
+            <i data-lucide="smartphone"></i>
+            Mobile App
+          </span>
+          <h2 class="section-title">Get GrihGO on your phone</h2>
+          <p class="section-subtitle">Download now and get ₹100 off your first order with code
+            <strong>GRIHGO100</strong>
+          </p>
+
+          <div class="download-features">
+            <div class="download-feature">
+              <i data-lucide="zap"></i>
+              <span>Faster ordering</span>
+            </div>
+            <div class="download-feature">
+              <i data-lucide="bell"></i>
+              <span>Real-time updates</span>
+            </div>
+            <div class="download-feature">
+              <i data-lucide="gift"></i>
+              <span>Exclusive offers</span>
+            </div>
+          </div>
+
+          <div class="download-buttons">
+            <a href="#" class="app-store-btn google-play">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                alt="Google Play">
+            </a>
+            <a href="#" class="app-store-btn app-store">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+                alt="App Store">
+            </a>
+          </div>
+
+          <p class="coming-soon-text">
+            <i data-lucide="clock"></i>
+            Coming Soon! Get notified when we launch.
+          </p>
+
+          <!-- Email Signup -->
+          <form class="notify-form"
+            onsubmit="event.preventDefault(); showNotification('success', 'You will be notified when we launch!');">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn-primary">
+              <i data-lucide="bell"></i>
+              Notify Me
+            </button>
+          </form>
+        </div>
+
+        <div class="download-visual" data-aos="fade-left">
+          <div class="phone-mockup">
+            <div class="phone-frame">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <img src="/logo.png" alt="GRIHGO" class="app-logo">
+                <div class="app-preview">
+                  <div class="preview-header">
+                    <span class="preview-greeting">Hello, Foodie! 👋</span>
+                    <span class="preview-location"><i data-lucide="map-pin"></i> Patna</span>
+                  </div>
+                  <div class="preview-search">
+                    <i data-lucide="search"></i>
+                    <span>Search for food...</span>
+                  </div>
+                  <div class="preview-categories">
+                    <div class="preview-cat">🍕</div>
+                    <div class="preview-cat">🍔</div>
+                    <div class="preview-cat">🍜</div>
+                    <div class="preview-cat">🍱</div>
+                  </div>
+                  <div class="preview-card">
+                    <div class="preview-card-img"></div>
+                    <div class="preview-card-info">
+                      <span class="preview-card-name">Biryani House</span>
+                      <span class="preview-card-rating">⭐ 4.5</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Floating Elements around phone -->
+            <div class="phone-float float-1">🍕</div>
+            <div class="phone-float float-2">🍔</div>
+            <div class="phone-float float-3">⭐</div>
+            <div class="phone-float float-4">❤️</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section faq-section" id="faq">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <span class="section-tag">
+          <i data-lucide="help-circle"></i>
+          FAQs
+        </span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Got questions? We've got answers!</p>
+      </div>
+
+      <div class="faq-wrapper" data-aos="fade-up" data-aos-delay="100">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What cities is GrihGO available in?</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>GrihGO is currently launching in major cities across Bihar and Jharkhand including Patna, Ranchi,
+              Jamshedpur, Muzaffarpur, Darbhanga, Gaya, Bhagalpur, and Dhanbad. Vote for your city to help us prioritize
+              our expansion!</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Are there really no hidden charges?</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely! We believe in complete transparency. You'll never see platform fees, surge pricing, or hidden
+              packaging charges. The price you see on the menu is what you pay, plus a flat delivery fee. No surprises!
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How can I become a restaurant partner?</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>It's easy! Visit our <a href="/partner.html">Partner With Us</a> page and fill out the registration form.
+              Our team will contact you within 24-48 hours. New partners get zero commission for the first 3 months!</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How much can I earn as a delivery partner?</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Our delivery partners earn between ₹15,000 - ₹25,000 per month depending on hours worked. We offer weekly
+              payments, incentives, bonuses, and insurance coverage. Be your own boss with flexible hours!</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>When will the app be available?</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Our app is coming soon! Sign up for notifications and you'll be the first to know when we launch. Early
+              users will get ₹100 off their first order with code GRIHGO100!</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What payment methods do you accept?</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>We accept all major payment methods including UPI (Google Pay, PhonePe, Paytm), credit/debit cards, net
+              banking, and cash on delivery. Choose what works best for you!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-cta text-center" data-aos="fade-up">
+        <p>Still have questions?</p>
+        <a href="/contact.html" class="btn btn-outline">
+          <i data-lucide="message-circle"></i>
+          Contact Support
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="section newsletter-section">
+    <div class="container">
+      <div class="newsletter-wrapper" data-aos="zoom-in">
+        <div class="newsletter-content">
+          <div class="newsletter-icon">
+            <i data-lucide="mail"></i>
+          </div>
+          <h3>Stay in the loop!</h3>
+          <p>Subscribe for exclusive offers, new restaurant updates, and launch notifications.</p>
+        </div>
+        <form class="newsletter-form"
+          onsubmit="event.preventDefault(); showNotification('success', 'Thanks for subscribing!');">
+          <div class="input-group">
+            <i data-lucide="mail" class="input-icon"></i>
+            <input type="email" placeholder="Enter your email address" required>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            Subscribe
+            <i data-lucide="arrow-right"></i>
+          </button>
+        </form>
+        <p class="newsletter-note">
+          <i data-lucide="shield-check"></i>
+          No spam, unsubscribe anytime. We respect your privacy.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- Footer Top Wave -->
+    <div class="footer-wave">
+      <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M0 50L48 45.8C96 41.7 192 33.3 288 29.2C384 25 480 25 576 33.3C672 41.7 768 58.3 864 62.5C960 66.7 1056 58.3 1152 50C1248 41.7 1344 33.3 1392 29.2L1440 25V100H1392C1344 100 1248 100 1152 100C1056 100 960 100 864 100C768 100 672 100 576 100C480 100 384 100 288 100C192 100 96 100 48 100H0V50Z"
+          fill="currentColor" />
+      </svg>
+    </div>
+
+    <!-- Main Footer -->
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Brand Column -->
+          <div class="footer-brand" data-aos="fade-up">
+            <a href="/" class="footer-logo">
+              <img src="/logo.png" alt="GRIHGO">
+            </a>
+            <p class="footer-tagline">Bihar & Jharkhand ka apna food delivery app. Fresh food. Fair prices. Local love.
+            </p>
+            <div class="footer-social">
+              <a href="#" class="social-link" aria-label="Instagram">
+                <i data-lucide="instagram"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter">
+                <i data-lucide="twitter"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Facebook">
+                <i data-lucide="facebook"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <i data-lucide="linkedin"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="YouTube">
+                <i data-lucide="youtube"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-links" data-aos="fade-up" data-aos-delay="100">
+            <h4 class="footer-title">For Customers</h4>
+            <ul>
+              <li><a href="/restaurants.html"><i data-lucide="chevron-right"></i> Browse Restaurants</a></li>
+              <li><a href="/cities.html"><i data-lucide="chevron-right"></i> Cities</a></li>
+              <li><a href="#download"><i data-lucide="chevron-right"></i> Download App</a></li>
+              <li><a href="/transparency.html"><i data-lucide="chevron-right"></i> Price Transparency</a></li>
+              <li><a href="/pride.html"><i data-lucide="chevron-right"></i> Local Pride</a></li>
+            </ul>
+          </div>
+
+          <!-- Business Links -->
+          <div class="footer-links" data-aos="fade-up" data-aos-delay="150">
+            <h4 class="footer-title">For Businesses</h4>
+            <ul>
+              <li><a href="/partner.html"><i data-lucide="chevron-right"></i> Partner With Us</a></li>
+              <li><a href="/delivery.html"><i data-lucide="chevron-right"></i> Become Delivery Partner</a></li>
+              <li><a href="/blog.html"><i data-lucide="chevron-right"></i> Restaurant Resources</a></li>
+              <li><a href="/business.html"><i data-lucide="chevron-right"></i> Business Dashboard</a></li>
+            </ul>
+          </div>
+
+          <!-- Company Links -->
+          <div class="footer-links" data-aos="fade-up" data-aos-delay="200">
+            <h4 class="footer-title">Company</h4>
+            <ul>
+              <li><a href="/about.html"><i data-lucide="chevron-right"></i> About Us</a></li>
+              <li><a href="/careers.html"><i data-lucide="chevron-right"></i> Careers <span
+                    class="badge-hiring">Hiring!</span></a></li>
+              <li><a href="/blog.html"><i data-lucide="chevron-right"></i> Blog</a></li>
+              <li><a href="/contact.html"><i data-lucide="chevron-right"></i> Contact</a></li>
+              <li><a href="/press.html"><i data-lucide="chevron-right"></i> Press Kit</a></li>
+            </ul>
+          </div>
+
+          <!-- App Download -->
+          <div class="footer-app" data-aos="fade-up" data-aos-delay="250">
+            <h4 class="footer-title">Get the App</h4>
+            <a href="#" class="app-download-btn">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                alt="Google Play">
+            </a>
+            <a href="#" class="app-download-btn">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+                alt="App Store">
+            </a>
+            <p class="coming-soon">Coming Soon!</p>
+
+            <!-- Contact Info -->
+            <div class="footer-contact">
+              <a href="mailto:hello@grihgo.com" class="contact-item">
+                <i data-lucide="mail"></i>
+                hello@grihgo.com
+              </a>
+              <a href="tel:+919876543210" class="contact-item">
+                <i data-lucide="phone"></i>
+                +91 98765 43210
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-content">
+          <div class="footer-copyright">
+            <p>© 2024 GrihGO. All rights reserved.</p>
+          </div>
+
+          <div class="footer-legal">
+            <a href="/privacy.html">Privacy Policy</a>
+            <span class="separator">•</span>
+            <a href="/terms.html">Terms of Service</a>
+            <span class="separator">•</span>
+            <a href="/refund.html">Refund Policy</a>
+          </div>
+
+          <div class="footer-badge">
+            <span>Made with</span>
+            <i data-lucide="heart" class="heart-icon"></i>
+            <span>in Bihar</span>
+            <img src="https://flagcdn.com/w20/in.png" alt="India" class="flag-icon">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Bottom Navigation -->
+  <nav class="mobile-bottom-nav" id="mobile-bottom-nav">
+    <a href="/" class="nav-item active">
+      <i data-lucide="home"></i>
+      <span>Home</span>
+    </a>
+    <a href="/restaurants.html" class="nav-item">
+      <i data-lucide="utensils"></i>
+      <span>Food</span>
+    </a>
+    <a href="#" class="nav-item nav-item-center" id="search-trigger">
+      <div class="nav-item-icon">
+        <i data-lucide="search"></i>
+      </div>
+    </a>
+    <a href="/cities.html" class="nav-item">
+      <i data-lucide="map-pin"></i>
+      <span>Cities</span>
+    </a>
+    <a href="/contact.html" class="nav-item">
+      <i data-lucide="user"></i>
+      <span>Account</span>
+    </a>
+  </nav>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i data-lucide="chevron-up"></i>
+  </button>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="module" src="/src/main.js"></script>
+
+
+</body>
+
+</html>

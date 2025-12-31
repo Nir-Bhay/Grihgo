@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="GrihGO Blog - Food stories, restaurant spotlights, delivery partner journeys, and updates from Bihar & Jharkhand.">
+    <meta name="keywords" content="GrihGO blog, Bihar food stories, Jharkhand restaurants, food delivery news">
+    <title>Blog - Stories & Updates | GrihGO</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/src/css/global.css">
+    <link rel="stylesheet" href="/src/css/header.css">
+    <link rel="stylesheet" href="/src/css/blog.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-logo-link">
+                <img src="/logo.png" alt="GrihGO" class="navbar-logo">
+            </a>
+            <div class="navbar-menu" id="navbar-menu">
+                <a href="/about.html" class="navbar-link">About</a>
+                <a href="/cities.html" class="navbar-link">Cities</a>
+                <a href="/restaurants.html" class="navbar-link">Restaurants</a>
+                <div class="navbar-dropdown">
+                    <a href="#" class="navbar-link navbar-dropdown-toggle">
+                        Explore
+                        <i data-lucide="chevron-down" class="icon-xs"></i>
+                    </a>
+                    <div class="navbar-dropdown-menu">
+                        <a href="/blog.html" class="dropdown-item active">
+                            <i data-lucide="book-open" class="icon-sm"></i>
+                            <div>
+                                <span class="dropdown-title">Blog</span>
+                                <span class="dropdown-desc">Stories & updates</span>
+                            </div>
+                        </a>
+                        <a href="/delivery.html" class="dropdown-item">
+                            <i data-lucide="bike" class="icon-sm"></i>
+                            <div>
+                                <span class="dropdown-title">Delivery Partners</span>
+                                <span class="dropdown-desc">Earn with GrihGO</span>
+                            </div>
+                        </a>
+                        <a href="/transparency.html" class="dropdown-item">
+                            <i data-lucide="shield-check" class="icon-sm"></i>
+                            <div>
+                                <span class="dropdown-title">Transparency</span>
+                                <span class="dropdown-desc">Zero hidden charges</span>
+                            </div>
+                        </a>
+                        <a href="/pride.html" class="dropdown-item">
+                            <i data-lucide="heart" class="icon-sm"></i>
+                            <div>
+                                <span class="dropdown-title">Local Pride</span>
+                                <span class="dropdown-desc">ई हमर है!</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a href="/partner.html" class="navbar-link">Partner With Us</a>
+                <a href="/careers.html" class="navbar-link">Careers</a>
+                <a href="/contact.html" class="navbar-link">Help</a>
+                <a href="/#download" class="btn btn-primary btn-sm navbar-cta">
+                    <i data-lucide="download" class="icon-sm"></i>
+                    Download App
+                </a>
+            </div>
+            <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <img src="/logo.png" alt="GrihGO" class="mobile-menu-logo">
+            <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <div class="mobile-menu-content">
+            <a href="/" class="mobile-menu-link">
+                <i data-lucide="home"></i>
+                Home
+            </a>
+            <a href="/about.html" class="mobile-menu-link">
+                <i data-lucide="info"></i>
+                About
+            </a>
+            <a href="/cities.html" class="mobile-menu-link">
+                <i data-lucide="map"></i>
+                Cities
+            </a>
+            <a href="/restaurants.html" class="mobile-menu-link">
+                <i data-lucide="utensils"></i>
+                Restaurants
+            </a>
+            <a href="/blog.html" class="mobile-menu-link active">
+                <i data-lucide="book-open"></i>
+                Blog
+            </a>
+            <a href="/partner.html" class="mobile-menu-link">
+                <i data-lucide="handshake"></i>
+                Partner With Us
+            </a>
+            <a href="/delivery.html" class="mobile-menu-link">
+                <i data-lucide="bike"></i>
+                Delivery Partners
+            </a>
+            <a href="/transparency.html" class="mobile-menu-link">
+                <i data-lucide="shield-check"></i>
+                Transparency
+            </a>
+            <a href="/pride.html" class="mobile-menu-link">
+                <i data-lucide="heart"></i>
+                Local Pride
+            </a>
+            <a href="/careers.html" class="mobile-menu-link">
+                <i data-lucide="briefcase"></i>
+                Careers
+            </a>
+            <a href="/contact.html" class="mobile-menu-link">
+                <i data-lucide="headphones"></i>
+                Help
+            </a>
+        </div>
+        <div class="mobile-menu-footer">
+            <a href="/#download" class="btn btn-primary btn-lg" style="width: 100%;">
+                <i data-lucide="download"></i>
+                Download App
+            </a>
+        </div>
+    </div>
+
+    <!-- Blog Hero Section -->
+    <header class="blog-hero">
+        <!-- Floating Elements -->
+        <div class="floating-elements">
+            <span class="floating-element" style="top: 15%; left: 8%;">📝</span>
+            <span class="floating-element" style="top: 25%; right: 12%;">📰</span>
+            <span class="floating-element" style="top: 60%; left: 5%;">✍️</span>
+            <span class="floating-element" style="top: 70%; right: 8%;">🍛</span>
+            <span class="floating-element" style="top: 40%; left: 15%;">📖</span>
+            <span class="floating-element" style="top: 80%; left: 20%;">🍜</span>
+            <span class="floating-element" style="top: 20%; right: 25%;">💡</span>
+            <span class="floating-element" style="top: 55%; right: 18%;">🎯</span>
+        </div>
+
+        <!-- Background Pattern -->
+        <div class="hero-pattern"></div>
+
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb" data-aos="fade-down" data-aos-delay="100">
+                <a href="/" class="breadcrumb-link">
+                    <i data-lucide="home" class="breadcrumb-icon"></i>
+                    Home
+                </a>
+                <i data-lucide="chevron-right" class="breadcrumb-separator"></i>
+                <span class="breadcrumb-current">Blog</span>
+            </nav>
+
+            <!-- Hero Badge -->
+            <div class="hero-badge" data-aos="fade-up" data-aos-delay="200">
+                <i data-lucide="newspaper"></i>
+                <span>Stories & Updates</span>
+            </div>
+
+            <!-- Hero Title -->
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="300">
+                Stories from <span class="text-gradient">GrihGO</span>
+            </h1>
+
+            <!-- Hero Subtitle -->
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="400">
+                Food stories, partner spotlights, delivery journeys, and company updates from Bihar & Jharkhand's
+                favorite food delivery platform
+            </p>
+
+            <!-- Hero Stats -->
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="500">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i data-lucide="file-text"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Stories</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Readers</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i data-lucide="heart"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number">25+</span>
+                        <span class="stat-label">Partner Stories</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="hero-search" data-aos="fade-up" data-aos-delay="600">
+                <div class="search-container">
+                    <i data-lucide="search" class="search-icon"></i>
+                    <input type="text" class="search-input" placeholder="Search stories, topics, or categories...">
+                    <button class="search-btn">
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Wave -->
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="white" />
+            </svg>
+        </div>
+    </header>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-wrapper">
+                <!-- Category Filters -->
+                <div class="filter-pills" data-aos="fade-up">
+                    <button class="filter-pill active" data-filter="all">
+                        <i data-lucide="grid-3x3"></i>
+                        <span>All Stories</span>
+                        <span class="pill-count">24</span>
+                    </button>
+                    <button class="filter-pill" data-filter="food">
+                        <i data-lucide="utensils"></i>
+                        <span>Food Stories</span>
+                        <span class="pill-count">8</span>
+                    </button>
+                    <button class="filter-pill" data-filter="partner">
+                        <i data-lucide="store"></i>
+                        <span>Partner Stories</span>
+                        <span class="pill-count">6</span>
+                    </button>
+                    <button class="filter-pill" data-filter="delivery">
+                        <i data-lucide="bike"></i>
+                        <span>Delivery Heroes</span>
+                        <span class="pill-count">5</span>
+                    </button>
+                    <button class="filter-pill" data-filter="updates">
+                        <i data-lucide="megaphone"></i>
+                        <span>Company Updates</span>
+                        <span class="pill-count">5</span>
+                    </button>
+                </div>
+
+                <!-- Sort Dropdown -->
+                <div class="filter-sort" data-aos="fade-up" data-aos-delay="100">
+                    <label for="sort-select">Sort by:</label>
+                    <select id="sort-select" class="sort-select">
+                        <option value="newest">Newest First</option>
+                        <option value="oldest">Oldest First</option>
+                        <option value="popular">Most Popular</option>
+                        <option value="reading">Reading Time</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article Section -->
+    <section class="section featured-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-tag">
+                    <i data-lucide="star"></i>
+                    <span>Featured Story</span>
+                </div>
+                <h2 class="section-title">Editor's Pick</h2>
+            </div>
+
+            <article class="featured-article" data-aos="fade-up" data-aos-delay="100">
+                <div class="featured-image">
+                    <img src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40?w=800"
+                        alt="Litti Chokha - Bihar's Soul Food" loading="lazy">
+                    <div class="featured-overlay"></div>
+                    <span class="featured-badge">
+                        <i data-lucide="flame"></i>
+                        Featured
+                    </span>
+                </div>
+                <div class="featured-content">
+                    <div class="featured-meta">
+                        <span class="category-tag food">
+                            <i data-lucide="utensils"></i>
+                            Food Story
+                        </span>
+                        <span class="meta-divider">•</span>
+                        <span class="meta-item">
+                            <i data-lucide="calendar"></i>
+                            December 28, 2024
+                        </span>
+                        <span class="meta-divider">•</span>
+                        <span class="meta-item">
+                            <i data-lucide="clock"></i>
+                            8 min read
+                        </span>
+                    </div>
+                    <h2 class="featured-title">
+                        The Litti-Chokha Trail: Exploring Bihar's Soul Food
+                    </h2>
+                    <p class="featured-excerpt">
+                        A journey through the authentic flavors of Bihar's most beloved dish, from bustling street
+                        corners of Patna to traditional family kitchens in rural villages. Discover the history, the
+                        passion, and the people keeping this culinary heritage alive.
+                    </p>
+                    <div class="featured-author">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100" alt="Author"
+                            class="author-avatar">
+                        <div class="author-info">
+                            <span class="author-name">Priya Sharma</span>
+                            <span class="author-role">Food Editor</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary featured-btn">
+                        <span>Read Full Story</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Blog Grid Section -->
+    <section class="section blog-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-tag">
+                    <i data-lucide="layout-grid"></i>
+                    <span>Latest Stories</span>
+                </div>
+                <h2 class="section-title">All Blog Posts</h2>
+                <p class="section-subtitle">
+                    Discover stories from our community of restaurants, delivery partners, and food lovers
+                </p>
+            </div>
+
+            <div class="blog-grid">
+                <!-- Article 1 -->
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="100" data-category="partner">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=500"
+                            alt="Sharma Ji's Dhaba" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="card-bookmark" aria-label="Bookmark">
+                                <i data-lucide="bookmark"></i>
+                            </button>
+                        </div>
+                        <span class="card-category partner">
+                            <i data-lucide="store"></i>
+                            Partner Story
+                        </span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="meta-item">
+                                <i data-lucide="calendar"></i>
+                                Dec 25, 2024
+                            </span>
+                            <span class="meta-item">
+                                <i data-lucide="clock"></i>
+                                5 min read
+                            </span>
+                        </div>
+                        <h3 class="card-title">
+                            <a href="#">How Sharma Ji's Dhaba Tripled Sales with GrihGO</a>
+                        </h3>
+                        <p class="card-excerpt">
+                            From 20 daily orders to 60+ — the inspiring story of a small dhaba's digital transformation
+                            and newfound success.
+                        </p>
+                        <div class="card-footer">
+                            <div class="card-author">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50"
+                                    alt="Author">
+                                <span>Amit Kumar</span>
+                            </div>
+                            <a href="#" class="card-link">
+                                Read More
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="150" data-category="delivery">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500"
+                            alt="Delivery Partner Rajesh" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="card-bookmark" aria-label="Bookmark">
+                                <i data-lucide="bookmark"></i>
+                            </button>
+                        </div>
+                        <span class="card-category delivery">
+                            <i data-lucide="bike"></i>
+                            Delivery Hero
+                        </span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="meta-item">
+                                <i data-lucide="calendar"></i>
+                                Dec 22, 2024
+                            </span>
+                            <span class="meta-item">
+                                <i data-lucide="clock"></i>
+                                4 min read
+                            </span>
+                        </div>
+                        <h3 class="card-title">
+                            <a href="#">Meet Rajesh: From Unemployed to Top Delivery Partner</a>
+                        </h3>
+                        <p class="card-excerpt">
+                            How one young man from Muzaffarpur found purpose, stability, and a path to success with
+                            GrihGO.
+                        </p>
+                        <div class="card-footer">
+                            <div class="card-author">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=50"
+                                    alt="Author">
+                                <span>Rahul Verma</span>
+                            </div>
+                            <a href="#" class="card-link">
+                                Read More
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="200" data-category="food">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=500" alt="Mithila Sweets"
+                            loading="lazy">
+                        <div class="card-overlay">
+                            <button class="card-bookmark" aria-label="Bookmark">
+                                <i data-lucide="bookmark"></i>
+                            </button>
+                        </div>
+                        <span class="card-category food">
+                            <i data-lucide="utensils"></i>
+                            Food Story
+                        </span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="meta-item">
+                                <i data-lucide="calendar"></i>
+                                Dec 18, 2024
+                            </span>
+                            <span class="meta-item">
+                                <i data-lucide="clock"></i>
+                                6 min read
+                            </span>
+                        </div>
+                        <h3 class="card-title">
+                            <a href="#">Mithila's Sweet Heritage: Beyond Just Desserts</a>
+                        </h3>
+                        <p class="card-excerpt">
+                            Exploring the rich tradition of Mithila sweets and the families keeping centuries-old
+                            recipes alive.
+                        </p>
+                        <div class="card-footer">
+                            <div class="card-author">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50"
+                                    alt="Author">
+                                <span>Sneha Jha</span>
+                            </div>
+                            <a href="#" class="card-link">
+                                Read More
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="100" data-category="updates">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
+                            alt="GrihGO Tech Stack" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="card-bookmark" aria-label="Bookmark">
+                                <i data-lucide="bookmark"></i>
+                            </button>
+                        </div>
+                        <span class="card-category updates">
+                            <i data-lucide="megaphone"></i>
+                            Company Update
+                        </span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="meta-item">
+                                <i data-lucide="calendar"></i>
+                                Dec 15, 2024
+                            </span>
+                            <span class="meta-item">
+                                <i data-lucide="clock"></i>
+                                7 min read
+                            </span>
+                        </div>
+                        <h3 class="card-title">
+                            <a href="#">Behind the Scenes: Building GrihGO's Tech Stack</a>
+                        </h3>
+                        <p class="card-excerpt">
+                            An inside look at how we built a scalable, reliable platform for local food delivery in
+                            Bihar & Jharkhand.
+                        </p>
+                        <div class="card-footer">
+                            <div class="card-author">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50"
+                                    alt="Author">
+                                <span>Dev Team</span>
+                            </div>
+                            <a href="#" class="card-link">
+                                Read More
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="150" data-category="food">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=500"
+                            alt="Street Food Patna" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="card-bookmark" aria-label="Bookmark">
+                                <i data-lucide="bookmark"></i>
+                            </button>
+                        </div>
+                        <span class="card-category food">
+                            <i data-lucide="utensils"></i>
+                            Food Story
+                        </span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="meta-item">
+                                <i data-lucide="calendar"></i>
+                                Dec 10, 2024
+                            </span>
+                            <span class="meta-item">
+                                <i data-lucide="clock"></i>
+                                5 min read
+                            </span>
+                        </div>
+                        <h3 class="card-title">
+                            <a href="#">Street Food Gems: Hidden Stalls of Patna</a>
+                        </h3>
+                        <p class="card-excerpt">
+                            Our curated guide to the best street food finds in Bihar's capital — from golgappas to
+                            kebabs.
+                        </p>
+                        <div class="card-footer">
+                            <div class="card-author">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50"
+                                    alt="Author">
+                                <span>Food Team</span>
+                            </div>
+                            <a href="#" class="card-link">
+                                Read More
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="200" data-category="partner">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=500"
+                            alt="Chinese Corner Restaurant" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="card-bookmark" aria-label="Bookmark">
+                                <i data-lucide="bookmark"></i>
+                            </button>
+                        </div>
+                        <span class="card-category partner">
+                            <i data-lucide="store"></i>
+                            Partner Story
+                        </span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="meta-item">
+                                <i data-lucide="calendar"></i>
+                                Dec 5, 2024
+                            </span>
+                            <span class="meta-item">
+                                <i data-lucide="clock"></i>
+                                4 min read
+                            </span>
+                        </div>
+                        <h3 class="card-title">
+                            <a href="#">Local Restaurant, Global Dreams: Chinese Corner's Story</a>
+                        </h3>
+                        <p class="card-excerpt">
+                            How a family-run Chinese restaurant in Ranchi embraced digital ordering and expanded their
+                            reach.
+                        </p>
+                        <div class="card-footer">
+                            <div class="card-author">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50"
+                                    alt="Author">
+                                <span>Priya Singh</span>
+                            </div>
+                            <a href="#" class="card-link">
+                                Read More
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 7 -->
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="100" data-category="delivery">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1543269664-56d93c1b41a6?w=500"
+                            alt="Women Delivery Partners" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="card-bookmark" aria-label="Bookmark">
+                                <i data-lucide="bookmark"></i>
+                            </button>
+                        </div>
+                        <span class="card-category delivery">
+                            <i data-lucide="bike"></i>
+                            Delivery Hero
+                        </span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="meta-item">
+                                <i data-lucide="calendar"></i>
+                                Dec 1, 2024
+                            </span>
+                            <span class="meta-item">
+                                <i data-lucide="clock"></i>
+                                6 min read
+                            </span>
+                        </div>
+                        <h3 class="card-title">
+                            <a href="#">Breaking Barriers: Women Delivery Partners in Bihar</a>
+                        </h3>
+                        <p class="card-excerpt">
+                            Meet the inspiring women who are redefining delivery roles and earning respect on the
+                            streets.
+                        </p>
+                        <div class="card-footer">
+                            <div class="card-author">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=50"
+                                    alt="Author">
+                                <span>Anjali Kumari</span>
+                            </div>
+                            <a href="#" class="card-link">
+                                Read More
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 8 -->
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="150" data-category="updates">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=500"
+                            alt="GrihGO Expansion" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="card-bookmark" aria-label="Bookmark">
+                                <i data-lucide="bookmark"></i>
+                            </button>
+                        </div>
+                        <span class="card-category updates">
+                            <i data-lucide="megaphone"></i>
+                            Company Update
+                        </span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="meta-item">
+                                <i data-lucide="calendar"></i>
+                                Nov 28, 2024
+                            </span>
+                            <span class="meta-item">
+                                <i data-lucide="clock"></i>
+                                3 min read
+                            </span>
+                        </div>
+                        <h3 class="card-title">
+                            <a href="#">GrihGO Expands to 5 New Cities in Jharkhand</a>
+                        </h3>
+                        <p class="card-excerpt">
+                            Announcing our expansion to Dhanbad, Bokaro, Hazaribagh, Deoghar, and Giridih.
+                        </p>
+                        <div class="card-footer">
+                            <div class="card-author">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50"
+                                    alt="Author">
+                                <span>GrihGO Team</span>
+                            </div>
+                            <a href="#" class="card-link">
+                                Read More
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 9 -->
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="200" data-category="food">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=500" alt="Bihari Thali"
+                            loading="lazy">
+                        <div class="card-overlay">
+                            <button class="card-bookmark" aria-label="Bookmark">
+                                <i data-lucide="bookmark"></i>
+                            </button>
+                        </div>
+                        <span class="card-category food">
+                            <i data-lucide="utensils"></i>
+                            Food Story
+                        </span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="meta-item">
+                                <i data-lucide="calendar"></i>
+                                Nov 25, 2024
+                            </span>
+                            <span class="meta-item">
+                                <i data-lucide="clock"></i>
+                                7 min read
+                            </span>
+                        </div>
+                        <h3 class="card-title">
+                            <a href="#">The Perfect Bihari Thali: A Complete Guide</a>
+                        </h3>
+                        <p class="card-excerpt">
+                            Everything you need to know about assembling the perfect traditional Bihari thali at home.
+                        </p>
+                        <div class="card-footer">
+                            <div class="card-author">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50"
+                                    alt="Author">
+                                <span>Chef Rekha</span>
+                            </div>
+                            <a href="#" class="card-link">
+                                Read More
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Load More -->
+            <div class="load-more" data-aos="fade-up">
+                <button class="btn btn-outline btn-lg load-more-btn">
+                    <i data-lucide="plus"></i>
+                    <span>Load More Stories</span>
+                </button>
+                <p class="load-more-text">Showing 9 of 24 stories</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="section categories-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-tag">
+                    <i data-lucide="folder"></i>
+                    <span>Browse by Category</span>
+                </div>
+                <h2 class="section-title">Explore Topics</h2>
+            </div>
+
+            <div class="categories-grid">
+                <a href="#" class="category-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-icon food-icon">
+                        <i data-lucide="utensils"></i>
+                    </div>
+                    <div class="category-info">
+                        <h3>Food Stories</h3>
+                        <p>Culinary journeys & recipes</p>
+                    </div>
+                    <span class="category-count">8 articles</span>
+                    <i data-lucide="arrow-right" class="category-arrow"></i>
+                </a>
+
+                <a href="#" class="category-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="category-icon partner-icon">
+                        <i data-lucide="store"></i>
+                    </div>
+                    <div class="category-info">
+                        <h3>Partner Stories</h3>
+                        <p>Restaurant success stories</p>
+                    </div>
+                    <span class="category-count">6 articles</span>
+                    <i data-lucide="arrow-right" class="category-arrow"></i>
+                </a>
+
+                <a href="#" class="category-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-icon delivery-icon">
+                        <i data-lucide="bike"></i>
+                    </div>
+                    <div class="category-info">
+                        <h3>Delivery Heroes</h3>
+                        <p>Partner journeys & tips</p>
+                    </div>
+                    <span class="category-count">5 articles</span>
+                    <i data-lucide="arrow-right" class="category-arrow"></i>
+                </a>
+
+                <a href="#" class="category-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="category-icon updates-icon">
+                        <i data-lucide="megaphone"></i>
+                    </div>
+                    <div class="category-info">
+                        <h3>Company Updates</h3>
+                        <p>News & announcements</p>
+                    </div>
+                    <span class="category-count">5 articles</span>
+                    <i data-lucide="arrow-right" class="category-arrow"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section newsletter-section">
+        <div class="container">
+            <div class="newsletter-card" data-aos="fade-up">
+                <div class="newsletter-bg">
+                    <div class="newsletter-pattern"></div>
+                </div>
+                <div class="newsletter-content">
+                    <div class="newsletter-icon">
+                        <i data-lucide="mail"></i>
+                    </div>
+                    <h2 class="newsletter-title">Stay Updated</h2>
+                    <p class="newsletter-subtitle">
+                        Get the latest food stories, partner spotlights, and company updates delivered straight to your
+                        inbox. No spam, just great content!
+                    </p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" placeholder="Enter your email address" required>
+                            <button type="submit" class="btn btn-white">
+                                <span>Subscribe</span>
+                                <i data-lucide="send"></i>
+                            </button>
+                        </div>
+                        <p class="newsletter-note">
+                            <i data-lucide="shield-check"></i>
+                            We respect your privacy. Unsubscribe anytime.
+                        </p>
+                    </form>
+                    <div class="newsletter-stats">
+                        <div class="stat">
+                            <strong>5,000+</strong>
+                            <span>Subscribers</span>
+                        </div>
+                        <div class="stat">
+                            <strong>Weekly</strong>
+                            <span>Newsletter</span>
+                        </div>
+                        <div class="stat">
+                            <strong>100%</strong>
+                            <span>Free</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Write for Us CTA -->
+    <section class="section write-section">
+        <div class="container">
+            <div class="write-card" data-aos="fade-up">
+                <div class="write-content">
+                    <div class="write-badge">
+                        <i data-lucide="pen-tool"></i>
+                        <span>Become a Contributor</span>
+                    </div>
+                    <h2>Have a Story to Share?</h2>
+                    <p>
+                        We're always looking for passionate writers to share food stories, restaurant experiences, and
+                        delivery journeys from Bihar & Jharkhand. Join our community of contributors!
+                    </p>
+                    <div class="write-benefits">
+                        <div class="benefit">
+                            <i data-lucide="check-circle"></i>
+                            <span>Get published on our platform</span>
+                        </div>
+                        <div class="benefit">
+                            <i data-lucide="check-circle"></i>
+                            <span>Reach 10,000+ monthly readers</span>
+                        </div>
+                        <div class="benefit">
+                            <i data-lucide="check-circle"></i>
+                            <span>Build your writing portfolio</span>
+                        </div>
+                    </div>
+                    <a href="/contact.html" class="btn btn-primary btn-lg">
+                        <i data-lucide="send"></i>
+                        <span>Submit Your Story</span>
+                    </a>
+                </div>
+                <div class="write-image">
+                    <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=500" alt="Write for us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-enhanced">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0,60 C360,0 1080,120 1440,60 L1440,120 L0,120 Z" fill="currentColor" />
+            </svg>
+        </div>
+
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid-5">
+                    <!-- Brand Column -->
+                    <div class="footer-brand">
+                        <img src="/logo.png" alt="GrihGO" class="footer-logo">
+                        <p>Bihar & Jharkhand ka apna food delivery app. Fresh food. Fair prices. Local love.</p>
+                        <div class="footer-social">
+                            <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                            <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                            <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                            <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- For Customers -->
+                    <div class="footer-links">
+                        <h4 class="footer-title">For Customers</h4>
+                        <a href="/restaurants.html" class="footer-link">Browse Restaurants</a>
+                        <a href="/cities.html" class="footer-link">Cities We Serve</a>
+                        <a href="/#download" class="footer-link">Download App</a>
+                        <a href="/transparency.html" class="footer-link">Price Transparency</a>
+                    </div>
+
+                    <!-- For Businesses -->
+                    <div class="footer-links">
+                        <h4 class="footer-title">For Businesses</h4>
+                        <a href="/partner.html" class="footer-link">Partner With Us</a>
+                        <a href="/delivery.html" class="footer-link">Become Delivery Partner</a>
+                        <a href="/partner.html#benefits" class="footer-link">Partner Benefits</a>
+                    </div>
+
+                    <!-- Company -->
+                    <div class="footer-links">
+                        <h4 class="footer-title">Company</h4>
+                        <a href="/about.html" class="footer-link">About Us</a>
+                        <a href="/careers.html" class="footer-link">Careers</a>
+                        <a href="/blog.html" class="footer-link active">Blog</a>
+                        <a href="/contact.html" class="footer-link">Contact Us</a>
+                    </div>
+
+                    <!-- Download App -->
+                    <div class="footer-app">
+                        <h4 class="footer-title">Get the App</h4>
+                        <a href="#" class="app-badge">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                                alt="Google Play">
+                        </a>
+                        <a href="#" class="app-badge">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+                                alt="App Store">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="footer-legal">
+                        <span>© 2024 GrihGO. All rights reserved.</span>
+                        <a href="/privacy.html">Privacy Policy</a>
+                        <a href="/terms.html">Terms of Service</a>
+                    </div>
+                    <div class="footer-badge">
+                        <span>Made with</span>
+                        <i data-lucide="heart" class="heart-icon"></i>
+                        <span>in Bihar</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-bottom-nav">
+        <a href="/" class="nav-item">
+            <i data-lucide="home"></i>
+            <span>Home</span>
+        </a>
+        <a href="/restaurants.html" class="nav-item">
+            <i data-lucide="utensils"></i>
+            <span>Order</span>
+        </a>
+        <a href="/blog.html" class="nav-item active">
+            <i data-lucide="newspaper"></i>
+            <span>Blog</span>
+        </a>
+        <a href="/contact.html" class="nav-item">
+            <i data-lucide="headphones"></i>
+            <span>Help</span>
+        </a>
+    </nav>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i data-lucide="chevron-up"></i>
+    </button>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Filter functionality
+        const filterPills = document.querySelectorAll('.filter-pill');
+        const blogCards = document.querySelectorAll('.blog-card');
+
+        filterPills.forEach(pill => {
+            pill.addEventListener('click', () => {
+                // Update active state
+                filterPills.forEach(p => p.classList.remove('active'));
+                pill.classList.add('active');
+
+                // Filter cards
+                const filter = pill.dataset.filter;
+                blogCards.forEach(card => {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.style.display = 'block';
+                        card.style.animation = 'fadeInUp 0.5s ease forwards';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Bookmark functionality
+        const bookmarkBtns = document.querySelectorAll('.card-bookmark');
+        bookmarkBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                btn.classList.toggle('active');
+                const icon = btn.querySelector('i');
+                if (btn.classList.contains('active')) {
+                    icon.setAttribute('data-lucide', 'bookmark-check');
+                    showToast('Article bookmarked!', 'success');
+                } else {
+                    icon.setAttribute('data-lucide', 'bookmark');
+                    showToast('Bookmark removed', 'info');
+                }
+                lucide.createIcons();
+            });
+        });
+
+        // Toast notification
+        function showToast(message, type = 'info') {
+            const container = document.getElementById('toastContainer');
+            const toast = document.createElement('div');
+            toast.className = `toast toast-${type}`;
+            toast.innerHTML = `
+                <i data-lucide="${type === 'success' ? 'check-circle' : 'info'}"></i>
+                <span>${message}</span>
+            `;
+            container.appendChild(toast);
+            lucide.createIcons();
+
+            setTimeout(() => {
+                toast.classList.add('toast-hide');
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+
+        // Back to top
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Newsletter form
+        const newsletterForm = document.querySelector('.newsletter-form');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                showToast('Successfully subscribed! 🎉', 'success');
+                newsletterForm.reset();
+            });
+        }
+
+        // Search functionality
+        const searchInput = document.querySelector('.search-input');
+        const searchBtn = document.querySelector('.search-btn');
+
+        if (searchBtn) {
+            searchBtn.addEventListener('click', () => {
+                const query = searchInput.value.trim();
+                if (query) {
+                    showToast(`Searching for: "${query}"`, 'info');
+                }
+            });
+        }
+
+        if (searchInput) {
+            searchInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    const query = searchInput.value.trim();
+                    if (query) {
+                        showToast(`Searching for: "${query}"`, 'info');
+                    }
+                }
+            });
+        }
+    </script>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

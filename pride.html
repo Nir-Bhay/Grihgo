@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="GRIHGO Local Pride - Bihar & Jharkhand ka apna food delivery app. Built here, for here.">
+    <meta name="keywords" content="GrihGO local, Bihar food delivery, Jharkhand restaurants, local pride">
+    <meta name="author" content="GrihGO">
+    <title>Local Pride - GRIHGO | ई हमर है!</title>
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/logo.png">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/src/css/global.css">
+    <link rel="stylesheet" href="/src/css/header.css">
+    <link rel="stylesheet" href="/src/css/pride.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-logo-link">
+                <img src="/logo.png" alt="GRIHGO" class="navbar-logo">
+            </a>
+            <div class="navbar-menu" id="navbar-menu">
+                <a href="/about.html" class="navbar-link">About</a>
+                <a href="/cities.html" class="navbar-link">Cities</a>
+                <a href="/restaurants.html" class="navbar-link">Restaurants</a>
+                <div class="navbar-dropdown">
+                    <a href="#" class="navbar-link navbar-dropdown-toggle active">
+                        Explore
+                        <i data-lucide="chevron-down" class="icon-xs"></i>
+                    </a>
+                    <div class="navbar-dropdown-menu">
+                        <a href="/blog.html" class="dropdown-item">
+                            <i data-lucide="book-open" class="icon-sm"></i>
+                            <div>
+                                <span class="dropdown-title">Blog</span>
+                                <span class="dropdown-desc">Stories & updates</span>
+                            </div>
+                        </a>
+                        <a href="/delivery.html" class="dropdown-item">
+                            <i data-lucide="bike" class="icon-sm"></i>
+                            <div>
+                                <span class="dropdown-title">Delivery Partners</span>
+                                <span class="dropdown-desc">Earn with GrihGO</span>
+                            </div>
+                        </a>
+                        <a href="/transparency.html" class="dropdown-item">
+                            <i data-lucide="shield-check" class="icon-sm"></i>
+                            <div>
+                                <span class="dropdown-title">Transparency</span>
+                                <span class="dropdown-desc">Zero hidden charges</span>
+                            </div>
+                        </a>
+                        <a href="/pride.html" class="dropdown-item active">
+                            <i data-lucide="heart" class="icon-sm"></i>
+                            <div>
+                                <span class="dropdown-title">Local Pride</span>
+                                <span class="dropdown-desc">ई हमर है!</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a href="/partner.html" class="navbar-link">Partner With Us</a>
+                <a href="/careers.html" class="navbar-link">Careers</a>
+                <a href="/contact.html" class="navbar-link">Help</a>
+                <a href="/#download" class="btn btn-primary btn-sm navbar-cta">
+                    <i data-lucide="download" class="icon-sm"></i>
+                    Download App
+                </a>
+            </div>
+            <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <img src="/logo.png" alt="GrihGO" class="mobile-menu-logo">
+            <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <div class="mobile-menu-content">
+            <a href="/" class="mobile-menu-link">
+                <i data-lucide="home"></i>
+                Home
+            </a>
+            <a href="/about.html" class="mobile-menu-link">
+                <i data-lucide="info"></i>
+                About
+            </a>
+            <a href="/cities.html" class="mobile-menu-link">
+                <i data-lucide="map"></i>
+                Cities
+            </a>
+            <a href="/restaurants.html" class="mobile-menu-link">
+                <i data-lucide="utensils"></i>
+                Restaurants
+            </a>
+            <a href="/blog.html" class="mobile-menu-link">
+                <i data-lucide="book-open"></i>
+                Blog
+            </a>
+            <a href="/partner.html" class="mobile-menu-link">
+                <i data-lucide="handshake"></i>
+                Partner With Us
+            </a>
+            <a href="/delivery.html" class="mobile-menu-link">
+                <i data-lucide="bike"></i>
+                Delivery Partners
+            </a>
+            <a href="/transparency.html" class="mobile-menu-link">
+                <i data-lucide="shield-check"></i>
+                Transparency
+            </a>
+            <a href="/pride.html" class="mobile-menu-link active">
+                <i data-lucide="heart"></i>
+                Local Pride
+            </a>
+            <a href="/careers.html" class="mobile-menu-link">
+                <i data-lucide="briefcase"></i>
+                Careers
+            </a>
+            <a href="/contact.html" class="mobile-menu-link">
+                <i data-lucide="headphones"></i>
+                Help
+            </a>
+        </div>
+        <div class="mobile-menu-footer">
+            <a href="/#download" class="btn btn-primary btn-lg" style="width: 100%;">
+                <i data-lucide="download"></i>
+                Download App
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="pride-hero">
+        <div class="container">
+            <div class="pride-hero-icon" data-aos="fade-down" data-aos-delay="100">
+                <i data-lucide="sprout"></i>
+            </div>
+            <h1 data-aos="fade-up" data-aos-delay="200">Bihar & Jharkhand ka apna<br>food delivery app</h1>
+            <p class="pride-tagline" data-aos="fade-up" data-aos-delay="300">ई हमर है!</p>
+            <p class="pride-subtitle" data-aos="fade-up" data-aos-delay="400">Built here. For here. By us.</p>
+        </div>
+    </header>
+
+    <!-- Local Impact Stats -->
+    <section class="pride-stats-section">
+        <div class="container">
+            <div class="pride-stats-grid">
+                <div class="pride-stat-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="pride-stat-number" data-count="100">0+</div>
+                    <p class="pride-stat-label">Local Jobs Created</p>
+                </div>
+                <div class="pride-stat-item" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="pride-stat-number" data-count="50">0+</div>
+                    <p class="pride-stat-label">Local Restaurants Supported</p>
+                </div>
+                <div class="pride-stat-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="pride-stat-number" data-count="5">0</div>
+                    <p class="pride-stat-label">Cities Served</p>
+                </div>
+                <div class="pride-stat-item" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="pride-stat-number">₹10L+</div>
+                    <p class="pride-stat-label">Monthly to Local Economy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Local Matters -->
+    <section class="section pride-why-section">
+        <div class="container">
+            <h2 class="pride-section-title" data-aos="fade-up">Why Local Matters</h2>
+
+            <div class="pride-cards-grid">
+                <div class="pride-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pride-card-icon">
+                        <i data-lucide="home"></i>
+                    </div>
+                    <h3>We Understand You</h3>
+                    <p>
+                        We know Bihar and Jharkhand because we're from here. We understand your tastes, your
+                        preferences, and your needs.
+                    </p>
+                </div>
+
+                <div class="pride-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pride-card-icon">
+                        <i data-lucide="trending-up"></i>
+                    </div>
+                    <h3>We Invest Here</h3>
+                    <p>
+                        Every rupee you spend on GrihGO stays in your community — supporting local restaurants and
+                        delivery partners.
+                    </p>
+                </div>
+
+                <div class="pride-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pride-card-icon">
+                        <i data-lucide="languages"></i>
+                    </div>
+                    <h3>We Speak Your Language</h3>
+                    <p>
+                        Hindi support, local customer service, and an app designed for Bihar & Jharkhand. No confusion,
+                        just convenience.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Stories / Testimonials -->
+    <section class="section pride-testimonials-section">
+        <div class="container">
+            <h2 class="pride-section-title" data-aos="fade-up">Voices from Our Community</h2>
+
+            <div class="pride-testimonials-grid">
+                <div class="pride-testimonial" data-aos="fade-up" data-aos-delay="100">
+                    <p class="pride-testimonial-quote">"Before GrihGO, we only served walk-in customers. Now 40% of our orders
+                        come from delivery! Our revenue has increased significantly."</p>
+                    <div class="pride-testimonial-author">
+                        <div class="pride-testimonial-avatar">R</div>
+                        <div>
+                            <p class="pride-testimonial-name">Radha Ji</p>
+                            <p class="pride-testimonial-role">Sharma Bhojanalaya, Darbhanga</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pride-testimonial" data-aos="fade-up" data-aos-delay="200">
+                    <p class="pride-testimonial-quote">"As a delivery partner, I earn ₹18,000/month with flexible hours. पैसा
+                        भी अच्छा, टाइम भी अच्छा! GrihGO changed my life."</p>
+                    <div class="pride-testimonial-author">
+                        <div class="pride-testimonial-avatar">R</div>
+                        <div>
+                            <p class="pride-testimonial-name">Rakesh Kumar</p>
+                            <p class="pride-testimonial-role">Delivery Partner, Muzaffarpur</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pride-testimonial" data-aos="fade-up" data-aos-delay="300">
+                    <p class="pride-testimonial-quote">"Finally a platform that understands small town restaurants. No
+                        complicated pricing, quick payouts, and excellent local support!"</p>
+                    <div class="pride-testimonial-author">
+                        <div class="pride-testimonial-avatar">S</div>
+                        <div>
+                            <p class="pride-testimonial-name">Sunil Kumar</p>
+                            <p class="pride-testimonial-role">Restaurant Owner, Patna</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Commitment -->
+    <section class="section pride-commitment-section">
+        <div class="container">
+            <div class="pride-commitment-grid">
+                <div data-aos="fade-right">
+                    <h2 class="pride-commitment-title">Our Commitment to Bihar & Jharkhand</h2>
+
+                    <div class="pride-commitment-list">
+                        <div class="pride-commitment-item">
+                            <div class="pride-commitment-icon">
+                                <i data-lucide="check"></i>
+                            </div>
+                            <div class="pride-commitment-content">
+                                <h4>Prioritize Local Restaurants</h4>
+                                <p>We actively promote and support local eateries over chains.</p>
+                            </div>
+                        </div>
+
+                        <div class="pride-commitment-item">
+                            <div class="pride-commitment-icon">
+                                <i data-lucide="check"></i>
+                            </div>
+                            <div class="pride-commitment-content">
+                                <h4>Create Local Employment</h4>
+                                <p>Every delivery partner we hire is from the community we serve.</p>
+                            </div>
+                        </div>
+
+                        <div class="pride-commitment-item">
+                            <div class="pride-commitment-icon">
+                                <i data-lucide="check"></i>
+                            </div>
+                            <div class="pride-commitment-content">
+                                <h4>Celebrate Local Cuisine</h4>
+                                <p>From Litti-Chokha to Maithili sweets, we celebrate Bihar's food heritage.</p>
+                            </div>
+                        </div>
+
+                        <div class="pride-commitment-item">
+                            <div class="pride-commitment-icon">
+                                <i data-lucide="check"></i>
+                            </div>
+                            <div class="pride-commitment-content">
+                                <h4>Grow Together</h4>
+                                <p>As we grow, our partners and community grow with us.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left" data-aos-delay="200">
+                    <div class="pride-brand-card">
+                        <img src="/logo.png" alt="GRIHGO" class="pride-brand-logo">
+                        <h3>Made in India</h3>
+                        <p class="pride-brand-tagline">Made for Bihar & Jharkhand</p>
+                        <p class="pride-brand-flag">🇮🇳</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Movement CTA -->
+    <section class="section pride-cta-section">
+        <div class="container">
+            <h2 class="pride-cta-title" data-aos="fade-up">Join the Local Movement</h2>
+            <p class="pride-cta-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Order local. Support local. Be local.
+            </p>
+            <div class="pride-cta-buttons" data-aos="fade-up" data-aos-delay="200">
+                <a href="/#download" class="btn btn-primary btn-lg">Download App</a>
+                <a href="/partner.html" class="btn btn-outline btn-outline-white btn-lg">Partner With Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-enhanced">
+        <!-- Main Footer Content -->
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid-5">
+                    <!-- Column 1: Brand -->
+                    <div class="footer-brand">
+                        <img src="/logo.png" alt="GRIHGO">
+                        <p>Bihar & Jharkhand ka apna food delivery app. Fresh food. Fair prices. Local love.</p>
+                        <div class="footer-social">
+                            <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                            <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                            <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: For Customers -->
+                    <div class="footer-links">
+                        <h4 class="footer-title">For Customers</h4>
+                        <a href="/restaurants.html" class="footer-link">Browse Restaurants</a>
+                        <a href="/cities.html" class="footer-link">Cities</a>
+                        <a href="/#download" class="footer-link">Download App</a>
+                        <a href="/transparency.html" class="footer-link">Price Transparency</a>
+                    </div>
+
+                    <!-- Column 3: For Businesses -->
+                    <div class="footer-links">
+                        <h4 class="footer-title">For Businesses</h4>
+                        <a href="/partner.html" class="footer-link">Partner With Us</a>
+                        <a href="/delivery.html" class="footer-link">Become Delivery Partner</a>
+                    </div>
+
+                    <!-- Column 4: Company -->
+                    <div class="footer-links">
+                        <h4 class="footer-title">Company</h4>
+                        <a href="/about.html" class="footer-link">About Us</a>
+                        <a href="/careers.html" class="footer-link">Careers</a>
+                        <a href="/blog.html" class="footer-link">Blog</a>
+                        <a href="/contact.html" class="footer-link">Contact</a>
+                    </div>
+
+                    <!-- Column 5: Install -->
+                    <div class="footer-app">
+                        <h4 class="footer-title">Install App</h4>
+                        <a href="#" class="app-badge">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                                alt="Google Play">
+                        </a>
+                        <a href="#" class="app-badge">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+                                alt="App Store">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="container text-sm">
+                <div class="footer-legal">
+                    <span>© 2024 GrihGO. All rights reserved.</span>
+                </div>
+                <div class="footer-badge">
+                    <span>Made with</span>
+                    <i data-lucide="heart" class="heart-icon"></i>
+                    <span>in Bihar</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-bottom-nav">
+        <a href="/" class="nav-item">
+            <i data-lucide="home"></i>
+            <span>Home</span>
+        </a>
+        <a href="/restaurants.html" class="nav-item">
+            <i data-lucide="utensils"></i>
+            <span>Order</span>
+        </a>
+        <a href="/cities.html" class="nav-item">
+            <i data-lucide="map-pin"></i>
+            <span>Cities</span>
+        </a>
+        <a href="/contact.html" class="nav-item">
+            <i data-lucide="phone"></i>
+            <span>Help</span>
+        </a>
+    </nav>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
