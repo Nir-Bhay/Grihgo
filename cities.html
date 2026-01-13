@@ -651,14 +651,46 @@
         <div class="container">
             <div class="section-header text-center" data-aos="fade-up">
                 <span class="section-tag voting-tag">
-                    <i data-lucide="vote"></i>
-                    Community Choice
+                    <i data-lucide="map-pin"></i>
+                    City Voting
                 </span>
-                <h2>Vote for Next City</h2>
+                <h2>Aapka Shehar GrihGO par kab aayega?</h2>
                 <p class="section-subtitle">
-                    Top voted cities will launch next! Your vote matters. <br>
-                    <span class="hindi-text">आपके शहर में GrihGO कब आएगा? वोट करें!</span>
+                    Vote for your city — Top 3 cities will launch next! 🚀 <br>
+                    <span class="hindi-text">अपने शहर के लिए वोट करें!</span>
                 </p>
+            </div>
+
+            <!-- City Search Section -->
+            <div class="city-search-wrapper" data-aos="fade-up" data-aos-delay="50">
+                <div class="city-search-card">
+                    <div class="search-header">
+                        <i data-lucide="search"></i>
+                        <h3>Search & Vote for Your City</h3>
+                    </div>
+                    <div class="city-search-form">
+                        <div class="search-input-wrapper">
+                            <i data-lucide="map-pin" class="search-icon"></i>
+                            <input type="text" class="city-search-input" id="citySearchInput"
+                                placeholder="Search city name... (e.g., Patna, Gaya, Bhagalpur)">
+                            <button class="search-clear-btn" id="citySearchClear" style="display: none;">
+                                <i data-lucide="x"></i>
+                            </button>
+                        </div>
+                        <button class="btn btn-primary" id="searchCityBtn">
+                            <i data-lucide="search"></i>
+                            Search
+                        </button>
+                    </div>
+                    <div class="city-suggestions" id="citySuggestions">
+                        <span class="suggestion-label">Popular cities:</span>
+                        <button class="suggestion-chip" data-city="patna">Patna</button>
+                        <button class="suggestion-chip" data-city="gaya">Gaya</button>
+                        <button class="suggestion-chip" data-city="muzaffarpur">Muzaffarpur</button>
+                        <button class="suggestion-chip" data-city="bhagalpur">Bhagalpur</button>
+                        <button class="suggestion-chip" data-city="darbhanga">Darbhanga</button>
+                    </div>
+                </div>
             </div>
 
             <!-- Voting Progress -->
@@ -667,194 +699,173 @@
                     <div class="progress-header">
                         <div class="progress-info">
                             <span class="progress-label">Total Votes</span>
-                            <span class="progress-count" id="total-votes">15,432</span>
+                            <span class="progress-count" id="total-votes">12,235</span>
                         </div>
                         <div class="progress-goal">
-                            <span>Goal: 25,000</span>
+                            <span>Goal: 20,000 votes</span>
                         </div>
                     </div>
                     <div class="progress-bar-wrapper">
                         <div class="progress-bar">
-                            <div class="progress-fill" style="width: 62%;"></div>
+                            <div class="progress-fill" style="width: 61%;"></div>
                         </div>
                     </div>
                     <p class="progress-message">
                         <i data-lucide="trophy"></i>
-                        Top 2 cities will be announced for launch in March 2025!
+                        Top 3 cities will be announced for launch in Q1 2026!
                     </p>
                 </div>
             </div>
 
-            <!-- Voting Leaderboard -->
-            <div class="voting-leaderboard" data-aos="fade-up" data-aos-delay="150">
-                <h3 class="leaderboard-title">
-                    <i data-lucide="trophy"></i>
-                    Current Leaderboard
+            <!-- Bihar Cities Grid -->
+            <div class="bihar-cities-section" data-aos="fade-up" data-aos-delay="120">
+                <h3 class="subsection-title">
+                    <span class="title-icon">🏛️</span>
+                    Bihar Cities
                 </h3>
-
-                <div class="leaderboard-grid">
-                    <!-- Rank 1 -->
-                    <div class="vote-card rank-1" data-city="gaya" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="vote-rank">
+                <div class="bihar-cities-grid">
+                    <!-- Gaya -->
+                    <div class="vote-card-compact" data-city="gaya">
+                        <div class="vote-rank rank-1">
                             <i data-lucide="trophy"></i>
                             <span>1</span>
                         </div>
-                        <div class="vote-card-header">
-                            <div class="city-icon-box">
-                                <i data-lucide="sparkles"></i>
-                            </div>
-                            <div class="city-info">
-                                <h4>Gaya</h4>
-                                <span class="city-subtitle">Spiritual Capital</span>
-                            </div>
+                        <div class="city-info-compact">
+                            <h4>Gaya</h4>
+                            <span class="city-tagline">Spiritual Capital</span>
                         </div>
-                        <div class="vote-progress">
-                            <div class="vote-progress-bar" style="width: 85%;"></div>
+                        <div class="vote-progress-compact">
+                            <div class="progress-bar-mini" style="--progress: 85%;"></div>
+                            <span class="vote-count-mini">3,456 votes</span>
                         </div>
-                        <div class="vote-stats">
-                            <span class="vote-count" data-count="3456">3,456</span>
-                            <span class="vote-label">votes</span>
-                        </div>
-                        <button class="btn btn-vote" onclick="voteCity('gaya', this)">
+                        <button class="btn btn-vote-compact" onclick="voteCity('gaya', this)">
                             <i data-lucide="thumbs-up"></i>
-                            Vote Now
+                            Vote
                         </button>
                     </div>
 
-                    <!-- Rank 2 -->
-                    <div class="vote-card rank-2" data-city="bhagalpur" data-aos="zoom-in" data-aos-delay="150">
-                        <div class="vote-rank">
+                    <!-- Bhagalpur -->
+                    <div class="vote-card-compact" data-city="bhagalpur">
+                        <div class="vote-rank rank-2">
                             <i data-lucide="medal"></i>
                             <span>2</span>
                         </div>
-                        <div class="vote-card-header">
-                            <div class="city-icon-box">
-                                <i data-lucide="waves"></i>
-                            </div>
-                            <div class="city-info">
-                                <h4>Bhagalpur</h4>
-                                <span class="city-subtitle">Silk City</span>
-                            </div>
+                        <div class="city-info-compact">
+                            <h4>Bhagalpur</h4>
+                            <span class="city-tagline">Silk City</span>
                         </div>
-                        <div class="vote-progress">
-                            <div class="vote-progress-bar" style="width: 72%;"></div>
+                        <div class="vote-progress-compact">
+                            <div class="progress-bar-mini" style="--progress: 72%;"></div>
+                            <span class="vote-count-mini">2,987 votes</span>
                         </div>
-                        <div class="vote-stats">
-                            <span class="vote-count" data-count="2987">2,987</span>
-                            <span class="vote-label">votes</span>
-                        </div>
-                        <button class="btn btn-vote" onclick="voteCity('bhagalpur', this)">
+                        <button class="btn btn-vote-compact" onclick="voteCity('bhagalpur', this)">
                             <i data-lucide="thumbs-up"></i>
-                            Vote Now
+                            Vote
                         </button>
                     </div>
 
-                    <!-- Rank 3 -->
-                    <div class="vote-card rank-3" data-city="dhanbad" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="vote-rank">
+                    <!-- Muzaffarpur -->
+                    <div class="vote-card-compact" data-city="muzaffarpur">
+                        <div class="vote-rank rank-3">
                             <i data-lucide="award"></i>
                             <span>3</span>
                         </div>
-                        <div class="vote-card-header">
-                            <div class="city-icon-box">
-                                <i data-lucide="pickaxe"></i>
-                            </div>
-                            <div class="city-info">
-                                <h4>Dhanbad</h4>
-                                <span class="city-subtitle">Coal Capital</span>
-                            </div>
+                        <div class="city-info-compact">
+                            <h4>Muzaffarpur</h4>
+                            <span class="city-tagline">Land of Litchi</span>
                         </div>
-                        <div class="vote-progress">
-                            <div class="vote-progress-bar" style="width: 58%;"></div>
+                        <div class="vote-progress-compact">
+                            <div class="progress-bar-mini" style="--progress: 58%;"></div>
+                            <span class="vote-count-mini">2,345 votes</span>
                         </div>
-                        <div class="vote-stats">
-                            <span class="vote-count" data-count="2345">2,345</span>
-                            <span class="vote-label">votes</span>
-                        </div>
-                        <button class="btn btn-vote" onclick="voteCity('dhanbad', this)">
+                        <button class="btn btn-vote-compact" onclick="voteCity('muzaffarpur', this)">
                             <i data-lucide="thumbs-up"></i>
-                            Vote Now
+                            Vote
                         </button>
                     </div>
 
-                    <!-- Rank 4 -->
-                    <div class="vote-card rank-4" data-city="purnia" data-aos="zoom-in" data-aos-delay="250">
-                        <div class="vote-rank">
+                    <!-- Purnia -->
+                    <div class="vote-card-compact" data-city="purnia">
+                        <div class="vote-rank rank-4">
                             <span>4</span>
                         </div>
-                        <div class="vote-card-header">
-                            <div class="city-icon-box">
-                                <i data-lucide="wheat"></i>
-                            </div>
-                            <div class="city-info">
-                                <h4>Purnia</h4>
-                                <span class="city-subtitle">Gateway of NE Bihar</span>
-                            </div>
+                        <div class="city-info-compact">
+                            <h4>Purnia</h4>
+                            <span class="city-tagline">Gateway of NE Bihar</span>
                         </div>
-                        <div class="vote-progress">
-                            <div class="vote-progress-bar" style="width: 45%;"></div>
+                        <div class="vote-progress-compact">
+                            <div class="progress-bar-mini" style="--progress: 45%;"></div>
+                            <span class="vote-count-mini">1,876 votes</span>
                         </div>
-                        <div class="vote-stats">
-                            <span class="vote-count" data-count="1876">1,876</span>
-                            <span class="vote-label">votes</span>
-                        </div>
-                        <button class="btn btn-vote" onclick="voteCity('purnia', this)">
+                        <button class="btn btn-vote-compact" onclick="voteCity('purnia', this)">
                             <i data-lucide="thumbs-up"></i>
-                            Vote Now
+                            Vote
                         </button>
                     </div>
 
-                    <!-- Rank 5 -->
-                    <div class="vote-card rank-5" data-city="hazaribagh" data-aos="zoom-in" data-aos-delay="300">
-                        <div class="vote-rank">
+                    <!-- Begusarai -->
+                    <div class="vote-card-compact" data-city="begusarai">
+                        <div class="vote-rank rank-5">
                             <span>5</span>
                         </div>
-                        <div class="vote-card-header">
-                            <div class="city-icon-box">
-                                <i data-lucide="mountain"></i>
-                            </div>
-                            <div class="city-info">
-                                <h4>Hazaribagh</h4>
-                                <span class="city-subtitle">Land of Thousand Gardens</span>
-                            </div>
+                        <div class="city-info-compact">
+                            <h4>Begusarai</h4>
+                            <span class="city-tagline">Industrial Hub</span>
                         </div>
-                        <div class="vote-progress">
-                            <div class="vote-progress-bar" style="width: 32%;"></div>
+                        <div class="vote-progress-compact">
+                            <div class="progress-bar-mini" style="--progress: 32%;"></div>
+                            <span class="vote-count-mini">987 votes</span>
                         </div>
-                        <div class="vote-stats">
-                            <span class="vote-count" data-count="1234">1,234</span>
-                            <span class="vote-label">votes</span>
-                        </div>
-                        <button class="btn btn-vote" onclick="voteCity('hazaribagh', this)">
+                        <button class="btn btn-vote-compact" onclick="voteCity('begusarai', this)">
                             <i data-lucide="thumbs-up"></i>
-                            Vote Now
+                            Vote
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jharkhand Cities Grid -->
+            <div class="jharkhand-cities-section" data-aos="fade-up" data-aos-delay="150">
+                <h3 class="subsection-title">
+                    <span class="title-icon">⛰️</span>
+                    Jharkhand Cities
+                </h3>
+                <div class="jharkhand-cities-grid">
+                    <!-- Dhanbad -->
+                    <div class="vote-card-compact" data-city="dhanbad">
+                        <div class="vote-rank">
+                            <span>1</span>
+                        </div>
+                        <div class="city-info-compact">
+                            <h4>Dhanbad</h4>
+                            <span class="city-tagline">Coal Capital</span>
+                        </div>
+                        <div class="vote-progress-compact">
+                            <div class="progress-bar-mini" style="--progress: 48%;"></div>
+                            <span class="vote-count-mini">1,534 votes</span>
+                        </div>
+                        <button class="btn btn-vote-compact" onclick="voteCity('dhanbad', this)">
+                            <i data-lucide="thumbs-up"></i>
+                            Vote
                         </button>
                     </div>
 
-                    <!-- Rank 6 -->
-                    <div class="vote-card rank-6" data-city="begusarai" data-aos="zoom-in" data-aos-delay="350">
+                    <!-- Hazaribagh -->
+                    <div class="vote-card-compact" data-city="hazaribagh">
                         <div class="vote-rank">
-                            <span>6</span>
+                            <span>2</span>
                         </div>
-                        <div class="vote-card-header">
-                            <div class="city-icon-box">
-                                <i data-lucide="factory"></i>
-                            </div>
-                            <div class="city-info">
-                                <h4>Begusarai</h4>
-                                <span class="city-subtitle">Industrial Hub</span>
-                            </div>
+                        <div class="city-info-compact">
+                            <h4>Hazaribagh</h4>
+                            <span class="city-tagline">Land of 1000 Gardens</span>
                         </div>
-                        <div class="vote-progress">
-                            <div class="vote-progress-bar" style="width: 25%;"></div>
+                        <div class="vote-progress-compact">
+                            <div class="progress-bar-mini" style="--progress: 35%;"></div>
+                            <span class="vote-count-mini">1,234 votes</span>
                         </div>
-                        <div class="vote-stats">
-                            <span class="vote-count" data-count="987">987</span>
-                            <span class="vote-label">votes</span>
-                        </div>
-                        <button class="btn btn-vote" onclick="voteCity('begusarai', this)">
+                        <button class="btn btn-vote-compact" onclick="voteCity('hazaribagh', this)">
                             <i data-lucide="thumbs-up"></i>
-                            Vote Now
+                            Vote
                         </button>
                     </div>
                 </div>
@@ -1279,7 +1290,163 @@
                 lucide.createIcons();
             }, 1500);
         }
-    </script>
-</body>
 
-</html>
+        // Vote City Function
+        function voteCity(city, button) {
+            // Check if already voted
+            if (localStorage.getItem(`voted_${city}`)) {
+                showNotification('info', 'आप पहले से ही इस शहर को वोट कर चुके हैं!');
+                return;
+            }
+
+            const originalHTML = button.innerHTML;
+            button.innerHTML = '<i data-lucide="loader-2" class="animate-spin"></i>';
+            button.disabled = true;
+
+            setTimeout(() => {
+                button.innerHTML = '<i data-lucide="check"></i> Voted!';
+                button.classList.add('btn-success');
+                button.classList.remove('btn-vote', 'btn-vote-compact');
+
+                // Update vote count
+                const card = button.closest('[data-city]');
+                const voteCountEl = card.querySelector('.vote-count-mini') || card.querySelector('.vote-count');
+                if (voteCountEl) {
+                    const currentText = voteCountEl.textContent;
+                    const currentCount = parseInt(currentText.replace(/[^0-9]/g, ''));
+                    voteCountEl.textContent = (currentCount + 1).toLocaleString() + ' votes';
+                }
+
+                // Update total votes
+                const totalVotesEl = document.getElementById('total-votes');
+                if (totalVotesEl) {
+                    const totalCount = parseInt(totalVotesEl.textContent.replace(/,/g, ''));
+                    totalVotesEl.textContent = (totalCount + 1).toLocaleString();
+                }
+
+                localStorage.setItem(`voted_${city}`, 'true');
+                showNotification('success', `${city.charAt(0).toUpperCase() + city.slice(1)} को वोट करने के लिए धन्यवाद! 🎉`);
+                lucide.createIcons();
+            }, 1000);
+        }
+
+        // City Search Functionality
+        const citySearchInput = document.getElementById('citySearchInput');
+        const citySearchClear = document.getElementById('citySearchClear');
+        const searchCityBtn = document.getElementById('searchCityBtn');
+        const suggestionChips = document.querySelectorAll('.suggestion-chip');
+
+        // All cities data
+        const allCities = [
+            { name: 'Gaya', slug: 'gaya', tagline: 'Spiritual Capital', votes: 3456 },
+            { name: 'Bhagalpur', slug: 'bhagalpur', tagline: 'Silk City', votes: 2987 },
+            { name: 'Muzaffarpur', slug: 'muzaffarpur', tagline: 'Land of Litchi', votes: 2345 },
+            { name: 'Purnia', slug: 'purnia', tagline: 'Gateway of NE Bihar', votes: 1876 },
+            { name: 'Begusarai', slug: 'begusarai', tagline: 'Industrial Hub', votes: 987 },
+            { name: 'Dhanbad', slug: 'dhanbad', tagline: 'Coal Capital', votes: 1534 },
+            { name: 'Hazaribagh', slug: 'hazaribagh', tagline: 'Land of 1000 Gardens', votes: 1234 },
+            { name: 'Patna', slug: 'patna', tagline: 'Capital of Bihar', votes: 0, live: true },
+            { name: 'Darbhanga', slug: 'darbhanga', tagline: 'Heart of Mithila', votes: 0, live: true }
+        ];
+
+        function searchCity() {
+            const query = citySearchInput.value.toLowerCase().trim();
+            if (!query) {
+                showNotification('info', 'कृपया शहर का नाम दर्ज करें');
+                return;
+            }
+
+            const foundCity = allCities.find(c =>
+                c.name.toLowerCase().includes(query) ||
+                c.slug.toLowerCase().includes(query)
+            );
+
+            if (foundCity) {
+                if (foundCity.live) {
+                    showNotification('success', `${foundCity.name} में GrihGO पहले से लाइव है! 🎉`);
+                    const liveCitiesSection = document.getElementById('live-cities');
+                    if (liveCitiesSection) {
+                        liveCitiesSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                } else {
+                    const cityCard = document.querySelector(`[data-city="${foundCity.slug}"]`);
+                    if (cityCard) {
+                        cityCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        cityCard.classList.add('highlight-card');
+                        setTimeout(() => cityCard.classList.remove('highlight-card'), 2000);
+                    }
+                    showNotification('info', `${foundCity.name} मिला! वोट करने के लिए नीचे स्क्रॉल करें`);
+                }
+            } else {
+                showNotification('info', `"${query}" नहीं मिला। आप इस शहर को रिक्वेस्ट कर सकते हैं!`);
+            }
+        }
+
+        citySearchInput?.addEventListener('input', (e) => {
+            citySearchClear.style.display = e.target.value ? 'flex' : 'none';
+        });
+
+        citySearchInput?.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                searchCity();
+            }
+        });
+
+        citySearchClear?.addEventListener('click', () => {
+            citySearchInput.value = '';
+            citySearchClear.style.display = 'none';
+        });
+
+        searchCityBtn?.addEventListener('click', searchCity);
+
+        suggestionChips.forEach(chip => {
+            chip.addEventListener('click', () => {
+                const city = chip.dataset.city;
+                const cityCard = document.querySelector(`[data-city="${city}"]`);
+                if (cityCard) {
+                    cityCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    cityCard.classList.add('highlight-card');
+                    setTimeout(() => cityCard.classList.remove('highlight-card'), 2000);
+                }
+            });
+        });
+
+        // Show notification helper
+        function showNotification(type, message) {
+            const container = document.getElementById('toast-container');
+            if (!container) return;
+
+            const toast = document.createElement('div');
+            toast.className = `toast toast-${type}`;
+            toast.innerHTML = `
+                <i data-lucide="${type === 'success' ? 'check-circle' : type === 'error' ? 'x-circle' : 'info'}" class="toast-icon"></i>
+                <span class="toast-message">${message}</span>
+            `;
+            container.appendChild(toast);
+            lucide.createIcons();
+
+            setTimeout(() => {
+                toast.classList.add('toast-exit');
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+
+        // Check already voted cities on load
+        document.querySelectorAll('[data-city]').forEach(card => {
+            const city = card.dataset.city;
+            if (localStorage.getItem(`voted_${city}`)) {
+                const btn = card.querySelector('.btn-vote, .btn-vote-compact');
+                if (btn) {
+                    btn.innerHTML = '<i data-lucide="check"></i> Voted';
+                    btn.classList.add('btn-success');
+                    btn.classList.remove('btn-vote', 'btn-vote-compact');
+                    btn.disabled = true;
+                }
+            }
+        });
+
+        // Reinitialize icons
+        lucide.createIcons();
+</body >
+
+</html >

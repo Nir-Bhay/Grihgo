@@ -3,6 +3,161 @@
    =================================== */
 
 /* ===================================
+   Pre-Partner Registration Banner
+   =================================== */
+
+.pre-partner-banner {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-darker) 100%);
+    padding: var(--space-4) 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.pre-partner-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    pointer-events: none;
+}
+
+.pre-partner-card {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    padding: var(--space-4) var(--space-6);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-2xl);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.pre-partner-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-shrink: 0;
+}
+
+.pre-partner-icon i {
+    width: 24px;
+    height: 24px;
+}
+
+.pre-partner-content {
+    flex: 1;
+    min-width: 200px;
+}
+
+.pre-partner-content h3 {
+    color: white;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-1);
+}
+
+.pre-partner-content p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: var(--font-size-sm);
+    margin: 0;
+}
+
+.pre-partner-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.quick-register-form {
+    display: flex;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+}
+
+.quick-input {
+    padding: var(--space-2) var(--space-3);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: var(--radius-lg);
+    background: rgba(255, 255, 255, 0.9);
+    font-size: var(--font-size-sm);
+    min-width: 120px;
+    flex: 1;
+    transition: all var(--transition-fast);
+}
+
+.quick-input:focus {
+    outline: none;
+    border-color: white;
+    background: white;
+}
+
+.quick-select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 30px;
+}
+
+.pre-partner-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    color: white;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all var(--transition-fast);
+}
+
+.pre-partner-link:hover {
+    text-decoration: underline;
+}
+
+.pre-partner-link i {
+    width: 14px;
+    height: 14px;
+}
+
+/* Responsive Pre-Partner Banner */
+@media (max-width: 768px) {
+    .pre-partner-card {
+        flex-direction: column;
+        text-align: center;
+        padding: var(--space-4);
+    }
+
+    .pre-partner-content {
+        min-width: 100%;
+    }
+
+    .pre-partner-form {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .quick-register-form {
+        flex-direction: column;
+    }
+
+    .quick-input {
+        width: 100%;
+    }
+}
+
+/* ===================================
    Page Header
    =================================== */
 
@@ -39,8 +194,13 @@
 }
 
 @keyframes patternMove {
-    0% { background-position: 0 0; }
-    100% { background-position: 30px 30px; }
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 30px 30px;
+    }
 }
 
 .restaurants-header .header-gradient {
@@ -71,17 +231,49 @@
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
 }
 
-.icon-1 { top: 10%; left: 8%; animation-delay: 0s; }
-.icon-2 { top: 20%; right: 12%; animation-delay: 1s; }
-.icon-3 { bottom: 35%; left: 12%; animation-delay: 2s; }
-.icon-4 { bottom: 25%; right: 8%; animation-delay: 3s; }
-.icon-5 { top: 45%; left: 5%; animation-delay: 4s; }
-.icon-6 { top: 35%; right: 5%; animation-delay: 5s; }
+.icon-1 {
+    top: 10%;
+    left: 8%;
+    animation-delay: 0s;
+}
+
+.icon-2 {
+    top: 20%;
+    right: 12%;
+    animation-delay: 1s;
+}
+
+.icon-3 {
+    bottom: 35%;
+    left: 12%;
+    animation-delay: 2s;
+}
+
+.icon-4 {
+    bottom: 25%;
+    right: 8%;
+    animation-delay: 3s;
+}
+
+.icon-5 {
+    top: 45%;
+    left: 5%;
+    animation-delay: 4s;
+}
+
+.icon-6 {
+    top: 35%;
+    right: 5%;
+    animation-delay: 5s;
+}
 
 @keyframes float-food {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0) rotate(0deg);
     }
+
     50% {
         transform: translateY(-15px) rotate(5deg);
     }
@@ -335,20 +527,26 @@
     position: relative;
     margin: 0 calc(-1 * var(--space-4));
     padding: 0 var(--space-4);
+    overflow: hidden;
 }
 
 .filter-pills {
     display: flex;
     gap: var(--space-3);
     overflow-x: auto;
+    overflow-y: hidden;
     scrollbar-width: none;
     -ms-overflow-style: none;
     scroll-behavior: smooth;
-    padding: var(--space-2) 0;
+    padding: var(--space-2) var(--space-1);
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
 }
 
 .filter-pills::-webkit-scrollbar {
     display: none;
+    height: 0;
+    width: 0;
 }
 
 .filter-pill {
@@ -365,6 +563,8 @@
     white-space: nowrap;
     transition: all var(--transition-fast);
     color: var(--color-text-secondary);
+    flex-shrink: 0;
+    scroll-snap-align: start;
 }
 
 .filter-pill i {
@@ -1453,7 +1653,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: 
+    background-image:
         radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
         radial-gradient(circle at 80% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
 }
@@ -1576,6 +1776,7 @@
         opacity: 0;
         transform: translateX(100%);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -1591,6 +1792,7 @@
         opacity: 1;
         transform: translateX(0);
     }
+
     to {
         opacity: 0;
         transform: translateX(100%);
@@ -1628,16 +1830,16 @@
     .spotlight-card {
         grid-template-columns: 1fr;
     }
-    
+
     .spotlight-image {
         min-height: 250px;
     }
-    
+
     .partner-cta-wrapper {
         grid-template-columns: 1fr;
         gap: var(--space-8);
     }
-    
+
     .partner-cta-image {
         order: -1;
         max-height: 300px;
@@ -1647,83 +1849,148 @@
 @media (max-width: 768px) {
     .restaurants-header {
         min-height: auto;
-        padding-top: calc(var(--navbar-height) + var(--space-8));
-        padding-bottom: var(--space-10);
+        padding-top: calc(var(--navbar-height) + var(--space-6));
+        padding-bottom: var(--space-8);
     }
-    
+
     .restaurants-header .header-stats {
-        gap: var(--space-3);
+        gap: var(--space-2);
     }
-    
+
     .restaurants-header .header-stat {
-        min-width: 70px;
+        min-width: 65px;
         padding: var(--space-2) var(--space-3);
     }
-    
+
+    /* Compact Sticky Filter Section */
     .filter-section {
-        padding: var(--space-4) 0;
+        padding: var(--space-2) 0;
+        top: var(--navbar-height);
+        background: white;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     }
-    
+
+    .filter-wrapper {
+        gap: var(--space-2);
+    }
+
+    /* Compact Search Row */
     .search-container {
-        flex-direction: column;
+        flex-direction: row;
+        gap: var(--space-2);
+        flex-wrap: nowrap;
+        align-items: center;
     }
-    
+
     .search-box {
-        max-width: 100%;
+        flex: 1;
+        min-width: 0;
+        max-width: none;
     }
-    
+
+    .search-input {
+        padding: 8px 12px 8px 36px;
+        font-size: 13px;
+        border-radius: 10px;
+        height: 38px;
+    }
+
+    .search-icon {
+        left: 12px;
+        width: 16px;
+        height: 16px;
+    }
+
     .city-selector {
-        width: 100%;
+        width: auto;
+        min-width: 90px;
+        flex-shrink: 0;
     }
-    
+
+    .city-icon {
+        left: 8px;
+        width: 14px;
+        height: 14px;
+    }
+
+    .city-select {
+        padding: 8px 28px 8px 28px;
+        font-size: 13px;
+        border-radius: 10px;
+        height: 38px;
+    }
+
+    /* Compact Filter Pills */
+    .filter-pills-wrapper {
+        margin: 0 -16px;
+        padding: 0 16px;
+    }
+
+    .filter-pills {
+        gap: 6px;
+        padding: 4px 0;
+    }
+
+    .filter-pill {
+        padding: 6px 12px;
+        font-size: 11px;
+        border-width: 1px;
+        border-radius: 16px;
+    }
+
+    .filter-pill i {
+        width: 12px;
+        height: 12px;
+    }
+
     .cuisine-grid {
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
         gap: var(--space-3);
     }
-    
+
     .cuisine-card {
         padding: var(--space-3);
     }
-    
+
     .cuisine-icon {
         width: 60px;
         height: 60px;
     }
-    
+
     .restaurants-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .quick-bites-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .coming-soon-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .spotlight-actions {
         flex-direction: column;
     }
-    
+
     .spotlight-favorite {
         width: 100%;
     }
-    
+
     .cta-buttons {
         flex-direction: column;
     }
-    
+
     .cta-buttons .btn {
         width: 100%;
     }
-    
+
     .toast-container {
         left: var(--space-4);
         right: var(--space-4);
         bottom: calc(var(--space-16) + 60px);
     }
-    
+
     .toast {
         max-width: 100%;
     }
@@ -1734,23 +2001,23 @@
         font-size: 1.75rem;
         opacity: 0.1;
     }
-    
+
     .section-header h2 {
         font-size: 1.25rem;
     }
-    
+
     .coming-soon-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .coming-soon-card {
         padding: var(--space-6);
     }
-    
+
     .quick-bite-card {
         padding: var(--space-3);
     }
-    
+
     .quick-bite-image {
         width: 60px;
         height: 60px;
@@ -1762,13 +2029,14 @@
    =================================== */
 
 @media (prefers-reduced-motion: reduce) {
+
     .floating-icon,
     .restaurant-image img,
     .cuisine-icon img {
         animation: none;
         transition: none;
     }
-    
+
     .restaurant-card:hover,
     .cuisine-card:hover,
     .quick-bite-card:hover {
@@ -1796,7 +2064,7 @@
         min-height: auto;
         padding: var(--space-4);
     }
-    
+
     .filter-section,
     .floating-food-icons,
     .favorite-btn,
@@ -1805,7 +2073,7 @@
     .back-to-top {
         display: none;
     }
-    
+
     .restaurant-card {
         break-inside: avoid;
         box-shadow: none;

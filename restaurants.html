@@ -196,25 +196,64 @@
                 <!-- Quick Stats -->
                 <div class="header-stats" data-aos="fade-up" data-aos-delay="400">
                     <div class="header-stat">
-                        <span class="stat-value">50+</span>
+                        <span class="stat-value">50</span>
                         <span class="stat-label">Restaurants</span>
                     </div>
                     <div class="header-stat">
-                        <span class="stat-value">200+</span>
+                        <span class="stat-value">200</span>
                         <span class="stat-label">Dishes</span>
                     </div>
                     <div class="header-stat">
-                        <span class="stat-value">4.5★</span>
+                        <span class="stat-value">45</span>
                         <span class="stat-label">Avg Rating</span>
                     </div>
                     <div class="header-stat">
-                        <span class="stat-value">25min</span>
+                        <span class="stat-value">25</span>
                         <span class="stat-label">Avg Delivery</span>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+
+    <!-- Pre-Partner Registration Banner -->
+    <section class="pre-partner-banner" id="pre-partner">
+        <div class="container">
+            <div class="pre-partner-card" data-aos="fade-up">
+                <div class="pre-partner-icon">
+                    <i data-lucide="store"></i>
+                </div>
+                <div class="pre-partner-content">
+                    <h3>🍽️ अपना Restaurant GrihGO पर लिस्ट करें!</h3>
+                    <p>पहले 3 महीने 0% कमीशन। Free Menu Photography & Quick Onboarding!</p>
+                </div>
+                <div class="pre-partner-form">
+                    <div class="quick-register-form">
+                        <input type="text" class="quick-input" id="prePartnerName" placeholder="Restaurant Name">
+                        <input type="tel" class="quick-input" id="prePartnerPhone" placeholder="Phone Number"
+                            maxlength="10">
+                        <select class="quick-input quick-select" id="prePartnerCity">
+                            <option value="">Select City</option>
+                            <option value="patna">Patna</option>
+                            <option value="gaya">Gaya</option>
+                            <option value="muzaffarpur">Muzaffarpur</option>
+                            <option value="bhagalpur">Bhagalpur</option>
+                            <option value="darbhanga">Darbhanga</option>
+                            <option value="purnia">Purnia</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <button class="btn btn-white btn-sm" onclick="preRegisterPartner()">
+                            <i data-lucide="send"></i>
+                            Register Now
+                        </button>
+                    </div>
+                </div>
+                <a href="/partner.html" class="pre-partner-link">
+                    पूरा फॉर्म भरें <i data-lucide="arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
 
     <!-- Search & Filter Section -->
     <section class="filter-section" id="filter-section">
@@ -1421,6 +1460,54 @@
         scrollRightBtn?.addEventListener('click', () => {
             filterWrapper.scrollBy({ left: 200, behavior: 'smooth' });
         });
+
+        // Pre-Partner Registration Function
+        function preRegisterPartner() {
+            const name = document.getElementById('prePartnerName').value;
+            const phone = document.getElementById('prePartnerPhone').value;
+            const city = document.getElementById('prePartnerCity').value;
+
+            if (!name || !phone || !city) {
+                showNotification('error', 'कृपया सभी फ़ील्ड भरें!');
+                return;
+            }
+
+            if (phone.length !== 10 || !/^\d+$/.test(phone)) {
+                showNotification('error', 'कृपया सही फ़ोन नंबर दर्ज करें!');
+                return;
+            }
+
+            // Show loading
+            const btn = event.target.closest('button');
+            const originalHTML = btn.innerHTML;
+            btn.innerHTML = '<i data-lucide="loader-2" class="animate-spin"></i> Registering...';
+            btn.disabled = true;
+
+            // Simulate API call
+            setTimeout(() => {
+                btn.innerHTML = '<i data-lucide="check"></i> Registered!';
+                btn.classList.add('btn-success');
+
+                // Clear form
+                document.getElementById('prePartnerName').value = '';
+                document.getElementById('prePartnerPhone').value = '';
+                document.getElementById('prePartnerCity').value = '';
+
+                showNotification('success', 'धन्यवाद! हमारी टीम जल्द ही आपसे संपर्क करेगी! 🎉');
+                lucide.createIcons();
+
+                // Reset button after 3 seconds
+                setTimeout(() => {
+                    btn.innerHTML = originalHTML;
+                    btn.classList.remove('btn-success');
+                    btn.disabled = false;
+                    lucide.createIcons();
+                }, 3000);
+            }, 1500);
+        }
+
+        // Make function globally available
+        window.preRegisterPartner = preRegisterPartner;
     </script>
 </body>
 
