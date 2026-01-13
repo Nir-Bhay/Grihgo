@@ -1353,6 +1353,82 @@
 }
 
 /* ===================================
+   Extra Small Mobile (360px and below)
+   =================================== */
+@media (max-width: 360px) {
+    /* Job Cards */
+    .job-card h3 {
+        font-size: var(--font-size-base);
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .job-card {
+        padding: var(--space-4);
+    }
+
+    /* Benefits */
+    .benefit-title {
+        font-size: var(--font-size-sm);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .benefit-card {
+        padding: var(--space-3);
+    }
+
+    /* Culture Cards */
+    .culture-card h3 {
+        font-size: var(--font-size-base);
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .culture-card {
+        padding: var(--space-5);
+    }
+
+    .culture-icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    /* Team Stats */
+    .team-stat {
+        padding: var(--space-3);
+    }
+
+    .team-stat .stat-value {
+        font-size: var(--font-size-xl);
+    }
+
+    /* Section Headers */
+    .section-header h2 {
+        font-size: 1.375rem;
+    }
+
+    .section-header p {
+        font-size: var(--font-size-sm);
+    }
+
+    /* Hero */
+    .careers-hero h1 {
+        font-size: 1.5rem;
+    }
+
+    /* General Application */
+    .general-application-content {
+        padding: var(--space-5);
+    }
+}
+
+/* ===================================
    Accessibility
    =================================== */
 

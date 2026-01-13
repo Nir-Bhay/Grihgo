@@ -1715,6 +1715,43 @@ p:last-child {
 }
 
 /* ===================================
+   Text Truncation Utilities
+   =================================== */
+
+/* Single line truncation with ellipsis */
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Multi-line truncation (2 lines) */
+.text-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Multi-line truncation (3 lines) */
+.text-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Word break for long words */
+.text-break {
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+/* ===================================
    Border Utilities
    =================================== */
 

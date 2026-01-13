@@ -2166,6 +2166,77 @@
 }
 
 /* ===================================
+   Extra Small Mobile (360px and below)
+   =================================== */
+@media (max-width: 360px) {
+    /* City Cards */
+    .city-card h3,
+    .live-city-card h3,
+    .launching-city-card h3 {
+        font-size: var(--font-size-base);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    /* Vote Stats */
+    .vote-stat {
+        min-width: 100%;
+        padding: var(--space-3);
+    }
+
+    /* Location Names */
+    .location-name {
+        font-size: var(--font-size-sm);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    /* Vote Card */
+    .vote-card {
+        padding: var(--space-4);
+    }
+
+    .vote-card h3 {
+        font-size: var(--font-size-base);
+    }
+
+    /* City Icon */
+    .city-icon-wrapper .city-icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    /* Countdown */
+    .countdown-item {
+        padding: var(--space-2);
+    }
+
+    .countdown-value {
+        font-size: var(--font-size-lg);
+    }
+
+    .countdown-label {
+        font-size: 10px;
+    }
+
+    /* Section Headers */
+    .section-header h2 {
+        font-size: 1.375rem;
+    }
+
+    .section-header p {
+        font-size: var(--font-size-sm);
+    }
+
+    /* Header */
+    .cities-header h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* ===================================
    Animations & Micro-interactions
    =================================== */
 

@@ -1704,6 +1704,89 @@
 }
 
 /* ===================================
+   Extra Small Mobile (360px and below)
+   =================================== */
+@media (max-width: 360px) {
+    /* Team Cards */
+    .team-card h4 {
+        font-size: var(--font-size-base);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .team-card {
+        padding: var(--space-5);
+    }
+
+    .team-role {
+        font-size: var(--font-size-xs);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    /* Value Cards */
+    .value-card h3 {
+        font-size: var(--font-size-base);
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .value-card {
+        padding: var(--space-5);
+    }
+
+    .value-icon {
+        width: 52px;
+        height: 52px;
+    }
+
+    /* Pillar Cards */
+    .pillar-card h3 {
+        font-size: var(--font-size-base);
+    }
+
+    .pillar-card {
+        padding: var(--space-5);
+    }
+
+    /* Stats */
+    .about-stat {
+        min-width: 100%;
+    }
+
+    .stats-section .stat-number {
+        font-size: var(--font-size-2xl);
+    }
+
+    /* Timeline */
+    .timeline-content {
+        padding: var(--space-3);
+    }
+
+    .timeline-content h3 {
+        font-size: var(--font-size-base);
+    }
+
+    /* Section Headers */
+    .section-header h2 {
+        font-size: 1.375rem;
+    }
+
+    .who-we-are-content h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Hero */
+    .about-header h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* ===================================
    Animation Enhancements
    =================================== */
 

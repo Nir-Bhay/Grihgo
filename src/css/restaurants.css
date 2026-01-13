@@ -2025,6 +2025,116 @@
 }
 
 /* ===================================
+   Extra Small Mobile (360px and below)
+   =================================== */
+@media (max-width: 360px) {
+    /* Search Box */
+    .search-box {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .search-container {
+        flex-direction: column;
+        gap: var(--space-2);
+    }
+
+    .city-selector {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    /* Restaurant Grid */
+    .restaurants-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+
+    /* Restaurant Card Text Truncation */
+    .restaurant-name {
+        font-size: var(--font-size-base);
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .restaurant-cuisine {
+        font-size: var(--font-size-xs);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    /* Quick Bites Grid */
+    .quick-bites-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-3);
+    }
+
+    .quick-bite-card {
+        padding: var(--space-3);
+    }
+
+    .quick-bite-info h4 {
+        font-size: var(--font-size-sm);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    /* Cuisine Grid */
+    .cuisine-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-2);
+    }
+
+    .cuisine-card {
+        padding: var(--space-2);
+    }
+
+    .cuisine-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .cuisine-name {
+        font-size: 11px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    /* Spotlight Card */
+    .spotlight-name {
+        font-size: var(--font-size-lg);
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    /* Header Stats */
+    .restaurants-header .header-stat {
+        min-width: calc(33% - var(--space-2));
+        padding: var(--space-2);
+    }
+
+    .restaurants-header .header-stat .stat-value {
+        font-size: var(--font-size-base);
+    }
+
+    /* Section Headers */
+    .section-header h2 {
+        font-size: 1.125rem;
+    }
+
+    .section-header p {
+        font-size: var(--font-size-xs);
+    }
+}
+
+/* ===================================
    Accessibility
    =================================== */
 
